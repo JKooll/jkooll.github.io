@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>JKol-Blog</title>
-  <subtitle>还没想好</subtitle>
+  <subtitle>PHP程序员--初级</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://JKooll.github.io/"/>
-  <updated>2016-10-03T10:14:03.609Z</updated>
+  <updated>2016-10-04T02:22:01.760Z</updated>
   <id>http://JKooll.github.io/</id>
   
   <author>
@@ -16,37 +16,55 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>create_blog_with_github</title>
+    <title>Github+Hexo+Next创建自己的博客</title>
     <link href="http://JKooll.github.io/2016/10/03/create-blog-with-github/"/>
     <id>http://JKooll.github.io/2016/10/03/create-blog-with-github/</id>
     <published>2016-10-03T09:33:34.000Z</published>
-    <updated>2016-10-03T10:14:03.609Z</updated>
+    <updated>2016-10-04T02:22:01.760Z</updated>
     
-    <content type="html"><![CDATA[<p>#Hexo+Github+Next创建自己的博客</p>
+    <content type="html"><![CDATA[<p>这是搭建完这个博客写的第一篇文章，就简单总结一些搭建这个博客的过程。</p>
+<h2 id="Github–建仓"><a href="#Github–建仓" class="headerlink" title="Github–建仓"></a>Github–建仓</h2><p>首先要在github上注册一个账号(<a href="https://github.com/join" target="_blank" rel="external">https://github.com/join</a>),<br><img src="../images/002.png" alt=""><br>然后登陆，新建一个git仓(<a href="https://github.com/new)，" target="_blank" rel="external">https://github.com/new)，</a><br><img src="../images/001.png" alt=""><br>Repository name填写you_username.github.io,Description为博客描述(可写)，确定填写无误之后<br>点击Create repository，git仓就创建完成了。</p>
+<h2 id="Hexo–博客"><a href="#Hexo–博客" class="headerlink" title="Hexo–博客"></a>Hexo–博客</h2><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，<br>即可利用靓丽的主题生成静态网页。<br>安装hexo需要Nodejs和Git(可参考<a href="https://hexo.io/zh-cn/docs/index.html)，通过" target="_blank" rel="external">https://hexo.io/zh-cn/docs/index.html)，通过</a><br><code>$ npm install -g hexo-cli</code>即可安装hexo，然后根据hexo<br><a href="https://hexo.io/zh-cn/docs/setup.html文档即可创建自己的博客了。" target="_blank" rel="external">https://hexo.io/zh-cn/docs/setup.html文档即可创建自己的博客了。</a></p>
+<h2 id="next–主题"><a href="#next–主题" class="headerlink" title="next–主题"></a>next–主题</h2><p>如果你对hexo自带的主题不满意可以在你的博客根目录下的themes/下添加自己喜欢的<br>主题。比较推荐的是next(<a href="http://theme-next.iissnan.com/)，官网上有详细的安装和使用" target="_blank" rel="external">http://theme-next.iissnan.com/)，官网上有详细的安装和使用</a><br>文档，这里就不写了，如果你对这个主题不满意可以去这里看一下，挑选自己满意的安装上去就可以了。</p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>最后就是讲博客部署到github上去了，可以参考一下这个(<a href="https://hexo.io/zh-cn/docs/deployment.html)，" target="_blank" rel="external">https://hexo.io/zh-cn/docs/deployment.html)，</a></p>
+<ul>
+<li>安装 hexo-deployer-git<br><code>$ npm install hexo-deployer-git –save</code></li>
+<li>配置_config.yml<br>打开博客根目录下的_config.yml，找到deploy,将配置修改为<br><code><pre><code>deploy:
+type: git
+repo: &lt;repository url&gt;//刚才建的git仓url，可在clone下找到
+branch: [branch]//分支
+message: [message]//commit信息
+</code></pre></code><br>配置完成之后就可以通过下面三步部署博客了</li>
+<li>hexo clean</li>
+<li>hexo generate</li>
+<li>hexo deploy<br>##完成<br>打开your_username.github.io看一下你的博客吧。 </li>
+</ul>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;#Hexo+Github+Next创建自己的博客&lt;/p&gt;
-
+      &lt;p&gt;这是搭建完这个博客写的第一篇文章，就简单总结一些搭建这个博客的过程。&lt;/p&gt;
+&lt;h2 id=&quot;Github–建仓&quot;&gt;&lt;a href=&quot;#Github–建仓&quot; class=&quot;headerlink&quot; title=&quot;Github–建仓&quot;&gt;&lt;/a&gt;Github–建仓&lt;/h2&gt;&lt;p&gt;
     
     </summary>
     
       <category term="笔记" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
+      <category term="Nodejs" scheme="http://JKooll.github.io/tags/Nodejs/"/>
+    
       <category term="hexo" scheme="http://JKooll.github.io/tags/hexo/"/>
     
       <category term="github" scheme="http://JKooll.github.io/tags/github/"/>
     
-      <category term="next" scheme="http://JKooll.github.io/tags/next/"/>
+      <category term="hexo-theme-next" scheme="http://JKooll.github.io/tags/hexo-theme-next/"/>
     
   </entry>
   
   <entry>
     <title>flysystem中集成SCS（新浪云存储）</title>
-    <link href="http://JKooll.github.io/2016/10/03/flysystem%E4%B8%AD%E9%9B%86%E6%88%90SCS%EF%BC%88%E6%96%B0%E6%B5%AA%E4%BA%91%E5%AD%98%E5%82%A8%EF%BC%89/"/>
-    <id>http://JKooll.github.io/2016/10/03/flysystem中集成SCS（新浪云存储）/</id>
+    <link href="http://JKooll.github.io/2016/10/03/flysystem-with-SCS/"/>
+    <id>http://JKooll.github.io/2016/10/03/flysystem-with-SCS/</id>
     <published>2016-10-03T07:35:13.000Z</published>
     <updated>2016-10-03T07:37:20.255Z</updated>
     
