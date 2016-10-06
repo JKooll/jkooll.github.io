@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://JKooll.github.io/"/>
-  <updated>2016-10-05T15:54:38.309Z</updated>
+  <updated>2016-10-06T05:50:31.229Z</updated>
   <id>http://JKooll.github.io/</id>
   
   <author>
@@ -16,13 +16,48 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>插入排序--算法导论1-2-1</title>
+    <link href="http://JKooll.github.io/2016/10/06/alg/"/>
+    <id>http://JKooll.github.io/2016/10/06/alg/</id>
+    <published>2016-10-06T03:34:48.000Z</published>
+    <updated>2016-10-06T05:50:31.229Z</updated>
+    
+    <content type="html"><![CDATA[<p>##&#x6982;&#x5FF5;<br>&#x539F;&#x5740;&#x6392;&#x5E8F;&#xFF1A;&#x7B97;&#x6CD5;&#x5728;&#x6570;&#x7EC4;A&#x4E2D;&#x6392;&#x5E8F;&#xFF0C;&#x5728;&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#xFF0C;&#x6700;&#x591A;&#x53EA;&#x6709;&#x5176;&#x4E2D;&#x7684;&#x5E38;&#x6570;<br>&#x4E2A;&#x6570;&#x5B57;&#x5B58;&#x50A8;&#x5728;&#x6570;&#x7EC4;&#x5916;&#x9762;&#x3002;</p>
+<p>##&#x95EE;&#x9898;<br>&#x8F93;&#x5165;&#xFF1A;n&#x4E2A;&#x6570;&#x7684;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&lt;$a_1$,$a_2$, &#x2026;, $a_n$&gt;<br>&#x8F93;&#x51FA;&#xFF1A;&#x8F93;&#x5165;&#x5E8F;&#x5217;&#x7684;&#x4E00;&#x4E2A;&#x6392;&#x5217;</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;##&amp;#x6982;&amp;#x5FF5;&lt;br&gt;&amp;#x539F;&amp;#x5740;&amp;#x6392;&amp;#x5E8F;&amp;#xFF1A;&amp;#x7B97;&amp;#x6CD5;&amp;#x5728;&amp;#x6570;&amp;#x7EC4;A&amp;#x4E2D;&amp;#x6392;&amp;#x5E8F;&amp;#xFF0C;&amp;#
+    
+    </summary>
+    
+      <category term="笔记" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="读书笔记" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="算法导论" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA/"/>
+    
+      <category term="第一部分 基础知识" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+      <category term="第二章 算法技术" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%AE%97%E6%B3%95%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="2.1 插入排序" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%AE%97%E6%B3%95%E6%8A%80%E6%9C%AF/2-1-%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/"/>
+    
+    
+      <category term="算法导论" scheme="http://JKooll.github.io/tags/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PHP程序员进阶学习书籍参考指南</title>
     <link href="http://JKooll.github.io/2016/10/05/booklist/"/>
     <id>http://JKooll.github.io/2016/10/05/booklist/</id>
     <published>2016-10-05T15:51:54.000Z</published>
-    <updated>2016-10-05T15:54:38.309Z</updated>
+    <updated>2016-10-05T15:58:00.999Z</updated>
     
-    <content type="html"><![CDATA[<p>PHP&#x7A0B;&#x5E8F;&#x5458;&#x8FDB;&#x9636;&#x5B66;&#x4E60;&#x4E66;&#x7C4D;&#x53C2;&#x8003;&#x6307;&#x5357;<br>@heiyeluren<br>lastmodify: 2016/2/18</p>
+    <content type="html"><![CDATA[<p>&#x539F;&#x6587;&#x94FE;&#x63A5;:<a href="http://blog.csdn.net/heiyeshuwu/article/details/50686878" target="_blank" rel="external">http://blog.csdn.net/heiyeshuwu/article/details/50686878</a></p>
+<p>@heiyeluren<br>lastmodify: 2016/2/18</p>
 <p>&#x3010;&#x521D;&#x9636;&#x3011;&#xFF08;&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x53CA;&#x5165;&#x95E8;&#xFF09;</p>
 <ol>
 <li>&#x300A;PHP&#x4E0E;MySQL&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#xFF08;&#x7B2C;4&#x7248;&#xFF09;&#x300B;  <a href="http://item.jd.com/10701892.html" target="_blank" rel="external">http://item.jd.com/10701892.html</a></li>
@@ -132,7 +167,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;PHP&amp;#x7A0B;&amp;#x5E8F;&amp;#x5458;&amp;#x8FDB;&amp;#x9636;&amp;#x5B66;&amp;#x4E60;&amp;#x4E66;&amp;#x7C4D;&amp;#x53C2;&amp;#x8003;&amp;#x6307;&amp;#x5357;&lt;br&gt;@heiyeluren&lt;br&gt;lastmodify:
+      &lt;p&gt;&amp;#x539F;&amp;#x6587;&amp;#x94FE;&amp;#x63A5;:&lt;a href=&quot;http://blog.csdn.net/heiyeshuwu/article/details/50686878&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http:/
     
     </summary>
     

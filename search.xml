@@ -4,9 +4,18 @@
   
     
     <entry>
+      <title><![CDATA[插入排序--算法导论1-2-1]]></title>
+      <url>http://JKooll.github.io/2016/10/06/alg/</url>
+      <content type="html"><![CDATA[<p>##&#x6982;&#x5FF5;<br>&#x539F;&#x5740;&#x6392;&#x5E8F;&#xFF1A;&#x7B97;&#x6CD5;&#x5728;&#x6570;&#x7EC4;A&#x4E2D;&#x6392;&#x5E8F;&#xFF0C;&#x5728;&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#xFF0C;&#x6700;&#x591A;&#x53EA;&#x6709;&#x5176;&#x4E2D;&#x7684;&#x5E38;&#x6570;<br>&#x4E2A;&#x6570;&#x5B57;&#x5B58;&#x50A8;&#x5728;&#x6570;&#x7EC4;&#x5916;&#x9762;&#x3002;</p>
+<p>##&#x95EE;&#x9898;<br>&#x8F93;&#x5165;&#xFF1A;n&#x4E2A;&#x6570;&#x7684;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&lt;$a_1$,$a_2$, &#x2026;, $a_n$&gt;<br>&#x8F93;&#x51FA;&#xFF1A;&#x8F93;&#x5165;&#x5E8F;&#x5217;&#x7684;&#x4E00;&#x4E2A;&#x6392;&#x5217;</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[PHP程序员进阶学习书籍参考指南]]></title>
       <url>http://JKooll.github.io/2016/10/05/booklist/</url>
-      <content type="html"><![CDATA[<p>PHP&#x7A0B;&#x5E8F;&#x5458;&#x8FDB;&#x9636;&#x5B66;&#x4E60;&#x4E66;&#x7C4D;&#x53C2;&#x8003;&#x6307;&#x5357;<br>@heiyeluren<br>lastmodify: 2016/2/18</p>
+      <content type="html"><![CDATA[<p>&#x539F;&#x6587;&#x94FE;&#x63A5;:<a href="http://blog.csdn.net/heiyeshuwu/article/details/50686878" target="_blank" rel="external">http://blog.csdn.net/heiyeshuwu/article/details/50686878</a></p>
+<p>@heiyeluren<br>lastmodify: 2016/2/18</p>
 <p>&#x3010;&#x521D;&#x9636;&#x3011;&#xFF08;&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x53CA;&#x5165;&#x95E8;&#xFF09;</p>
 <ol>
 <li>&#x300A;PHP&#x4E0E;MySQL&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#xFF08;&#x7B2C;4&#x7248;&#xFF09;&#x300B;  <a href="http://item.jd.com/10701892.html" target="_blank" rel="external">http://item.jd.com/10701892.html</a></li>
