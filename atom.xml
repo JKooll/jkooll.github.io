@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://JKooll.github.io/"/>
-  <updated>2016-10-06T07:33:15.542Z</updated>
+  <updated>2016-10-09T01:09:09.926Z</updated>
   <id>http://JKooll.github.io/</id>
   
   <author>
@@ -16,15 +16,48 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Reverse String--LeetCode 344</title>
+    <link href="http://JKooll.github.io/2016/10/09/alg-practice/"/>
+    <id>http://JKooll.github.io/2016/10/09/alg-practice/</id>
+    <published>2016-10-09T01:02:46.000Z</published>
+    <updated>2016-10-09T01:09:09.926Z</updated>
+    
+    <content type="html"><![CDATA[<p>##&#x95EE;&#x9898;<br>Write a function that takes a string as input and returns the string reversed.</p>
+<p>##&#x793A;&#x4F8B;<br>Given s = &#x201C;hello&#x201D;, return &#x201C;olleh&#x201D;.</p>
+<p>##&#x6211;&#x7684;&#x4EE3;&#x7801;(Javascript)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * @param {string} s</div><div class="line"> * @return {string}</div><div class="line"> */</div><div class="line">var reverseString = function(s) {</div><div class="line">    var re_s = &apos;&apos;;</div><div class="line">    for(var i = 1; i &lt;= s.length; i++) {</div><div class="line">        re_s += s[s.length - i];</div><div class="line">    }</div><div class="line">    return re_s;</div><div class="line">};</div></pre></td></tr></table></figure></p>
+<p>&#x76F8;&#x5173;&#x94FE;&#x63A5;:<br><a href="https://leetcode.com/problems/reverse-string/" target="_blank" rel="external">https://leetcode.com/problems/reverse-string/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;##&amp;#x95EE;&amp;#x9898;&lt;br&gt;Write a function that takes a string as input and returns the string reversed.&lt;/p&gt;
+&lt;p&gt;##&amp;#x793A;&amp;#x4F8B;&lt;br&gt;Given s
+    
+    </summary>
+    
+      <category term="笔记" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="算法练习" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%BB%83%E4%B9%A0/"/>
+    
+      <category term="LeetCode" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E7%BB%83%E4%B9%A0/LeetCode/"/>
+    
+    
+      <category term="算法练习" scheme="http://JKooll.github.io/tags/%E7%AE%97%E6%B3%95%E7%BB%83%E4%B9%A0/"/>
+    
+      <category term="LeetCode" scheme="http://JKooll.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>插入排序--算法导论1-2-1</title>
     <link href="http://JKooll.github.io/2016/10/06/alg/"/>
     <id>http://JKooll.github.io/2016/10/06/alg/</id>
     <published>2016-10-06T03:34:48.000Z</published>
-    <updated>2016-10-06T07:33:15.542Z</updated>
+    <updated>2016-10-09T01:18:44.443Z</updated>
     
     <content type="html"><![CDATA[<p>##&#x6982;&#x5FF5;<br>&#x539F;&#x5740;&#x6392;&#x5E8F;&#xFF1A;&#x7B97;&#x6CD5;&#x5728;&#x6570;&#x7EC4;A&#x4E2D;&#x6392;&#x5E8F;&#xFF0C;&#x5728;&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#xFF0C;&#x6700;&#x591A;&#x53EA;&#x6709;&#x5176;&#x4E2D;&#x7684;&#x5E38;&#x6570;<br>&#x4E2A;&#x6570;&#x5B57;&#x5B58;&#x50A8;&#x5728;&#x6570;&#x7EC4;&#x5916;&#x9762;&#x3002;</p>
 <p>##&#x95EE;&#x9898;<br>&#x8F93;&#x5165;&#xFF1A;n&#x4E2A;&#x6570;&#x7684;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&lt;$a_1$,$a_2$, &#x2026;, $a_n$&gt;</p>
-<p>&#x8F93;&#x51FA;&#xFF1A;&#x8F93;&#x5165;&#x5E8F;&#x5217;&#x7684;&#x4E00;&#x4E2A;&#x6392;&#x5217;&lt;$a_1^\&#x2019;$, $a_2^\&#x2019;$, &#x2026;, $a_n^\&#x2019;$&gt;<br>&#x6EE1;&#x8DB3;$a_1^\&#x2019;$&#x2264;$a_2^\&#x2019;$&#x2264;&#x2026;&#x2264;$a_n^\&#x2019;$</p>
+<p>&#x8F93;&#x51FA;&#xFF1A;&#x8F93;&#x5165;&#x5E8F;&#x5217;&#x7684;&#x4E00;&#x4E2A;&#x6392;&#x5217;&lt;$a_1^&#x2019;$, $a_2^\&#x2019;$, &#x2026;, $a_n^\&#x2019;$&gt;<br>&#x6EE1;&#x8DB3;$a_1^&#x2019;$&#x2264;$a_2^&#x2019;$&#x2264;&#x2026;&#x2264;$a_n^&#x2019;$</p>
 ]]></content>
     
     <summary type="html">
@@ -42,8 +75,6 @@
       <category term="第一部分 基础知识" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
       <category term="第二章 算法技术" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%AE%97%E6%B3%95%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="2.1 插入排序" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%AE%97%E6%B3%95%E6%8A%80%E6%9C%AF/2-1-%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/"/>
     
     
       <category term="算法导论" scheme="http://JKooll.github.io/tags/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA/"/>
