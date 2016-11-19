@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://JKooll.github.io/"/>
-  <updated>2016-10-10T09:07:33.634Z</updated>
+  <updated>2016-11-19T00:40:19.800Z</updated>
   <id>http://JKooll.github.io/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sorting Secret - Computerphile</title>
+    <link href="http://JKooll.github.io/2016/11/19/note/"/>
+    <id>http://JKooll.github.io/2016/11/19/note/</id>
+    <published>2016-11-19T02:28:27.000Z</published>
+    <updated>2016-11-19T00:40:19.800Z</updated>
+    
+    <content type="html"><![CDATA[<p>url:<a href="https://www.youtube.com/watch?v=pcJHkWwjNl4" target="_blank" rel="external">https://www.youtube.com/watch?v=pcJHkWwjNl4</a></p>
+<p>&#x8BB2;&#x5F97;&#x8FD8;&#x4E0D;&#x9519;&#xFF0C;&#x5B66;&#x4E60;&#x4E00;&#x4E0B;&#xFF01;</p>
+<p><img src="/2016/11/19/note/001.JPG" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;url:&lt;a href=&quot;https://www.youtube.com/watch?v=pcJHkWwjNl4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.youtube.com/watch?v=pcJHkWwjNl4&lt;/a&gt;&lt;
+    
+    </summary>
+    
+      <category term="笔记" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Youtube" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/Youtube/"/>
+    
+    
+      <category term="insert sort" scheme="http://JKooll.github.io/tags/insert-sort/"/>
+    
+      <category term="Youtube" scheme="http://JKooll.github.io/tags/Youtube/"/>
+    
+  </entry>
   
   <entry>
     <title>php绘制国旗(未上色)</title>
