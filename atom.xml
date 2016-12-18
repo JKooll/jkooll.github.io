@@ -326,7 +326,7 @@
     <link href="http://JKooll.github.io/2016/10/03/create-blog-with-github/"/>
     <id>http://JKooll.github.io/2016/10/03/create-blog-with-github/</id>
     <published>2016-10-03T09:33:34.000Z</published>
-    <updated>2016-11-15T07:26:33.170Z</updated>
+    <updated>2016-12-18T10:30:49.302Z</updated>
     
     <content type="html"><![CDATA[<p>&#x8FD9;&#x662F;&#x642D;&#x5EFA;&#x5B8C;&#x8FD9;&#x4E2A;&#x535A;&#x5BA2;&#x5199;&#x7684;&#x7B2C;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#xFF0C;&#x5C31;&#x7B80;&#x5355;&#x603B;&#x7ED3;&#x4E00;&#x4E9B;&#x642D;&#x5EFA;&#x8FD9;&#x4E2A;&#x535A;&#x5BA2;&#x7684;&#x8FC7;&#x7A0B;&#x3002;</p>
 <h2 id="Github&#x2013;&#x5EFA;&#x4ED3;"><a href="#Github&#x2013;&#x5EFA;&#x4ED3;" class="headerlink" title="Github&#x2013;&#x5EFA;&#x4ED3;"></a>Github&#x2013;&#x5EFA;&#x4ED3;</h2><p>&#x9996;&#x5148;&#x8981;&#x5728;github&#x4E0A;&#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x8D26;&#x53F7;(<a href="https://github.com/join" target="_blank" rel="external">https://github.com/join</a>),<br><img src="/2016/10/03/create-blog-with-github/002.png" alt=""><br>&#x7136;&#x540E;&#x767B;&#x9646;&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;git&#x4ED3;(<a href="https://github.com/new)&#xFF0C;" target="_blank" rel="external">https://github.com/new)&#xFF0C;</a><br><img src="/2016/10/03/create-blog-with-github/001.png" alt=""><br>Repository name&#x586B;&#x5199;you_username.github.io,Description&#x4E3A;&#x535A;&#x5BA2;&#x63CF;&#x8FF0;(&#x53EF;&#x5199;)&#xFF0C;&#x786E;&#x5B9A;&#x586B;&#x5199;&#x65E0;&#x8BEF;&#x4E4B;&#x540E;<br>&#x70B9;&#x51FB;Create repository&#xFF0C;git&#x4ED3;&#x5C31;&#x521B;&#x5EFA;&#x5B8C;&#x6210;&#x4E86;&#x3002;</p>
@@ -343,12 +343,12 @@ message: [message]//commit&#x4FE1;&#x606F;
 </code></pre></code><br>&#x914D;&#x7F6E;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x4E09;&#x6B65;&#x90E8;&#x7F72;&#x535A;&#x5BA2;&#x4E86;</li>
 <li>hexo clean</li>
 <li>hexo generate</li>
-<li>hexo deploy<br>##&#x5B8C;&#x6210;<br>&#x6253;&#x5F00;your_username.github.io&#x770B;&#x4E00;&#x4E0B;&#x4F60;&#x7684;&#x535A;&#x5BA2;&#x5427;&#x3002;</li>
+<li>hexo deploy<h2 id="&#x5B8C;&#x6210;"><a href="#&#x5B8C;&#x6210;" class="headerlink" title="&#x5B8C;&#x6210;"></a>&#x5B8C;&#x6210;</h2>&#x6253;&#x5F00;your_username.github.io&#x770B;&#x4E00;&#x4E0B;&#x4F60;&#x7684;&#x535A;&#x5BA2;&#x5427;&#x3002;</li>
 </ul>
-<p>#&#x95EE;&#x9898;</p>
-<ul>
+<h1 id="&#x95EE;&#x9898;"><a href="#&#x95EE;&#x9898;" class="headerlink" title="&#x95EE;&#x9898;"></a>&#x95EE;&#x9898;</h1><ul>
 <li>hexo&#x56FE;&#x7247;&#x94FE;&#x63A5;&#x95EE;&#x9898;<a href="http://www.tuicool.com/articles/umEBVfI" target="_blank" rel="external">http://www.tuicool.com/articles/umEBVfI</a></li>
 </ul>
+<h1 id="&#x53C2;&#x8003;"><a href="#&#x53C2;&#x8003;" class="headerlink" title="&#x53C2;&#x8003;"></a>&#x53C2;&#x8003;</h1><p><a href="http://www.jianshu.com/p/f4cc5866946b" target="_blank" rel="external">http://www.jianshu.com/p/f4cc5866946b</a></p>
 ]]></content>
     
     <summary type="html">
