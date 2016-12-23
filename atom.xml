@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://JKooll.github.io/"/>
-  <updated>2016-12-21T08:05:33.767Z</updated>
+  <updated>2016-12-23T21:44:41.714Z</updated>
   <id>http://JKooll.github.io/</id>
   
   <author>
@@ -14,6 +14,76 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>理解PHP 依赖注入|Laravel IoC容器</title>
+    <link href="http://JKooll.github.io/2016/12/24/note/"/>
+    <id>http://JKooll.github.io/2016/12/24/note/</id>
+    <published>2016-12-23T23:44:03.000Z</published>
+    <updated>2016-12-23T21:44:41.714Z</updated>
+    
+    <content type="html"><![CDATA[<p>url:<a href="https://yuansir-web.com/2014/03/21/li-jie-php-yi-lai-zhu-ru-laravel-iocrong-qi-/" target="_blank" rel="external">https://yuansir-web.com/2014/03/21/li-jie-php-yi-lai-zhu-ru-laravel-iocrong-qi-/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;url:&lt;a href=&quot;https://yuansir-web.com/2014/03/21/li-jie-php-yi-lai-zhu-ru-laravel-iocrong-qi-/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://yua
+    
+    </summary>
+    
+      <category term="笔记" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="博客" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>技术博客列表</title>
+    <link href="http://JKooll.github.io/2016/12/24/plan/"/>
+    <id>http://JKooll.github.io/2016/12/24/plan/</id>
+    <published>2016-12-23T23:15:33.000Z</published>
+    <updated>2016-12-23T21:19:09.254Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Ryan&#x662F;&#x83DC;&#x9E1F;-LNMP&#x6280;&#x672F;&#x6808;&#x7B14;&#x8BB0;"><a href="#Ryan&#x662F;&#x83DC;&#x9E1F;-LNMP&#x6280;&#x672F;&#x6808;&#x7B14;&#x8BB0;" class="headerlink" title="Ryan&#x662F;&#x83DC;&#x9E1F; | LNMP&#x6280;&#x672F;&#x6808;&#x7B14;&#x8BB0;"></a>Ryan&#x662F;&#x83DC;&#x9E1F; | LNMP&#x6280;&#x672F;&#x6808;&#x7B14;&#x8BB0;</h2><p><a href="https://yuansir-web.com/" target="_blank" rel="external">https://yuansir-web.com/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Ryan&amp;#x662F;&amp;#x83DC;&amp;#x9E1F;-LNMP&amp;#x6280;&amp;#x672F;&amp;#x6808;&amp;#x7B14;&amp;#x8BB0;&quot;&gt;&lt;a href=&quot;#Ryan&amp;#x662F;&amp;#x83DC;&amp;#x9E1F;-LNMP&amp;#x6280;&amp;#x672
+    
+    </summary>
+    
+      <category term="计划" scheme="http://JKooll.github.io/categories/%E8%AE%A1%E5%88%92/"/>
+    
+      <category term="书签" scheme="http://JKooll.github.io/categories/%E8%AE%A1%E5%88%92/%E4%B9%A6%E7%AD%BE/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>PHP 标准规范</title>
+    <link href="http://JKooll.github.io/2016/12/23/note/"/>
+    <id>http://JKooll.github.io/2016/12/23/note/</id>
+    <published>2016-12-23T10:35:03.000Z</published>
+    <updated>2016-12-23T21:16:58.171Z</updated>
+    
+    <content type="html"><![CDATA[<p>url:<a href="https://psr.phphub.org/" target="_blank" rel="external">https://psr.phphub.org/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;url:&lt;a href=&quot;https://psr.phphub.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://psr.phphub.org/&lt;/a&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="笔记" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="博客" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>PHP文档学习笔记</title>
@@ -34,24 +104,6 @@
       <category term="笔记" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
     
       <category term="文档" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/%E6%96%87%E6%A1%A3/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>plan</title>
-    <link href="http://JKooll.github.io/2016/12/21/plan/"/>
-    <id>http://JKooll.github.io/2016/12/21/plan/</id>
-    <published>2016-12-21T08:07:25.504Z</published>
-    <updated>2016-12-21T08:09:55.918Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="计划" scheme="http://JKooll.github.io/categories/%E8%AE%A1%E5%88%92/"/>
-    
-      <category term="学习" scheme="http://JKooll.github.io/categories/%E8%AE%A1%E5%88%92/%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>

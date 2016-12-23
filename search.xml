@@ -4,16 +4,31 @@
   
     
     <entry>
+      <title><![CDATA[理解PHP 依赖注入|Laravel IoC容器]]></title>
+      <url>http://JKooll.github.io/2016/12/24/note/</url>
+      <content type="html"><![CDATA[<p>url:<a href="https://yuansir-web.com/2014/03/21/li-jie-php-yi-lai-zhu-ru-laravel-iocrong-qi-/" target="_blank" rel="external">https://yuansir-web.com/2014/03/21/li-jie-php-yi-lai-zhu-ru-laravel-iocrong-qi-/</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[技术博客列表]]></title>
+      <url>http://JKooll.github.io/2016/12/24/plan/</url>
+      <content type="html"><![CDATA[<h2 id="Ryan&#x662F;&#x83DC;&#x9E1F;-LNMP&#x6280;&#x672F;&#x6808;&#x7B14;&#x8BB0;"><a href="#Ryan&#x662F;&#x83DC;&#x9E1F;-LNMP&#x6280;&#x672F;&#x6808;&#x7B14;&#x8BB0;" class="headerlink" title="Ryan&#x662F;&#x83DC;&#x9E1F; | LNMP&#x6280;&#x672F;&#x6808;&#x7B14;&#x8BB0;"></a>Ryan&#x662F;&#x83DC;&#x9E1F; | LNMP&#x6280;&#x672F;&#x6808;&#x7B14;&#x8BB0;</h2><p><a href="https://yuansir-web.com/" target="_blank" rel="external">https://yuansir-web.com/</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PHP 标准规范]]></title>
+      <url>http://JKooll.github.io/2016/12/23/note/</url>
+      <content type="html"><![CDATA[<p>url:<a href="https://psr.phphub.org/" target="_blank" rel="external">https://psr.phphub.org/</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[PHP文档学习笔记]]></title>
       <url>http://JKooll.github.io/2016/12/21/note/</url>
       <content type="html"><![CDATA[<p>&#x53C2;&#x8003;&#xFF1A;php&#x5B98;&#x65B9;&#x4E2D;&#x6587;&#x6587;&#x6863;<a href="http://php.net/manual/zh/" target="_blank" rel="external">http://php.net/manual/zh/</a></p>
 <h2 id="2016-12-21"><a href="#2016-12-21" class="headerlink" title="2016-12-21"></a>2016-12-21</h2>]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[plan]]></title>
-      <url>http://JKooll.github.io/2016/12/21/plan/</url>
-      <content type="html"></content>
     </entry>
     
     <entry>
