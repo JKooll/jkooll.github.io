@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://JKooll.github.io/"/>
-  <updated>2016-12-23T21:44:41.714Z</updated>
+  <updated>2017-01-08T13:41:56.851Z</updated>
   <id>http://JKooll.github.io/</id>
   
   <author>
@@ -14,6 +14,109 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LAMP配置过程</title>
+    <link href="http://JKooll.github.io/2017/01/08/note-1/"/>
+    <id>http://JKooll.github.io/2017/01/08/note-1/</id>
+    <published>2017-01-08T12:23:31.000Z</published>
+    <updated>2017-01-08T13:41:56.851Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="&#x914D;&#x7F6E;LAMP&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;"><a href="#&#x914D;&#x7F6E;LAMP&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;" class="headerlink" title="&#x914D;&#x7F6E;LAMP&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;"></a>&#x914D;&#x7F6E;LAMP&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;</h1><ul>
+<li>&#x5355;&#x72EC;&#x4E0B;&#x8F7D;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5B89;&#x88C5;</li>
+<li>&#x4F7F;&#x7528;&#x96C6;&#x6210;&#x5305;</li>
+</ul>
+<h1 id="&#x5355;&#x72EC;&#x4E0B;&#x8F7D;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5B89;&#x88C5;"><a href="#&#x5355;&#x72EC;&#x4E0B;&#x8F7D;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5B89;&#x88C5;" class="headerlink" title="&#x5355;&#x72EC;&#x4E0B;&#x8F7D;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5B89;&#x88C5;"></a>&#x5355;&#x72EC;&#x4E0B;&#x8F7D;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5B89;&#x88C5;</h1><h2 id="&#x5B89;&#x88C5;apache2"><a href="#&#x5B89;&#x88C5;apache2" class="headerlink" title="&#x5B89;&#x88C5;apache2"></a>&#x5B89;&#x88C5;apache2</h2><blockquote>
+<p>apt-get install apache2</p>
+</blockquote>
+<h2 id="&#x67E5;&#x770B;apache2&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;"><a href="#&#x67E5;&#x770B;apache2&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;" class="headerlink" title="&#x67E5;&#x770B;apache2&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;"></a>&#x67E5;&#x770B;apache2&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;</h2><blockquote>
+<p>apache2 -v</p>
+</blockquote>
+<h2 id="&#x5B89;&#x88C5;php5-php7"><a href="#&#x5B89;&#x88C5;php5-php7" class="headerlink" title="&#x5B89;&#x88C5;php5/php7"></a>&#x5B89;&#x88C5;php5/php7</h2><blockquote>
+<p>apt-get install php5/php7</p>
+</blockquote>
+<h2 id="&#x67E5;&#x770B;php&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;"><a href="#&#x67E5;&#x770B;php&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;" class="headerlink" title="&#x67E5;&#x770B;php&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;"></a>&#x67E5;&#x770B;php&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;</h2><blockquote>
+<p>php5/php7 -v</p>
+</blockquote>
+<h2 id="&#x67E5;&#x770B;apache2&#x4E2D;&#x662F;&#x5426;&#x6709;php-load&#x6A21;&#x5757;"><a href="#&#x67E5;&#x770B;apache2&#x4E2D;&#x662F;&#x5426;&#x6709;php-load&#x6A21;&#x5757;" class="headerlink" title="&#x67E5;&#x770B;apache2&#x4E2D;&#x662F;&#x5426;&#x6709;php.load&#x6A21;&#x5757;"></a>&#x67E5;&#x770B;apache2&#x4E2D;&#x662F;&#x5426;&#x6709;php.load&#x6A21;&#x5757;</h2><blockquote>
+<p>cat /etc/apache2/mods-enabled/{php5.load | php7.load}</p>
+</blockquote>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5BF9;&#x5E94;php&#x7248;&#x672C;&#x7684;.load,&#x5C31;&#x5B89;&#x88C5;libapache2-mod-php5/libapache2-mod-php7</p>
+<h2 id="&#x5B89;&#x88C5;MySQL"><a href="#&#x5B89;&#x88C5;MySQL" class="headerlink" title="&#x5B89;&#x88C5;MySQL"></a>&#x5B89;&#x88C5;MySQL</h2><blockquote>
+<p>apt-get install mysql-server</p>
+</blockquote>
+<h2 id="&#x67E5;&#x770B;MySQL&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;"><a href="#&#x67E5;&#x770B;MySQL&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;" class="headerlink" title="&#x67E5;&#x770B;MySQL&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;"></a>&#x67E5;&#x770B;MySQL&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;</h2><blockquote>
+<p>mysql -V</p>
+</blockquote>
+<h2 id="&#x67E5;&#x770B;php&#x662F;&#x5426;&#x6709;mysql&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a href="#&#x67E5;&#x770B;php&#x662F;&#x5426;&#x6709;mysql&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="headerlink" title="&#x67E5;&#x770B;php&#x662F;&#x5426;&#x6709;mysql&#x914D;&#x7F6E;&#x6587;&#x4EF6;"></a>&#x67E5;&#x770B;php&#x662F;&#x5426;&#x6709;mysql&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h2><blockquote>
+<p>cat /etc/{php5/php7}/conf.d/mysql.ini</p>
+</blockquote>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5BF9;&#x5E94;php&#x7248;&#x672C;&#x7684;mysql.ini, &#x5C31;&#x5B89;&#x88C5;php5-mysql/php7-mysql</p>
+<h2 id="&#x91CD;&#x542F;&#x670D;&#x52A1;"><a href="#&#x91CD;&#x542F;&#x670D;&#x52A1;" class="headerlink" title="&#x91CD;&#x542F;&#x670D;&#x52A1;"></a>&#x91CD;&#x542F;&#x670D;&#x52A1;</h2><blockquote>
+<p>service mysql restart</p>
+<p>service apache2 restart</p>
+</blockquote>
+<h1 id="&#x4F7F;&#x7528;&#x96C6;&#x6210;&#x5305;&#x5B89;&#x88C5;"><a href="#&#x4F7F;&#x7528;&#x96C6;&#x6210;&#x5305;&#x5B89;&#x88C5;" class="headerlink" title="&#x4F7F;&#x7528;&#x96C6;&#x6210;&#x5305;&#x5B89;&#x88C5;"></a>&#x4F7F;&#x7528;&#x96C6;&#x6210;&#x5305;&#x5B89;&#x88C5;</h1><blockquote>
+<p>tasksel install lamp-server</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;&amp;#x914D;&amp;#x7F6E;LAMP&amp;#x6709;&amp;#x4E24;&amp;#x79CD;&amp;#x65B9;&amp;#x6CD5;&quot;&gt;&lt;a href=&quot;#&amp;#x914D;&amp;#x7F6E;LAMP&amp;#x6709;&amp;#x4E24;&amp;#x79CD;&amp;#x65B9;&amp;#x6CD5;
+    
+    </summary>
+    
+      <category term="note" scheme="http://JKooll.github.io/categories/note/"/>
+    
+      <category term="Linux" scheme="http://JKooll.github.io/categories/note/Linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用EC2搭建PHPweb服务器</title>
+    <link href="http://JKooll.github.io/2017/01/08/note/"/>
+    <id>http://JKooll.github.io/2017/01/08/note/</id>
+    <published>2017-01-08T07:33:11.000Z</published>
+    <updated>2017-01-08T13:43:45.909Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="&#x4F7F;&#x7528;Xshell&#x767B;&#x5F55;EC2"><a href="#&#x4F7F;&#x7528;Xshell&#x767B;&#x5F55;EC2" class="headerlink" title="&#x4F7F;&#x7528;Xshell&#x767B;&#x5F55;EC2"></a>&#x4F7F;&#x7528;Xshell&#x767B;&#x5F55;EC2</h2><p>&#x53C2;&#x89C1;&#xFF1A;<a href="http://www.wuji8.com/meta/512046964.html" target="_blank" rel="external">http://www.wuji8.com/meta/512046964.html</a></p>
+<h2 id="&#x914D;&#x7F6E;LAMP"><a href="#&#x914D;&#x7F6E;LAMP" class="headerlink" title="&#x914D;&#x7F6E;LAMP"></a>&#x914D;&#x7F6E;LAMP</h2><p>&#x53C2;&#x89C1;&#xFF1A;<a href="https://jkooll.github.io/2017/01/08/note-1/">https://jkooll.github.io/2017/01/08/note-1/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;&amp;#x4F7F;&amp;#x7528;Xshell&amp;#x767B;&amp;#x5F55;EC2&quot;&gt;&lt;a href=&quot;#&amp;#x4F7F;&amp;#x7528;Xshell&amp;#x767B;&amp;#x5F55;EC2&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x4F7F;&amp;#
+    
+    </summary>
+    
+      <category term="note" scheme="http://JKooll.github.io/categories/note/"/>
+    
+      <category term="linux" scheme="http://JKooll.github.io/categories/note/linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>win10无限重启修复笔记</title>
+    <link href="http://JKooll.github.io/2017/01/03/note/"/>
+    <id>http://JKooll.github.io/2017/01/03/note/</id>
+    <published>2017-01-03T12:32:43.000Z</published>
+    <updated>2017-01-08T05:14:26.595Z</updated>
+    
+    <content type="html"><![CDATA[<p>&#x5229;&#x7528;&#x4E00;&#x5207;&#x529E;&#x6CD5;&#x91CD;&#x88C5;&#x7CFB;&#x7EDF;</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;#x5229;&amp;#x7528;&amp;#x4E00;&amp;#x5207;&amp;#x529E;&amp;#x6CD5;&amp;#x91CD;&amp;#x88C5;&amp;#x7CFB;&amp;#x7EDF;&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>理解PHP 依赖注入|Laravel IoC容器</title>
@@ -43,9 +146,10 @@
     <link href="http://JKooll.github.io/2016/12/24/plan/"/>
     <id>http://JKooll.github.io/2016/12/24/plan/</id>
     <published>2016-12-23T23:15:33.000Z</published>
-    <updated>2016-12-23T21:19:09.254Z</updated>
+    <updated>2016-12-23T22:20:47.496Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Ryan&#x662F;&#x83DC;&#x9E1F;-LNMP&#x6280;&#x672F;&#x6808;&#x7B14;&#x8BB0;"><a href="#Ryan&#x662F;&#x83DC;&#x9E1F;-LNMP&#x6280;&#x672F;&#x6808;&#x7B14;&#x8BB0;" class="headerlink" title="Ryan&#x662F;&#x83DC;&#x9E1F; | LNMP&#x6280;&#x672F;&#x6808;&#x7B14;&#x8BB0;"></a>Ryan&#x662F;&#x83DC;&#x9E1F; | LNMP&#x6280;&#x672F;&#x6808;&#x7B14;&#x8BB0;</h2><p><a href="https://yuansir-web.com/" target="_blank" rel="external">https://yuansir-web.com/</a></p>
+<h2 id="&#x9876;&#x7EA7;&#x6280;&#x672F;&#x7F51;&#x7AD9;&#x535A;&#x5BA2;&#x6C47;&#x603B;"><a href="#&#x9876;&#x7EA7;&#x6280;&#x672F;&#x7F51;&#x7AD9;&#x535A;&#x5BA2;&#x6C47;&#x603B;" class="headerlink" title="&#x9876;&#x7EA7;&#x6280;&#x672F;&#x7F51;&#x7AD9;&#x535A;&#x5BA2;&#x6C47;&#x603B;"></a>&#x9876;&#x7EA7;&#x6280;&#x672F;&#x7F51;&#x7AD9;&#x535A;&#x5BA2;&#x6C47;&#x603B;</h2><p><a href="http://www.manew.com/blog-166566-25333.html" target="_blank" rel="external">http://www.manew.com/blog-166566-25333.html</a></p>
 ]]></content>
     
     <summary type="html">
