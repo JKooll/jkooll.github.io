@@ -4,6 +4,90 @@
   
     
     <entry>
+      <title><![CDATA[锋利的JQuery]]></title>
+      <url>http://JKooll.github.io/2017/01/17/note-1/</url>
+      <content type="html"><![CDATA[<h2 id="JQuery&#x9009;&#x62E9;&#x5668;"><a href="#JQuery&#x9009;&#x62E9;&#x5668;" class="headerlink" title="JQuery&#x9009;&#x62E9;&#x5668;"></a>JQuery&#x9009;&#x62E9;&#x5668;</h2><h3 id="&#x57FA;&#x672C;&#x9009;&#x62E9;&#x5668;"><a href="#&#x57FA;&#x672C;&#x9009;&#x62E9;&#x5668;" class="headerlink" title="&#x57FA;&#x672C;&#x9009;&#x62E9;&#x5668;"></a>&#x57FA;&#x672C;&#x9009;&#x62E9;&#x5668;</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">&#x9009;&#x62E9;&#x5668;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x793A;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">#id</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;id&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x5143;&#x7D20;</td>
+<td>&#x5355;&#x4E2A;&#x5143;&#x7D20;</td>
+<td>$(&#x201C;#test&#x201D;)&#x9009;&#x53D6;id&#x4E3A;test&#x7684;&#x5143;&#x7D20;</td>
+</tr>
+<tr>
+<td style="text-align:left">.class</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;&#x5143;&#x7D20;&#x540D;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x5143;&#x7D20;</td>
+<td>&#x96C6;&#x5408;&#x5143;&#x7D20;</td>
+<td>$(&#x201C;.test&#x201D;)&#x9009;&#x53D6;&#x6240;&#x6709;class&#x4E3A;test&#x7684;&#x5143;&#x7D20;</td>
+</tr>
+<tr>
+<td style="text-align:left">element</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;&#x5143;&#x7D20;&#x540D;&#x5339;&#x914D;&#x5143;&#x7D20;</td>
+<td>&#x96C6;&#x5408;&#x5143;&#x7D20;</td>
+<td>$(&#x201C;p&#x201D;)&#x9009;&#x53D6;&#x6240;&#x6709;&#x7684;<p>&#x5143;&#x7D20;</p></td>
+</tr>
+<tr>
+<td style="text-align:left">*</td>
+<td style="text-align:left">&#x5339;&#x914D;&#x6240;&#x6709;&#x5143;&#x7D20;</td>
+<td>&#x96C6;&#x5408;&#x5143;&#x7D20;</td>
+<td>$(&#x201C;*&#x201D;)&#x9009;&#x53D6;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;</td>
+</tr>
+<tr>
+<td style="text-align:left">selector, selector2, &#x2026; , selectorN</td>
+<td style="text-align:left">&#x5C06;&#x6BCF;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#x5339;&#x914D;&#x5230;&#x7684;&#x5143;&#x7D20;&#x5408;&#x5E76;&#x540E;&#x4E00;&#x8D77;&#x8FD4;&#x56DE;</td>
+<td>&#x96C6;&#x5408;&#x5143;&#x7D20;</td>
+<td>$(&#x201C;div,span,p.myClass&#x201D;)&#x9009;&#x53D6;&#x6240;&#x6709;<div>,<span>&#x548C;&#x62E5;&#x6709;class&#x4E3A;myClass&#x7684;<p>&#x6807;&#x7B7E;&#x7684;&#x4E00;&#x7EC4;&#x5143;&#x7D20;</p></span></div></td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5C42;&#x6B21;&#x9009;&#x62E9;&#x5668;"><a href="#&#x5C42;&#x6B21;&#x9009;&#x62E9;&#x5668;" class="headerlink" title="&#x5C42;&#x6B21;&#x9009;&#x62E9;&#x5668;"></a>&#x5C42;&#x6B21;&#x9009;&#x62E9;&#x5668;</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">&#x9009;&#x62E9;&#x5668;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x793A;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$(&#x201C;ancestor descendant&#x201D;)</td>
+<td style="text-align:left">&#x9009;&#x53D6; ancestor &#x5143;&#x7D20;&#x91CC;&#x7684;&#x7D20;&#x6709;descendant(&#x540E;&#x4EE3;)</td>
+<td>&#x96C6;&#x5408;&#x5143;&#x7D20;</td>
+<td>$(&#x201C;div span&#x201D;)&#x9009;&#x53D6;<div>&#x91CC;&#x7684;&#x6240;&#x6709;&#x7684;<span>&#x5143;&#x7D20;</span></div></td>
+</tr>
+<tr>
+<td style="text-align:left">$(&#x201C;parent &gt; child&#x201D;)</td>
+<td style="text-align:left">&#x9009;&#x53D6;parent&#x5143;&#x7D20;&#x7684;child&#xFF08;&#x5B50;&#xFF09;&#x5143;&#x7D20;&#xFF0C;&#x4E0E;$(&#x201C;ancestor descendant&#x201D;)&#x6709;&#x533A;&#x522B;&#xFF0C;$(&#x201C;ancestor descendant&#x201D;)&#x9009;&#x62E9;&#x7684;&#x662F;&#x540E;&#x4EE3;&#x5143;&#x7D20;</td>
+<td>&#x96C6;&#x5408;&#x5143;&#x7D20;</td>
+<td>$(&#x201C;div &gt; span&#x201D;)&#x9009;&#x53D6;<div>&#x5143;&#x7D20;&#x4E0B;&#x5143;&#x7D20;&#x540D;&#x662F;<span>&#x7684;&#x5B50;&#x5143;&#x7D20;</span></div></td>
+</tr>
+<tr>
+<td style="text-align:left">$(&#x201C;prev + next&#x201D;)</td>
+<td style="text-align:left">&#x9009;&#x53D6;&#x7D27;&#x63A5;&#x5728;prev&#x5143;&#x7D20;&#x540E;&#x7684;next&#x5143;&#x7D20;</td>
+<td>&#x96C6;&#x5408;&#x5143;&#x7D20;</td>
+<td>$(&#x201C;.one + div&#x201D;)&#x9009;&#x53D6;class&#x4E3A;one&#x7684;&#x4E0B;&#x4E00;&#x4E2A;<div>&#x5143;&#x7D20;</div></td>
+</tr>
+<tr>
+<td style="text-align:left">$(&#x201C;prev~sibligns&#x201D;)</td>
+<td style="text-align:left">&#x9009;&#x53D6;prev&#x5143;&#x7D20;&#x4E4B;&#x540E;&#x7684;&#x6240;&#x6709;siblings&#x5143;&#x7D20;</td>
+<td>&#x96C6;&#x5408;&#x5143;&#x7D20;</td>
+<td>$(&#x201C;#two~div&#x201D;)&#x9009;&#x53D6;id&#x4E3A;two&#x7684;&#x5143;&#x7D20;&#x540E;&#x9762;&#x7684;&#x6240;&#x6709;<div>&#x5144;&#x5F1F;&#x5143;&#x7D20;</div></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Linux挂在NTFS格式硬盘]]></title>
       <url>http://JKooll.github.io/2017/01/17/note/</url>
       <content type="html"><![CDATA[<h2 id="&#x95EE;&#x9898;-Question"><a href="#&#x95EE;&#x9898;-Question" class="headerlink" title="&#x95EE;&#x9898;(Question)"></a>&#x95EE;&#x9898;(Question)</h2><p>linux&#x4E00;&#x822C;&#x4E0D;&#x652F;&#x6301;NTFS&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x5728;&#x6302;&#x5728;&#x786C;&#x76D8;&#x65F6;&#xFF0C;&#x4F1A;&#x51FA;&#x73B0;&#x53EA;&#x8BFB;&#x73B0;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B89;&#x88C5;ntfs-3g&#x6765;&#x5B9E;&#x73B0;&#x5728;linux&#x4E0A;&#x8BFB;&#x5199;NTFS&#x683C;&#x5F0F;&#x7684;&#x786C;&#x76D8;&#x3002;</p>
