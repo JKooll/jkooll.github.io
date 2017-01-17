@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://JKooll.github.io/"/>
-  <updated>2017-01-17T05:21:22.564Z</updated>
+  <updated>2017-01-17T05:26:18.599Z</updated>
   <id>http://JKooll.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://JKooll.github.io/2017/01/17/note/"/>
     <id>http://JKooll.github.io/2017/01/17/note/</id>
     <published>2017-01-16T22:58:55.000Z</published>
-    <updated>2017-01-17T05:21:22.564Z</updated>
+    <updated>2017-01-17T05:26:18.599Z</updated>
     
     <content type="html"><![CDATA[<h2 id="&#x95EE;&#x9898;-Question"><a href="#&#x95EE;&#x9898;-Question" class="headerlink" title="&#x95EE;&#x9898;(Question)"></a>&#x95EE;&#x9898;(Question)</h2><p>linux&#x4E00;&#x822C;&#x4E0D;&#x652F;&#x6301;NTFS&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x5728;&#x6302;&#x5728;&#x786C;&#x76D8;&#x65F6;&#xFF0C;&#x4F1A;&#x51FA;&#x73B0;&#x53EA;&#x8BFB;&#x73B0;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B89;&#x88C5;ntfs-3g&#x6765;&#x5B9E;&#x73B0;&#x5728;linux&#x4E0A;&#x8BFB;&#x5199;NTFS&#x683C;&#x5F0F;&#x7684;&#x786C;&#x76D8;&#x3002;</p>
 <h2 id="&#x51C6;&#x5907;-Prepare"><a href="#&#x51C6;&#x5907;-Prepare" class="headerlink" title="&#x51C6;&#x5907;(Prepare)"></a>&#x51C6;&#x5907;(Prepare)</h2><ul>
@@ -46,9 +46,9 @@
     
     </summary>
     
-      <category term="note" scheme="http://JKooll.github.io/categories/note/"/>
+      <category term="笔记" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="Linux" scheme="http://JKooll.github.io/categories/note/Linux/"/>
+      <category term="Linux" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/Linux/"/>
     
     
   </entry>
