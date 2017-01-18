@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://JKooll.github.io/"/>
-  <updated>2017-01-18T08:14:21.222Z</updated>
+  <updated>2017-01-18T08:23:04.340Z</updated>
   <id>http://JKooll.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://JKooll.github.io/2017/01/17/note-1/"/>
     <id>http://JKooll.github.io/2017/01/17/note-1/</id>
     <published>2017-01-17T09:50:53.000Z</published>
-    <updated>2017-01-18T08:14:21.222Z</updated>
+    <updated>2017-01-18T08:23:04.340Z</updated>
     
     <content type="html"><![CDATA[<h2 id="JQuery&#x9009;&#x62E9;&#x5668;"><a href="#JQuery&#x9009;&#x62E9;&#x5668;" class="headerlink" title="JQuery&#x9009;&#x62E9;&#x5668;"></a>JQuery&#x9009;&#x62E9;&#x5668;</h2><h3 id="&#x57FA;&#x672C;&#x9009;&#x62E9;&#x5668;"><a href="#&#x57FA;&#x672C;&#x9009;&#x62E9;&#x5668;" class="headerlink" title="&#x57FA;&#x672C;&#x9009;&#x62E9;&#x5668;"></a>&#x57FA;&#x672C;&#x9009;&#x62E9;&#x5668;</h3><table>
 <thead>
@@ -198,7 +198,7 @@
 <td style="text-align:left">:has(selector)</td>
 <td style="text-align:left">&#x9009;&#x53D6;&#x542B;&#x6709;&#x9009;&#x62E9;&#x5668;&#x6240;&#x5339;&#x914D;&#x7684;&#x5143;&#x7D20;&#x7684;&#x5143;&#x7D20;</td>
 <td>&#x96C6;&#x5408;&#x5143;&#x7D20;</td>
-<td>$(&#x201C;div:has(p)&#x201D;)&#x7384;&#x5947;&#x542B;&#x6709;p&#x5143;&#x7D20;&#x7684;div&#x5143;&#x7D20;</td>
+<td>$(&#x201C;div:has(p)&#x201D;)&#x9009;&#x53D6;&#x542B;&#x6709;p&#x5143;&#x7D20;&#x7684;div&#x5143;&#x7D20;</td>
 </tr>
 <tr>
 <td style="text-align:left">:parent</td>
