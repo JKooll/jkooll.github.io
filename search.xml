@@ -4,6 +4,70 @@
   
     
     <entry>
+      <title><![CDATA[JavaScript学习笔记]]></title>
+      <url>http://JKooll.github.io/2017/01/22/note-1/</url>
+      <content type="html"><![CDATA[<h2 id="&#x600E;&#x6837;&#x6839;&#x636E;&#x51FD;&#x6570;&#x540D;&#x5B57;&#x7B26;&#x4E32;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x7684;&#x65B9;&#x6CD5;&#xFF1F;&#x53C2;&#x89C1;"><a href="#&#x600E;&#x6837;&#x6839;&#x636E;&#x51FD;&#x6570;&#x540D;&#x5B57;&#x7B26;&#x4E32;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x7684;&#x65B9;&#x6CD5;&#xFF1F;&#x53C2;&#x89C1;" class="headerlink" title="&#x600E;&#x6837;&#x6839;&#x636E;&#x51FD;&#x6570;&#x540D;&#x5B57;&#x7B26;&#x4E32;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x7684;&#x65B9;&#x6CD5;&#xFF1F;&#x53C2;&#x89C1;"></a>&#x600E;&#x6837;&#x6839;&#x636E;&#x51FD;&#x6570;&#x540D;&#x5B57;&#x7B26;&#x4E32;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x7684;&#x65B9;&#x6CD5;&#xFF1F;<a href="http://www.tonitech.com/2213.html" target="_blank" rel="external">&#x53C2;&#x89C1;</a></h2><ul>
+<li><p>&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x5168;&#x5C40;&#x7684;&#x51FD;&#x6570;</p>
+<pre>
+//&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;foo&#x7684;&#x51FD;&#x6570;
+funciton foo()
+{
+  alert(1);
+}
+//&#x7B2C;&#x4E00;&#x79CD;&#x8C03;&#x7528;&#x65B9;&#x5F0F;
+window[&apos;foo&apos;]();
+//&#x7B2C;&#x4E8C;&#x79CD;&#x8C03;&#x7528;&#x65B9;&#x5F0F;
+eval(&apos;foo()&apos;);
+</pre>
+</li>
+<li><p>&#x5728;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x91CC;&#x9762;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x81EA;&#x5DF1;&#x7684;&#x5C5E;&#x6027;&#x51FD;&#x6570;</p>
+<pre>
+var test = {
+  foo : funciton(a) {
+      alert(a);
+  },
+  bar : function() {
+      ***var property = &apos;foo&apos;;***
+      var parameter = [&apos;this is a test!&apos;];
+      ***var fn = this[property];***
+      if(typeof fn === &apos;funciton&apos;) {
+          fn.apply(this, parameter);
+      }
+
+  }
+};
+test.bar();
+</pre>
+</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[书单[2017]]]></title>
+      <url>http://JKooll.github.io/2017/01/22/plan/</url>
+      <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x4E66;&#x540D;/book title</th>
+<th style="text-align:left">&#x72B6;&#x6001;/status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="">&#x9AD8;&#x6027;&#x80FD;&#x7F51;&#x7AD9;&#x5EFA;&#x8BBE;&#x6307;&#x5357;</a></td>
+<td style="text-align:left">&#x8BFB;&#x5B8C;</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://jkooll.github.io/2017/01/17/note-1/">&#x950B;&#x5229;&#x7684;JQuery</a></td>
+<td style="text-align:left">&#x8FDB;&#x884C;&#x4E2D;</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[HTML特殊字符编码]]></title>
       <url>http://JKooll.github.io/2017/01/22/note/</url>
       <content type="html"><![CDATA[<p>&#x53C2;&#x89C1;:<a href="http://www.jb51.net/onlineread/htmlchar.htm" target="_blank" rel="external">http://www.jb51.net/onlineread/htmlchar.htm</a></p>
@@ -111,13 +175,13 @@
     <entry>
       <title><![CDATA[锋利的JQuery]]></title>
       <url>http://JKooll.github.io/2017/01/17/note-1/</url>
-      <content type="html"><![CDATA[<h2 id="JQuery&#x9009;&#x62E9;&#x5668;"><a href="#JQuery&#x9009;&#x62E9;&#x5668;" class="headerlink" title="JQuery&#x9009;&#x62E9;&#x5668;"></a>JQuery&#x9009;&#x62E9;&#x5668;</h2><h3 id=""><a href="#" class="headerlink" title="$()"></a>$()</h3><ul>
+      <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title="$()"></a>$()</h2><ul>
 <li><p>$(document).ready(function() {});</p>
 </li>
 <li><p>$(function() {});</p>
 </li>
 </ul>
-<h3 id="&#x57FA;&#x672C;&#x9009;&#x62E9;&#x5668;"><a href="#&#x57FA;&#x672C;&#x9009;&#x62E9;&#x5668;" class="headerlink" title="&#x57FA;&#x672C;&#x9009;&#x62E9;&#x5668;"></a>&#x57FA;&#x672C;&#x9009;&#x62E9;&#x5668;</h3><table>
+<h2 id="JQuery&#x9009;&#x62E9;&#x5668;"><a href="#JQuery&#x9009;&#x62E9;&#x5668;" class="headerlink" title="JQuery&#x9009;&#x62E9;&#x5668;"></a>JQuery&#x9009;&#x62E9;&#x5668;</h2><h3 id="&#x57FA;&#x672C;&#x9009;&#x62E9;&#x5668;"><a href="#&#x57FA;&#x672C;&#x9009;&#x62E9;&#x5668;" class="headerlink" title="&#x57FA;&#x672C;&#x9009;&#x62E9;&#x5668;"></a>&#x57FA;&#x672C;&#x9009;&#x62E9;&#x5668;</h3><table>
 <thead>
 <tr>
 <th style="text-align:left">&#x9009;&#x62E9;&#x5668;</th>
