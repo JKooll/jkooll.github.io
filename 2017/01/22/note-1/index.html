@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="JKol-Blog">
 <meta property="og:description" content="&amp;#x600E;&amp;#x6837;&amp;#x6839;&amp;#x636E;&amp;#x51FD;&amp;#x6570;&amp;#x540D;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&amp;#x8C03;&amp;#x7528;&amp;#x51FD;&amp;#x6570;&amp;#x7684;&amp;#x65B9;&amp;#x6CD5;&amp;#xFF1F;&amp;#x53C2;&amp;#x89C1;
 &amp;#x76F4;&amp;#x63A5;&amp;#x8C03;&amp;#x7528;&amp;#x5168">
-<meta property="og:updated_time" content="2017-01-22T10:37:04.842Z">
+<meta property="og:updated_time" content="2017-01-26T08:33:57.041Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript学习笔记">
 <meta name="twitter:description" content="&amp;#x600E;&amp;#x6837;&amp;#x6839;&amp;#x636E;&amp;#x51FD;&amp;#x6570;&amp;#x540D;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&amp;#x8C03;&amp;#x7528;&amp;#x51FD;&amp;#x6570;&amp;#x7684;&amp;#x65B9;&amp;#x6CD5;&amp;#xFF1F;&amp;#x53C2;&amp;#x89C1;
@@ -470,7 +470,25 @@ test.bar();
 <h2 id="JSON&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x5BF9;&#x8C61;-&#x53C2;&#x89C1;-aspx"><a href="#JSON&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x5BF9;&#x8C61;-&#x53C2;&#x89C1;-aspx" class="headerlink" title="JSON&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x5BF9;&#x8C61; &#x53C2;&#x89C1;.aspx)"></a>JSON&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x5BF9;&#x8C61; <a href="https://msdn.microsoft.com/zh-cn/library/cc836466(v=vs.94" target="_blank" rel="external">&#x53C2;&#x89C1;</a>.aspx)</h2><ul>
 <li>JSON.parse()</li>
 </ul>
+<h2 id="&#x62FC;&#x63A5;&#x4E24;&#x4E2A;json&#x5BF9;&#x8C61;"><a href="#&#x62FC;&#x63A5;&#x4E24;&#x4E2A;json&#x5BF9;&#x8C61;" class="headerlink" title="&#x62FC;&#x63A5;&#x4E24;&#x4E2A;json&#x5BF9;&#x8C61;"></a>&#x62FC;&#x63A5;&#x4E24;&#x4E2A;json&#x5BF9;&#x8C61;</h2><pre>
+//&#x62FC;&#x63A5;&#x4E24;&#x4E2A;json&#x5BF9;&#x8C61;
+function merge_jsonobject(jsonobj1, jsonobj2)
+{
+    let result_json = {};
 
+    for(let attr in jsonobj1) {
+        result_json[attr] = jsonobj1[attr];
+    }
+
+    for(let attr in jsonobj2) {
+        result_json[attr] = jsonobj2[attr];
+    }
+
+    return result_json;
+}
+</pre>
+
+<h2 id="&#x7C7B;&#x578B;&#x8F6C;&#x6362;-&#x53C2;&#x89C1;"><a href="#&#x7C7B;&#x578B;&#x8F6C;&#x6362;-&#x53C2;&#x89C1;" class="headerlink" title="&#x7C7B;&#x578B;&#x8F6C;&#x6362; &#x53C2;&#x89C1;"></a>&#x7C7B;&#x578B;&#x8F6C;&#x6362; <a href="http://javascript.ruanyifeng.com/grammar/conversion.html#toc3" target="_blank" rel="external">&#x53C2;&#x89C1;</a></h2>
       
     </div>
 
@@ -599,7 +617,7 @@ test.bar();
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">28</span>
+              <span class="site-state-item-count">30</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -687,7 +705,7 @@ test.bar();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#怎样根据函数名字符串调用函数的方法？参见"><span class="nav-number">1.</span> <span class="nav-text">怎样根据函数名字符串调用函数的方法？参见</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象或数组转换成JSON字符串-参见-aspx"><span class="nav-number">2.</span> <span class="nav-text">对象或数组转换成JSON字符串 参见.aspx)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON字符串转换成对象-参见-aspx"><span class="nav-number">3.</span> <span class="nav-text">JSON字符串转换成对象 参见.aspx)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#怎样根据函数名字符串调用函数的方法？参见"><span class="nav-number">1.</span> <span class="nav-text">怎样根据函数名字符串调用函数的方法？参见</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象或数组转换成JSON字符串-参见-aspx"><span class="nav-number">2.</span> <span class="nav-text">对象或数组转换成JSON字符串 参见.aspx)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON字符串转换成对象-参见-aspx"><span class="nav-number">3.</span> <span class="nav-text">JSON字符串转换成对象 参见.aspx)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拼接两个json对象"><span class="nav-number">4.</span> <span class="nav-text">拼接两个json对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类型转换-参见"><span class="nav-number">5.</span> <span class="nav-text">类型转换 参见</span></a></li></ol></div>
             
 
           </div>
