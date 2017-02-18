@@ -1218,16 +1218,6 @@ $(&quot;element&quot;).bind(&quot;click&quot;,funciton(event){
     <entry>
       <title></title>
       <url>http://JKooll.github.io/2017/01/17/note-1/001/</url>
-      <content type="html"><![CDATA[.focus {
-    border: 1px solid #f00;
-    background: #fcc;
-}
-]]></content>
-    </entry>
-    
-    <entry>
-      <title></title>
-      <url>http://JKooll.github.io/2017/01/17/note-1/001/</url>
       <content type="html"><![CDATA[<!DOCTYPE html>
 <html>
     <head>
@@ -1261,6 +1251,16 @@ $(&quot;element&quot;).bind(&quot;click&quot;,funciton(event){
         <script src="001.js" charset="utf-8"></script>
     </body>
 </html>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>http://JKooll.github.io/2017/01/17/note-1/001/</url>
+      <content type="html"><![CDATA[.focus {
+    border: 1px solid #f00;
+    background: #fcc;
+}
 ]]></content>
     </entry>
     
@@ -1315,59 +1315,6 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&amp;&amp;&quot;set&quot;in e&amp;&a
     
     <entry>
       <title></title>
-      <url>http://JKooll.github.io/2017/01/17/note-1/004/</url>
-      <content type="html"><![CDATA[$(function() {
-    $(&quot;#add&quot;).click(function() {
-        var $options = $(&quot;#select1 option:selected&quot;);
-        $options.appendTo(&quot;#select2&quot;);
-    });
-
-    $(&quot;#add_all&quot;).click(function() {
-        var $options = $(&quot;#select1 option&quot;);
-        $options.appendTo(&quot;#select2&quot;);
-    });
-
-    //&#x53CC;&#x51FB;&#x6DFB;&#x52A0;
-    $(&quot;#select1&quot;).dblclick(function() {
-        $option = $(&quot;option:selected&quot;, this);
-
-        $option.appendTo(&quot;#select2&quot;);
-    })
-});
-]]></content>
-    </entry>
-    
-    <entry>
-      <title></title>
-      <url>http://JKooll.github.io/2017/01/17/note-1/003/</url>
-      <content type="html"><![CDATA[<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x590D;&#x9009;&#x6846;&#x5E94;&#x7528;</title>
-    </head>
-    <body>
-        <form>
-            &#x4F60;&#x7231;&#x597D;&#x7684;&#x8FD0;&#x52A8;&#x662F;&#xFF1F;<br>
-            <input type="checkbox" name="items" value="&#x8DB3;&#x7403;">&#x8DB3;&#x7403;
-            <input type="checkbox" name="items" value="&#x7BEE;&#x7403;">&#x7BEE;&#x7403;
-            <input type="checkbox" name="items" value="&#x7FBD;&#x6BDB;&#x7403;">&#x7FBD;&#x6BDB;&#x7403;
-            <input type="checkbox" name="items" value="&#x4E52;&#x4E53;&#x7403;">&#x4E52;&#x4E53;&#x7403;
-            <input type="button" id="CheckedAll" value="&#x5168; &#x9009;">
-            <input type="button" id="CheckedNo" value="&#x5168;&#x4E0D;&#x9009;">
-            <input type="button" id="CheckedRev" value="&#x53CD;&#x9009;">
-            <input type="button" id="send" value="&#x63D0; &#x4EA4;">
-        </form>
-
-        <script src="jquery.min.js" charset="utf-8"></script>
-        <script src="003.js" charset="utf-8"></script>
-    </body>
-</html>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title></title>
       <url>http://JKooll.github.io/2017/01/17/note-1/005/</url>
       <content type="html"><![CDATA[<!DOCTYPE html>
 <html>
@@ -1404,38 +1351,99 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&amp;&amp;&quot;set&quot;in e&amp;&a
     
     <entry>
       <title></title>
-      <url>http://JKooll.github.io/2017/01/17/note-1/002/</url>
+      <url>http://JKooll.github.io/2017/01/17/note-1/004/</url>
       <content type="html"><![CDATA[$(function() {
-    var $comment = $(&quot;#comment&quot;);
-
-    $(&quot;.bigger&quot;).click(function() {
-        if(!$comment.is(&quot;:animated&quot;)) {
-            if($comment.height() &lt; 500) {
-                $comment.animate({&quot;height&quot; : &quot;+=50&quot;}, 400);
-            }
-        }
+    $(&quot;#add&quot;).click(function() {
+        var $options = $(&quot;#select1 option:selected&quot;);
+        $options.appendTo(&quot;#select2&quot;);
     });
 
-    $(&quot;.smaller&quot;).click(function() {
-        if(!$comment.is(&quot;:animated&quot;)) {
-            if($comment.height() &gt; 50) {
-                $comment.animate({&quot;height&quot; : &quot;-=50&quot;}, 400);
-            }
-        }
+    $(&quot;#add_all&quot;).click(function() {
+        var $options = $(&quot;#select1 option&quot;);
+        $options.appendTo(&quot;#select2&quot;);
     });
 
-    $(&quot;.up&quot;).click(function() {
-        if(!$comment.is(&quot;:animated&quot;)) {
-            $comment.animate({&quot;scrollTop&quot; : &quot;-=50&quot;}, 400);
-        }
-    });
+    //&#x53CC;&#x51FB;&#x6DFB;&#x52A0;
+    $(&quot;#select1&quot;).dblclick(function() {
+        $option = $(&quot;option:selected&quot;, this);
 
-    $(&quot;.down&quot;).click(function() {
-        if(!$comment.is(&quot;animated&quot;)) {
-            $comment.animate({&quot;scrollTop&quot; : &quot;+=50&quot;}, 400);
-        }
+        $option.appendTo(&quot;#select2&quot;);
     })
 });
+]]></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>http://JKooll.github.io/2017/01/17/note-1/004/</url>
+      <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x4E0B;&#x62C9;&#x6846;&#x5E94;&#x7528;</title>
+    </head>
+    <body>
+        <div class="centent">
+            <select multiple id="select1" style="width:100px;height:160px;">
+                <option value="1">&#x9009;&#x9879;1</option>
+                <option value="2">&#x9009;&#x9879;2</option>
+                <option value="3">&#x9009;&#x9879;3</option>
+                <option value="4">&#x9009;&#x9879;4</option>
+                <option value="5">&#x9009;&#x9879;5</option>
+                <option value="6">&#x9009;&#x9879;6</option>
+                <option value="7">&#x9009;&#x9879;7</option>
+                <option value="8">&#x9009;&#x9879;8</option>
+                <option value="9">&#x9009;&#x9879;9</option>
+            </select>
+
+            <div>
+                <span id="add">&#x9009;&#x4E2D;&#x6DFB;&#x52A0;&#x5230;&#x53F3;&#x8FB9;&gt;&gt;</span>
+                <span id="add_all">&#x5168;&#x90E8;&#x6DFB;&#x52A0;&#x5230;&#x53F3;&#x8FB9;&gt;&gt;</span>
+            </div>
+        </div>
+
+        <div class="centent">
+            <select multiple id="select2" style="width:100px;height:160px;"></select>
+
+            <div>
+                <span id="remove">&lt;&lt;&#x9009;&#x4E2D;&#x5220;&#x9664;&#x5230;&#x5DE6;&#x8FB9;</span>
+                <span id="remove_all">&lt;&lt;&#x5168;&#x90E8;&#x5220;&#x9664;&#x5230;&#x5DE6;&#x8FB9;</span>
+            </div>
+        </div>
+
+        <script src="jquery.min.js" charset="utf-8"></script>
+        <script src="004.js" charset="utf-8"></script>
+    </body>
+</html>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>http://JKooll.github.io/2017/01/17/note-1/003/</url>
+      <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x590D;&#x9009;&#x6846;&#x5E94;&#x7528;</title>
+    </head>
+    <body>
+        <form>
+            &#x4F60;&#x7231;&#x597D;&#x7684;&#x8FD0;&#x52A8;&#x662F;&#xFF1F;<br>
+            <input type="checkbox" name="items" value="&#x8DB3;&#x7403;">&#x8DB3;&#x7403;
+            <input type="checkbox" name="items" value="&#x7BEE;&#x7403;">&#x7BEE;&#x7403;
+            <input type="checkbox" name="items" value="&#x7FBD;&#x6BDB;&#x7403;">&#x7FBD;&#x6BDB;&#x7403;
+            <input type="checkbox" name="items" value="&#x4E52;&#x4E53;&#x7403;">&#x4E52;&#x4E53;&#x7403;
+            <input type="button" id="CheckedAll" value="&#x5168; &#x9009;">
+            <input type="button" id="CheckedNo" value="&#x5168;&#x4E0D;&#x9009;">
+            <input type="button" id="CheckedRev" value="&#x53CD;&#x9009;">
+            <input type="button" id="send" value="&#x63D0; &#x4EA4;">
+        </form>
+
+        <script src="jquery.min.js" charset="utf-8"></script>
+        <script src="003.js" charset="utf-8"></script>
+    </body>
+</html>
 ]]></content>
     </entry>
     
@@ -1491,46 +1499,38 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&amp;&amp;&quot;set&quot;in e&amp;&a
     
     <entry>
       <title></title>
-      <url>http://JKooll.github.io/2017/01/17/note-1/004/</url>
-      <content type="html"><![CDATA[<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x4E0B;&#x62C9;&#x6846;&#x5E94;&#x7528;</title>
-    </head>
-    <body>
-        <div class="centent">
-            <select multiple id="select1" style="width:100px;height:160px;">
-                <option value="1">&#x9009;&#x9879;1</option>
-                <option value="2">&#x9009;&#x9879;2</option>
-                <option value="3">&#x9009;&#x9879;3</option>
-                <option value="4">&#x9009;&#x9879;4</option>
-                <option value="5">&#x9009;&#x9879;5</option>
-                <option value="6">&#x9009;&#x9879;6</option>
-                <option value="7">&#x9009;&#x9879;7</option>
-                <option value="8">&#x9009;&#x9879;8</option>
-                <option value="9">&#x9009;&#x9879;9</option>
-            </select>
+      <url>http://JKooll.github.io/2017/01/17/note-1/002/</url>
+      <content type="html"><![CDATA[$(function() {
+    var $comment = $(&quot;#comment&quot;);
 
-            <div>
-                <span id="add">&#x9009;&#x4E2D;&#x6DFB;&#x52A0;&#x5230;&#x53F3;&#x8FB9;&gt;&gt;</span>
-                <span id="add_all">&#x5168;&#x90E8;&#x6DFB;&#x52A0;&#x5230;&#x53F3;&#x8FB9;&gt;&gt;</span>
-            </div>
-        </div>
+    $(&quot;.bigger&quot;).click(function() {
+        if(!$comment.is(&quot;:animated&quot;)) {
+            if($comment.height() &lt; 500) {
+                $comment.animate({&quot;height&quot; : &quot;+=50&quot;}, 400);
+            }
+        }
+    });
 
-        <div class="centent">
-            <select multiple id="select2" style="width:100px;height:160px;"></select>
+    $(&quot;.smaller&quot;).click(function() {
+        if(!$comment.is(&quot;:animated&quot;)) {
+            if($comment.height() &gt; 50) {
+                $comment.animate({&quot;height&quot; : &quot;-=50&quot;}, 400);
+            }
+        }
+    });
 
-            <div>
-                <span id="remove">&lt;&lt;&#x9009;&#x4E2D;&#x5220;&#x9664;&#x5230;&#x5DE6;&#x8FB9;</span>
-                <span id="remove_all">&lt;&lt;&#x5168;&#x90E8;&#x5220;&#x9664;&#x5230;&#x5DE6;&#x8FB9;</span>
-            </div>
-        </div>
+    $(&quot;.up&quot;).click(function() {
+        if(!$comment.is(&quot;:animated&quot;)) {
+            $comment.animate({&quot;scrollTop&quot; : &quot;-=50&quot;}, 400);
+        }
+    });
 
-        <script src="jquery.min.js" charset="utf-8"></script>
-        <script src="004.js" charset="utf-8"></script>
-    </body>
-</html>
+    $(&quot;.down&quot;).click(function() {
+        if(!$comment.is(&quot;animated&quot;)) {
+            $comment.animate({&quot;scrollTop&quot; : &quot;+=50&quot;}, 400);
+        }
+    })
+});
 ]]></content>
     </entry>
     
