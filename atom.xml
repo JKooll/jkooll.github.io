@@ -420,30 +420,6 @@ function merge_jsonobject(jsonobj1, jsonobj2)
   </entry>
   
   <entry>
-    <title>在ubuntu上写C</title>
-    <link href="http://JKooll.github.io/2017/01/21/note-1/"/>
-    <id>http://JKooll.github.io/2017/01/21/note-1/</id>
-    <published>2017-01-21T13:06:31.000Z</published>
-    <updated>2017-01-21T11:07:53.670Z</updated>
-    
-    <content type="html"><![CDATA[<p>gcc &#x2013; &#x7F16;&#x8BD1;&#x5DE5;&#x5177;<br>emacs &#x2013; &#x56FE;&#x5F62;&#x7F16;&#x8F91;&#x5668;</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;gcc &amp;#x2013; &amp;#x7F16;&amp;#x8BD1;&amp;#x5DE5;&amp;#x5177;&lt;br&gt;emacs &amp;#x2013; &amp;#x56FE;&amp;#x5F62;&amp;#x7F16;&amp;#x8F91;&amp;#x5668;&lt;/p&gt;
-
-    
-    </summary>
-    
-      <category term="笔记" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Linux" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/Linux/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>数据结构与算法学习资源</title>
     <link href="http://JKooll.github.io/2017/01/21/note/"/>
     <id>http://JKooll.github.io/2017/01/21/note/</id>
@@ -1422,25 +1398,23 @@ $(&quot;element&quot;).bind(&quot;click&quot;,funciton(event){
   
   <entry>
     <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/test/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/test/</id>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/001/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/001/</id>
     <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-01-28T10:48:03.856Z</updated>
+    <updated>2017-02-17T08:01:40.352Z</updated>
     
-    <content type="html"><![CDATA[$(function(){
-    $(&quot;#test&quot;).click(function(event) {
-        alert(&quot;success!!!&quot;);
-    });
-});
+    <content type="html"><![CDATA[.focus {
+    border: 1px solid #f00;
+    background: #fcc;
+}
 ]]></content>
     
     <summary type="html">
     
-      $(function(){
-    $(&amp;quot;#test&amp;quot;).click(function(event) {
-        alert(&amp;quot;success!!!&amp;quot;);
-    });
-});
+      .focus {
+    border: 1px solid #f00;
+    background: #fcc;
+}
 
     
     </summary>
@@ -1450,22 +1424,42 @@ $(&quot;element&quot;).bind(&quot;click&quot;,funciton(event){
   
   <entry>
     <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/test/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/test/</id>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/001/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/001/</id>
     <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-01-28T11:10:32.889Z</updated>
+    <updated>2017-02-18T11:53:06.576Z</updated>
     
     <content type="html"><![CDATA[<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>&#x6D4B;&#x8BD5;</title>
+        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x5355;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;</title>
+        <link rel="stylesheet" href="001.css">
     </head>
     <body>
-        <button id="test"></button>
+        <form action="#" method="post" id="regForm">
+            <fieldset>
+                <legend>&#x4E2A;&#x4EBA;&#x57FA;&#x672C;&#x4FE1;&#x606F;</legend>
+
+                <div>
+                    <label for="username">&#x540D;&#x79F0;&#xFF1A;</label>
+                    <input type="text" id="username">
+                </div>
+
+                <div>
+                    <label for="pass">&#x5BC6;&#x7801;&#xFF1A;</label>
+                    <input id="pass" type="password">
+                </div>
+
+                <div>
+                    <label for="msg">&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF1A;</label>
+                    <textarea id="msg"></textarea>
+                </div>
+            </fieldset>
+        </form>
 
         <script src="jquery.min.js" charset="utf-8"></script>
-        <script src="test.js" charset="utf-8"></script>
+        <script src="001.js" charset="utf-8"></script>
     </body>
 </html>
 ]]></content>
@@ -1476,10 +1470,21 @@ $(&quot;element&quot;).bind(&quot;click&quot;,funciton(event){
 &lt;html&gt;
     &lt;head&gt;
         &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;title&gt;&amp;#x6D4B;&amp;#x8BD5;&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;but
+        &lt;title&gt;&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x5355;&amp;#x884C;&amp;#x6587;&amp;#
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/005/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/005/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-18T11:53:34.190Z</updated>
+    
+    <summary type="html">
     
     </summary>
     
@@ -1510,230 +1515,292 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&amp;&amp;&quot;set&quot;in e&amp;&a
   </entry>
   
   <entry>
-    <title>nodejs &amp;&amp; npm</title>
-    <link href="http://JKooll.github.io/2017/01/16/note-1/"/>
-    <id>http://JKooll.github.io/2017/01/16/note-1/</id>
-    <published>2017-01-16T12:35:32.000Z</published>
-    <updated>2017-01-16T10:41:37.819Z</updated>
+    <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/003/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/003/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-17T11:14:31.164Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="npm&#x5404;&#x79CD;&#x5751;"><a href="#npm&#x5404;&#x79CD;&#x5751;" class="headerlink" title="npm&#x5404;&#x79CD;&#x5751;"></a>npm&#x5404;&#x79CD;&#x5751;</h1><h2 id="&#x95EE;&#x9898;&#x4E00;"><a href="#&#x95EE;&#x9898;&#x4E00;" class="headerlink" title="&#x95EE;&#x9898;&#x4E00;"></a>&#x95EE;&#x9898;&#x4E00;</h2><blockquote>
-<p>&#x5728;linux&#x4E0B;&#xFF0C;&#x6267;&#x884C;<code>npm install</code>&#xFF0C;&#x53D1;&#x73B0;<code>not find node</code>,&#x5176;&#x5B9E;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x4E86;nodejs.<br>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;<code>cd /usr/bin &amp;&amp; sudo ln -s nodejs node</code>.</p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;npm&amp;#x5404;&amp;#x79CD;&amp;#x5751;&quot;&gt;&lt;a href=&quot;#npm&amp;#x5404;&amp;#x79CD;&amp;#x5751;&quot; class=&quot;headerlink&quot; title=&quot;npm&amp;#x5404;&amp;#x79CD;&amp;#x5751;&quot;&gt;&lt;/a&gt;npm&amp;#
-    
-    </summary>
-    
-      <category term="笔记" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="JavaScript" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/JavaScript/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>写作 --- 雅思英语学习笔记</title>
-    <link href="http://JKooll.github.io/2017/01/16/note/"/>
-    <id>http://JKooll.github.io/2017/01/16/note/</id>
-    <published>2017-01-16T11:59:39.000Z</published>
-    <updated>2017-02-01T11:29:18.377Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Task-1"><a href="#Task-1" class="headerlink" title="Task 1"></a>Task 1</h1><h2 id="&#x600E;&#x6837;&#x5199;&#x56FE;&#x8868;&#x9898;"><a href="#&#x600E;&#x6837;&#x5199;&#x56FE;&#x8868;&#x9898;" class="headerlink" title="&#x600E;&#x6837;&#x5199;&#x56FE;&#x8868;&#x9898;"></a>&#x600E;&#x6837;&#x5199;&#x56FE;&#x8868;&#x9898;</h2><ol>
-<li>&#x6982;&#x62EC;&#x56FE;&#x6807;&#x4FE1;&#x606F;&#xFF08;overview&#xFF09;//&#x6700;&#x663E;&#x8457;&#x7684;&#x53D8;&#x5316;&#x548C;/&#x6216;&#x6BD4;&#x8F83;&#x7279;&#x5F81;&#xFF0C;&#x6D41;&#x7A0B;&#x603B;&#x62EC;</li>
-<li>&#x9009;&#x62E9;&#x5173;&#x952E;&#x7279;&#x5F81;&#xFF08;key features&#xFF09;//&#x8D77;&#x70B9;&#x3001;&#x7EC8;&#x70B9;&#x3001;&#x6700;&#x503C;&#x3001;&#x4EA4;&#x70B9;&#x3001;&#x7279;&#x6B8A;&#x70B9;</li>
-<li><p>&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x652F;&#x6301;&#xFF08;data)</p>
-<blockquote>
-<p>The number of A increased from ## to ##.</p>
-<p>A is twice  as many as B</p>
-</blockquote>
-</li>
-<li><p>&#x4E0D;&#x5E26;&#x4E3B;&#x89C2;&#x5206;&#x6790;&#xFF08;objective&#xFF09;//&#x4FE1;&#x606F;&#x76F4;&#x63A5;&#x6E90;&#x81EA;&#x56FE;&#x8868;&#xFF0C;&#x53EA;&#x63CF;&#x8FF0;&#x4E0D;&#x89E3;&#x91CA;</p>
-</li>
-<li>&#x4F7F;&#x7528;&#x6B63;&#x786E;&#x65F6;&#x6001;&#xFF08;tense&#xFF09;//Introduction &#x4E00;&#x822C;&#x73B0;&#x5728;&#x65F6;&#xFF0C;&#x56FE;&#x8868;&#x7EC6;&#x8282;&#x4FE1;&#x606F;&#x4ECB;&#x7ECD;&#x53CA;&#x5185;&#x5BB9;&#x6982;&#x62EC;&#x6839;&#x636E;&#x5177;&#x4F53;&#x65F6;&#x95F4;&#x786E;&#x5B9A;</li>
-</ol>
-<h2 id="&#x56FE;&#x8868;&#x57FA;&#x672C;&#x7ED3;&#x6784;&#x53CA;&#x5199;&#x4F5C;&#x6B65;&#x9AA4;"><a href="#&#x56FE;&#x8868;&#x57FA;&#x672C;&#x7ED3;&#x6784;&#x53CA;&#x5199;&#x4F5C;&#x6B65;&#x9AA4;" class="headerlink" title="&#x56FE;&#x8868;&#x57FA;&#x672C;&#x7ED3;&#x6784;&#x53CA;&#x5199;&#x4F5C;&#x6B65;&#x9AA4;"></a>&#x56FE;&#x8868;&#x57FA;&#x672C;&#x7ED3;&#x6784;&#x53CA;&#x5199;&#x4F5C;&#x6B65;&#x9AA4;</h2><h3 id="&#x57FA;&#x672C;&#x7ED3;&#x6784;"><a href="#&#x57FA;&#x672C;&#x7ED3;&#x6784;" class="headerlink" title="&#x57FA;&#x672C;&#x7ED3;&#x6784;"></a>&#x57FA;&#x672C;&#x7ED3;&#x6784;</h3><h4 id="Part1-&#x7B80;&#x660E;&#x4ECB;&#x7ECD;&#x56FE;&#x8868;&#x5185;&#x5BB9;-Introduction"><a href="#Part1-&#x7B80;&#x660E;&#x4ECB;&#x7ECD;&#x56FE;&#x8868;&#x5185;&#x5BB9;-Introduction" class="headerlink" title="Part1-&#x7B80;&#x660E;&#x4ECB;&#x7ECD;&#x56FE;&#x8868;&#x5185;&#x5BB9;(Introduction)"></a><strong>Part1</strong>-&#x7B80;&#x660E;&#x4ECB;&#x7ECD;&#x56FE;&#x8868;&#x5185;&#x5BB9;(Introduction)</h4><p>The chart gives information about&#x2026;</p>
-<p>The graph illustrates&#x2026;</p>
-<h4 id="Part2&#xFF08;&#x89C6;&#x60C5;&#x51B5;&#x5206;&#x6BB5;&#xFF09;-&#x5173;&#x952E;&#x4FE1;&#x606F;&#x63CF;&#x5199;&#xFF08;key&#xFF09;-&#x6570;&#x636E;&#x652F;&#x6301;&#xFF08;data-support&#xFF09;"><a href="#Part2&#xFF08;&#x89C6;&#x60C5;&#x51B5;&#x5206;&#x6BB5;&#xFF09;-&#x5173;&#x952E;&#x4FE1;&#x606F;&#x63CF;&#x5199;&#xFF08;key&#xFF09;-&#x6570;&#x636E;&#x652F;&#x6301;&#xFF08;data-support&#xFF09;" class="headerlink" title="Part2&#xFF08;&#x89C6;&#x60C5;&#x51B5;&#x5206;&#x6BB5;&#xFF09;-&#x5173;&#x952E;&#x4FE1;&#x606F;&#x63CF;&#x5199;&#xFF08;key&#xFF09;+ &#x6570;&#x636E;&#x652F;&#x6301;&#xFF08;data support&#xFF09;"></a><strong>Part2&#xFF08;&#x89C6;&#x60C5;&#x51B5;&#x5206;&#x6BB5;&#xFF09;</strong>-&#x5173;&#x952E;&#x4FE1;&#x606F;&#x63CF;&#x5199;&#xFF08;key&#xFF09;+ &#x6570;&#x636E;&#x652F;&#x6301;&#xFF08;data support&#xFF09;</h4><p>According to the chart, &#x2026;</p>
-<h4 id="Part3-&#x6982;&#x62EC;&#x56FE;&#x8868;&#x4FE1;&#x606F;&#xFF08;overview&#xFF09;"><a href="#Part3-&#x6982;&#x62EC;&#x56FE;&#x8868;&#x4FE1;&#x606F;&#xFF08;overview&#xFF09;" class="headerlink" title="Part3-&#x6982;&#x62EC;&#x56FE;&#x8868;&#x4FE1;&#x606F;&#xFF08;overview&#xFF09;"></a><strong>Part3</strong>-&#x6982;&#x62EC;&#x56FE;&#x8868;&#x4FE1;&#x606F;&#xFF08;overview&#xFF09;</h4><p>Overall&#x2026;/Obviously&#x2026;</p>
-<h3 id="&#x5199;&#x4F5C;&#x6B65;&#x9AA4;"><a href="#&#x5199;&#x4F5C;&#x6B65;&#x9AA4;" class="headerlink" title="&#x5199;&#x4F5C;&#x6B65;&#x9AA4;"></a>&#x5199;&#x4F5C;&#x6B65;&#x9AA4;</h3><ul>
-<li>step 1 - &#x8BFB;&#x61C2;&#x56FE;&#x8868;</li>
-<li>step 2 - &#x5224;&#x65AD;&#x6570;&#x636E;&#x7279;&#x70B9;&#xFF08;&#x53D8;&#x5316;/&#x6BD4;&#x8F83;&#xFF09;</li>
-<li>step 3 - &#x63D0;&#x53D6;&#x5173;&#x952E;&#x4FE1;&#x606F;&#xFF08;key features + overview&#xFF09;</li>
-<li>step 4 - &#x786E;&#x5B9A;&#x6BB5;&#x843D;&#x5B89;&#x6392;</li>
-<li>step 5 - &#x5B8C;&#x6210;&#x6587;&#x7AE0;&#x5199;&#x4F5C;</li>
-</ul>
-<h2 id="&#x67F1;&#x72B6;&#x56FE;&#x5199;&#x4F5C;"><a href="#&#x67F1;&#x72B6;&#x56FE;&#x5199;&#x4F5C;" class="headerlink" title="&#x67F1;&#x72B6;&#x56FE;&#x5199;&#x4F5C;"></a>&#x67F1;&#x72B6;&#x56FE;&#x5199;&#x4F5C;</h2><p><img src="/2017/01/16/note/001.png" alt=""></p>
-<p><strong>The chart shows</strong> the time spent by UK residents on different types of telephone calls <strong>between</strong> 1995 <strong>and 2002</strong>.</p>
-<p>Local fixed line calls <strong>were the highest throughout the period</strong>, <strong>rising from</strong> 72 billion minutes in 1995 <strong>to</strong> just under 90 billion in 1998.</p>
-<p><strong>After peaking at</strong> 90 billion <strong>the following year</strong>, these calls <strong>had fallen back to</strong> the 1995 figure by 2002.</p>
-<p>Notional and international fixed line calls <strong>grew stredily</strong> from 38 billion to 61 billion <strong>at the end of the period in question</strong>, <strong>through the growth showed over the last two years.</strong></p>
-<p><strong>There was a dramatoc increase in</strong> mobile calls from 2 billion to 46 billion minutes. <strong>This rise was particularly noticea    ble</strong> between 1999 and 2002, <strong>during which time</strong> the use of mobile phones <strong>tripled</strong>.</p>
-<p><strong>To sum up</strong>, although local fixed line calls were still the most popular in 2002, <strong>the gap between the three categories had narrow considerably over the second half of the period in question.</strong></p>
-<h2 id="&#x96C5;&#x601D;&#x5199;&#x4F5C;Task2&#x5E38;&#x7528;&#x53E5;&#x578B;-&#x53C2;&#x8003;"><a href="#&#x96C5;&#x601D;&#x5199;&#x4F5C;Task2&#x5E38;&#x7528;&#x53E5;&#x578B;-&#x53C2;&#x8003;" class="headerlink" title="&#x96C5;&#x601D;&#x5199;&#x4F5C;Task2&#x5E38;&#x7528;&#x53E5;&#x578B; &#x53C2;&#x8003;"></a>&#x96C5;&#x601D;&#x5199;&#x4F5C;Task2&#x5E38;&#x7528;&#x53E5;&#x578B; <a href="https://wenku.baidu.com/view/283df531b90d6c85ec3ac628.html" target="_blank" rel="external">&#x53C2;&#x8003;</a></h2><ul>
-<li>There is no doubt that&#x2026;<br>&#x6BEB;&#x65E0;&#x7591;&#x95EE;</li>
-<li>The reason why &#x2026; is that &#x2026;<br>&#x4E4B;&#x6240;&#x4EE5;&#x2026;&#x4E3B;&#x8981;&#x5728;&#x4E8E;&#x2026;</li>
-<li>It is conceivable that &#x2026;<br>&#x53EF;&#x60F3;&#x800C;&#x77E5;</li>
-<li>The most obvious reason for this phenomenon is that&#x2026;<br>&#x9020;&#x6210;&#x8BE5;&#x73B0;&#x8C61;&#x7684;&#x4E3B;&#x8981;&#x539F;&#x56E0;&#x5728;&#x4E8E;</li>
-<li>There are probably many reasons contributing to this phenomenon.<br>&#x9020;&#x6210;&#x8BE5;&#x73B0;&#x8C61;&#x7684;&#x539F;&#x56E0;&#x6709;&#x5F88;&#x591A;</li>
-<li>When it comes to &#x2026;, &#x2026;<br>&#x4E00;&#x8C08;&#x5230;&#x2026;, &#x2026;</li>
-<li>No one can deny the fact that&#x2026;<br>&#x6CA1;&#x6709;&#x4EBA;&#x80FD;&#x5426;&#x8BA4;&#x2026;</li>
-<li>To be sure, the topic concerning &#x2026; can always attract our eyes.<br>&#x65E0;&#x7591;&#xFF0C; &#x6709;&#x5173;&#x2026;&#x8BDD;&#x9898;&#x603B;&#x662F;&#x80FD;&#x591F;&#x5F15;&#x8D77;&#x4EBA;&#x4EEC;&#x7684;&#x5173;&#x6CE8;</li>
-<li>Simply put, &#x2026;<br>&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x2026;</li>
-<li>It is no overstatement to say that &#x2026;<br>&#x53EF;&#x4EE5;&#x6BEB;&#x4E0D;&#x5938;&#x5F20;&#x7684;&#x8BF4;&#x2026;</li>
-<li>&#x2026;is a good case in point.<br>&#x2026;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7EDD;&#x4F73;&#x7684;&#x4F8B;&#x5B50;</li>
-<li>People assume different attitudes towards this issue.<br>&#x4EBA;&#x4EEC;&#x5BF9;&#x8BE5;&#x95EE;&#x9898;&#x7684;&#x89C2;&#x70B9;&#x4E0D;&#x540C;</li>
-<li>As is widely-accepted, &#x2026;<br>&#x4F17;&#x6240;&#x5468;&#x77E5;&#xFF0C; &#x2026;</li>
-<li>To conclude,&#x2026;<br>&#x603B;&#x4E4B;&#xFF0C;&#x2026;</li>
-<li>Another consideration in this case is that&#x2026;<br>&#x5BF9;&#x8BE5;&#x95EE;&#x9898;&#x7684;&#x53E6;&#x4E00;&#x5C42;&#x8003;&#x8651;&#x5728;&#x4E8E;&#x2026;</li>
-<li>The ever-accelerated updating of &#x2026; has brought about both chances and challenges.<br>&#x2026;&#x7684;&#x52A0;&#x901F;&#x53D1;&#x5C55;&#x65E2;&#x5E26;&#x6765;&#x4E86;&#x673A;&#x9047;&#x4E5F;&#x5E26;&#x6765;&#x4E86;&#x6311;&#x6218;</li>
-<li>Personally, I am in favor of the former/latter view.<br>&#x5C31;&#x4E2A;&#x4EBA;&#x800C;&#x8A00;&#xFF0C;&#x6211;&#x652F;&#x6301;&#x524D;&#x8005;/&#x540E;&#x8005;&#x3002;</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Task-1&quot;&gt;&lt;a href=&quot;#Task-1&quot; class=&quot;headerlink&quot; title=&quot;Task 1&quot;&gt;&lt;/a&gt;Task 1&lt;/h1&gt;&lt;h2 id=&quot;&amp;#x600E;&amp;#x6837;&amp;#x5199;&amp;#x56FE;&amp;#x8868;&amp;#x9898;&quot;
-    
-    </summary>
-    
-      <category term="笔记" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Languages" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/Languages/"/>
-    
-    
-      <category term="IELTS" scheme="http://JKooll.github.io/tags/IELTS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LAMP配置过程</title>
-    <link href="http://JKooll.github.io/2017/01/08/note-1/"/>
-    <id>http://JKooll.github.io/2017/01/08/note-1/</id>
-    <published>2017-01-08T12:23:31.000Z</published>
-    <updated>2017-01-08T14:17:51.829Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="&#x914D;&#x7F6E;LAMP&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;"><a href="#&#x914D;&#x7F6E;LAMP&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;" class="headerlink" title="&#x914D;&#x7F6E;LAMP&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;"></a>&#x914D;&#x7F6E;LAMP&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;</h1><ul>
-<li>&#x5355;&#x72EC;&#x4E0B;&#x8F7D;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5B89;&#x88C5;</li>
-<li>&#x4F7F;&#x7528;&#x96C6;&#x6210;&#x5305;</li>
-</ul>
-<h1 id="&#x5355;&#x72EC;&#x4E0B;&#x8F7D;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5B89;&#x88C5;"><a href="#&#x5355;&#x72EC;&#x4E0B;&#x8F7D;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5B89;&#x88C5;" class="headerlink" title="&#x5355;&#x72EC;&#x4E0B;&#x8F7D;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5B89;&#x88C5;"></a>&#x5355;&#x72EC;&#x4E0B;&#x8F7D;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5B89;&#x88C5;</h1><h2 id="&#x5B89;&#x88C5;apache2"><a href="#&#x5B89;&#x88C5;apache2" class="headerlink" title="&#x5B89;&#x88C5;apache2"></a>&#x5B89;&#x88C5;apache2</h2><blockquote>
-<p>apt-get install apache2</p>
-</blockquote>
-<h2 id="&#x67E5;&#x770B;apache2&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;"><a href="#&#x67E5;&#x770B;apache2&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;" class="headerlink" title="&#x67E5;&#x770B;apache2&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;"></a>&#x67E5;&#x770B;apache2&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;</h2><blockquote>
-<p>apache2 -v</p>
-</blockquote>
-<h2 id="&#x5B89;&#x88C5;php5-php7"><a href="#&#x5B89;&#x88C5;php5-php7" class="headerlink" title="&#x5B89;&#x88C5;php5/php7"></a>&#x5B89;&#x88C5;php5/php7</h2><blockquote>
-<p>apt-get install php5/php7</p>
-</blockquote>
-<h2 id="&#x67E5;&#x770B;php&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;"><a href="#&#x67E5;&#x770B;php&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;" class="headerlink" title="&#x67E5;&#x770B;php&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;"></a>&#x67E5;&#x770B;php&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;</h2><blockquote>
-<p>php5/php7 -v</p>
-</blockquote>
-<h2 id="&#x67E5;&#x770B;apache2&#x4E2D;&#x662F;&#x5426;&#x6709;php-load&#x6A21;&#x5757;"><a href="#&#x67E5;&#x770B;apache2&#x4E2D;&#x662F;&#x5426;&#x6709;php-load&#x6A21;&#x5757;" class="headerlink" title="&#x67E5;&#x770B;apache2&#x4E2D;&#x662F;&#x5426;&#x6709;php.load&#x6A21;&#x5757;"></a>&#x67E5;&#x770B;apache2&#x4E2D;&#x662F;&#x5426;&#x6709;php.load&#x6A21;&#x5757;</h2><blockquote>
-<p>cat /etc/apache2/mods-enabled/{php5.load | php7.load}</p>
-</blockquote>
-<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5BF9;&#x5E94;php&#x7248;&#x672C;&#x7684;.load,&#x5C31;&#x5B89;&#x88C5;libapache2-mod-php5/libapache2-mod-php7</p>
-<h2 id="&#x5B89;&#x88C5;MySQL"><a href="#&#x5B89;&#x88C5;MySQL" class="headerlink" title="&#x5B89;&#x88C5;MySQL"></a>&#x5B89;&#x88C5;MySQL</h2><blockquote>
-<p>apt-get install mysql-server</p>
-</blockquote>
-<h2 id="&#x67E5;&#x770B;MySQL&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;"><a href="#&#x67E5;&#x770B;MySQL&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;" class="headerlink" title="&#x67E5;&#x770B;MySQL&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;"></a>&#x67E5;&#x770B;MySQL&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;</h2><blockquote>
-<p>mysql -V</p>
-</blockquote>
-<h2 id="&#x67E5;&#x770B;php&#x662F;&#x5426;&#x6709;mysql&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a href="#&#x67E5;&#x770B;php&#x662F;&#x5426;&#x6709;mysql&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="headerlink" title="&#x67E5;&#x770B;php&#x662F;&#x5426;&#x6709;mysql&#x914D;&#x7F6E;&#x6587;&#x4EF6;"></a>&#x67E5;&#x770B;php&#x662F;&#x5426;&#x6709;mysql&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h2><blockquote>
-<p>cat /etc/{php5/php7}/conf.d/mysql.ini</p>
-</blockquote>
-<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5BF9;&#x5E94;php&#x7248;&#x672C;&#x7684;mysql.ini, &#x5C31;&#x5B89;&#x88C5;php5-mysql/php7-mysql</p>
-<h2 id="&#x91CD;&#x542F;&#x670D;&#x52A1;"><a href="#&#x91CD;&#x542F;&#x670D;&#x52A1;" class="headerlink" title="&#x91CD;&#x542F;&#x670D;&#x52A1;"></a>&#x91CD;&#x542F;&#x670D;&#x52A1;</h2><blockquote>
-<p>service mysql restart</p>
-<p>service apache2 restart</p>
-</blockquote>
-<h1 id="&#x4F7F;&#x7528;&#x96C6;&#x6210;&#x5305;&#x5B89;&#x88C5;"><a href="#&#x4F7F;&#x7528;&#x96C6;&#x6210;&#x5305;&#x5B89;&#x88C5;" class="headerlink" title="&#x4F7F;&#x7528;&#x96C6;&#x6210;&#x5305;&#x5B89;&#x88C5;"></a>&#x4F7F;&#x7528;&#x96C6;&#x6210;&#x5305;&#x5B89;&#x88C5;</h1><blockquote>
-<p>tasksel install lamp-server</p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;&amp;#x914D;&amp;#x7F6E;LAMP&amp;#x6709;&amp;#x4E24;&amp;#x79CD;&amp;#x65B9;&amp;#x6CD5;&quot;&gt;&lt;a href=&quot;#&amp;#x914D;&amp;#x7F6E;LAMP&amp;#x6709;&amp;#x4E24;&amp;#x79CD;&amp;#x65B9;&amp;#x6CD5;
-    
-    </summary>
-    
-      <category term="笔记" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Linux" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/Linux/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>使用EC2搭建PHPweb服务器</title>
-    <link href="http://JKooll.github.io/2017/01/08/note/"/>
-    <id>http://JKooll.github.io/2017/01/08/note/</id>
-    <published>2017-01-08T07:33:11.000Z</published>
-    <updated>2017-01-08T14:17:58.465Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="&#x4F7F;&#x7528;Xshell&#x767B;&#x5F55;EC2"><a href="#&#x4F7F;&#x7528;Xshell&#x767B;&#x5F55;EC2" class="headerlink" title="&#x4F7F;&#x7528;Xshell&#x767B;&#x5F55;EC2"></a>&#x4F7F;&#x7528;Xshell&#x767B;&#x5F55;EC2</h2><p>&#x53C2;&#x89C1;&#xFF1A;<a href="http://www.wuji8.com/meta/512046964.html" target="_blank" rel="external">http://www.wuji8.com/meta/512046964.html</a></p>
-<h2 id="&#x914D;&#x7F6E;LAMP"><a href="#&#x914D;&#x7F6E;LAMP" class="headerlink" title="&#x914D;&#x7F6E;LAMP"></a>&#x914D;&#x7F6E;LAMP</h2><p>&#x53C2;&#x89C1;&#xFF1A;<a href="https://jkooll.github.io/2017/01/08/note-1/">https://jkooll.github.io/2017/01/08/note-1/</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;&amp;#x4F7F;&amp;#x7528;Xshell&amp;#x767B;&amp;#x5F55;EC2&quot;&gt;&lt;a href=&quot;#&amp;#x4F7F;&amp;#x7528;Xshell&amp;#x767B;&amp;#x5F55;EC2&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x4F7F;&amp;#
-    
-    </summary>
-    
-      <category term="笔记" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="linux" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/linux/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>win10无限重启修复笔记</title>
-    <link href="http://JKooll.github.io/2017/01/03/note/"/>
-    <id>http://JKooll.github.io/2017/01/03/note/</id>
-    <published>2017-01-03T12:32:43.000Z</published>
-    <updated>2017-01-08T14:17:42.656Z</updated>
-    
-    <content type="html"><![CDATA[<p>&#x5229;&#x7528;&#x4E00;&#x5207;&#x529E;&#x6CD5;&#x91CD;&#x88C5;&#x7CFB;&#x7EDF;</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&amp;#x5229;&amp;#x7528;&amp;#x4E00;&amp;#x5207;&amp;#x529E;&amp;#x6CD5;&amp;#x91CD;&amp;#x88C5;&amp;#x7CFB;&amp;#x7EDF;&lt;/p&gt;
+    <content type="html"><![CDATA[$(function() {
+    var $items = $(&quot;[name=items]:checkbox&quot;);
+    $(&quot;#CheckedAll&quot;).click(function() {
 
+        $items.attr(&quot;checked&quot;, true);
+    });
+
+    $(&quot;#CheckedNo&quot;).click(function() {
+        $items.attr(&quot;checked&quot;, false);
+    });
+
+    $(&quot;#CheckedRev&quot;).click(function() {
+        $(&quot;[name=items]:checkbox&quot;).each(function() {
+            this.checked = !this.checked;
+        });
+    });
+
+    $(&quot;#send&quot;).click(function() {
+        let str = &quot;&#x9009;&#x4E2D;&#x7684;&#x662F;&#xFF1A; \r\n&quot;;
+
+        $(&quot;[name=items]:checkbox:checked&quot;).each(function() {
+            str += $(this).val()+&quot;\r\n&quot;;
+        });
+
+        alert(str);
+    });
+});
+]]></content>
+    
+    <summary type="html">
+    
+      $(function() {
+    var $items = $(&amp;quot;[name=items]:checkbox&amp;quot;);
+    $(&amp;quot;#CheckedAll&amp;quot;).click(function() {
+
+        $items.attr
     
     </summary>
-    
-      <category term="笔记" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="日常" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/%E6%97%A5%E5%B8%B8/"/>
     
     
   </entry>
   
   <entry>
-    <title>理解PHP 依赖注入|Laravel IoC容器</title>
-    <link href="http://JKooll.github.io/2016/12/24/note/"/>
-    <id>http://JKooll.github.io/2016/12/24/note/</id>
-    <published>2016-12-23T23:44:03.000Z</published>
-    <updated>2017-01-08T14:17:19.777Z</updated>
+    <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/004/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/004/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-17T11:42:17.796Z</updated>
     
-    <content type="html"><![CDATA[<p>url:<a href="https://yuansir-web.com/2014/03/21/li-jie-php-yi-lai-zhu-ru-laravel-iocrong-qi-/" target="_blank" rel="external">https://yuansir-web.com/2014/03/21/li-jie-php-yi-lai-zhu-ru-laravel-iocrong-qi-/</a></p>
+    <content type="html"><![CDATA[$(function() {
+    $(&quot;#add&quot;).click(function() {
+        var $options = $(&quot;#select1 option:selected&quot;);
+        $options.appendTo(&quot;#select2&quot;);
+    });
+
+    $(&quot;#add_all&quot;).click(function() {
+        var $options = $(&quot;#select1 option&quot;);
+        $options.appendTo(&quot;#select2&quot;);
+    });
+
+    //&#x53CC;&#x51FB;&#x6DFB;&#x52A0;
+    $(&quot;#select1&quot;).dblclick(function() {
+        $option = $(&quot;option:selected&quot;, this);
+
+        $option.appendTo(&quot;#select2&quot;);
+    })
+});
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;url:&lt;a href=&quot;https://yuansir-web.com/2014/03/21/li-jie-php-yi-lai-zhu-ru-laravel-iocrong-qi-/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://yua
+      $(function() {
+    $(&amp;quot;#add&amp;quot;).click(function() {
+        var $options = $(&amp;quot;#select1 option:selected&amp;quot;);
+        $options.a
     
     </summary>
     
-      <category term="笔记" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="PHP" scheme="http://JKooll.github.io/categories/%E7%AC%94%E8%AE%B0/PHP/"/>
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/003/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/003/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-18T11:52:57.508Z</updated>
+    
+    <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x590D;&#x9009;&#x6846;&#x5E94;&#x7528;</title>
+    </head>
+    <body>
+        <form>
+            &#x4F60;&#x7231;&#x597D;&#x7684;&#x8FD0;&#x52A8;&#x662F;&#xFF1F;<br>
+            <input type="checkbox" name="items" value="&#x8DB3;&#x7403;">&#x8DB3;&#x7403;
+            <input type="checkbox" name="items" value="&#x7BEE;&#x7403;">&#x7BEE;&#x7403;
+            <input type="checkbox" name="items" value="&#x7FBD;&#x6BDB;&#x7403;">&#x7FBD;&#x6BDB;&#x7403;
+            <input type="checkbox" name="items" value="&#x4E52;&#x4E53;&#x7403;">&#x4E52;&#x4E53;&#x7403;
+            <input type="button" id="CheckedAll" value="&#x5168; &#x9009;">
+            <input type="button" id="CheckedNo" value="&#x5168;&#x4E0D;&#x9009;">
+            <input type="button" id="CheckedRev" value="&#x53CD;&#x9009;">
+            <input type="button" id="send" value="&#x63D0; &#x4EA4;">
+        </form>
+
+        <script src="jquery.min.js" charset="utf-8"></script>
+        <script src="003.js" charset="utf-8"></script>
+    </body>
+</html>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x590D;&amp;#x9009;&amp;#x6846;&amp;#
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/005/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/005/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-18T11:57:43.917Z</updated>
+    
+    <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x8868;&#x5355;&#x9A8C;&#x8BC1;</title>
+    </head>
+    <body>
+        <form action="" method="post">
+            <div class="int">
+                <label for="username">&#x7528;&#x6237;&#x540D;&#xFF1A;</label>
+                <input type="text" id="username" class="required">
+            </div>
+
+            <div class="int">
+                <label for="email">&#x90AE;&#x7BB1;&#xFF1A;</label>
+                <input type="text" id="email" class="required">
+            </div>
+
+            <div class="int">
+                <label for="personinfo">&#x4E2A;&#x4EBA;&#x8D44;&#x6599;&#xFF1A;</label>
+                <input type="text" id="personinfo">
+            </div>
+
+            <div class="sub">
+                <input type="submit" id="send" value="&#x63D0;&#x4EA4;">
+                <input type="reset" id="res">
+            </div>
+        </form>
+    </body>
+</html>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x8868;&amp;#x5355;&amp;#x9A8C;&amp;#
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/002/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/002/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-17T09:09:14.322Z</updated>
+    
+    <content type="html"><![CDATA[$(function() {
+    var $comment = $(&quot;#comment&quot;);
+
+    $(&quot;.bigger&quot;).click(function() {
+        if(!$comment.is(&quot;:animated&quot;)) {
+            if($comment.height() &lt; 500) {
+                $comment.animate({&quot;height&quot; : &quot;+=50&quot;}, 400);
+            }
+        }
+    });
+
+    $(&quot;.smaller&quot;).click(function() {
+        if(!$comment.is(&quot;:animated&quot;)) {
+            if($comment.height() &gt; 50) {
+                $comment.animate({&quot;height&quot; : &quot;-=50&quot;}, 400);
+            }
+        }
+    });
+
+    $(&quot;.up&quot;).click(function() {
+        if(!$comment.is(&quot;:animated&quot;)) {
+            $comment.animate({&quot;scrollTop&quot; : &quot;-=50&quot;}, 400);
+        }
+    });
+
+    $(&quot;.down&quot;).click(function() {
+        if(!$comment.is(&quot;animated&quot;)) {
+            $comment.animate({&quot;scrollTop&quot; : &quot;+=50&quot;}, 400);
+        }
+    })
+});
+]]></content>
+    
+    <summary type="html">
+    
+      $(function() {
+    var $comment = $(&amp;quot;#comment&amp;quot;);
+
+    $(&amp;quot;.bigger&amp;quot;).click(function() {
+        if(!$comment.is(&amp;quot;:ani
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/002/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/002/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-18T11:53:14.376Z</updated>
+    
+    <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x591A;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;</title>
+    </head>
+    <body>
+        <form>
+            <div class="msg">
+                <div class="msg_caption">
+                    <span class="bigger">&#x653E;&#x5927;</span>
+                    <span class="smaller">&#x7F29;&#x5C0F;</span>
+                    <span class="up">&#x5411;&#x4E0A;</span>
+                    <span class="down">&#x5411;&#x4E0B;</span>
+                </div>
+
+                <div>
+                    <textarea id="comment" rows="8" cols="20">
+                        2004&#x5E74;&#x53C2;&#x6F14;&#x7535;&#x89C6;&#x5267;&#x300A;&#x4E0E;&#x9752;&#x6625;&#x6709;&#x5173;&#x7684;&#x65E5;&#x5B50;&#x300B;&#xFF0C;&#x5F00;&#x59CB;&#x5728;&#x5F71;&#x89C6;&#x5708;&#x5D2D;&#x9732;&#x5934;&#x89D2;
+                        [1]  &#x3002;2005&#x5E74;&#x62CD;&#x6444;&#x53E4;&#x88C5;&#x5267;&#x300A;&#x9526;&#x8863;&#x536B;&#x300B;&#x3002;2007&#x5E74;&#x4E3B;&#x6F14;&#x8D75;&#x5B9D;&#x521A;&#x5BFC;&#x6F14;&#x7684;
+                        &#x9752;&#x6625;&#x5267;&#x300A;&#x594B;&#x6597;&#x300B;&#xFF1B;[2]  &#x540C;&#x5E74;&#xFF0C;&#x4E3B;&#x6F14;&#x9996;&#x90E8;&#x7535;&#x5F71;&#x300A;&#x8D70;&#x7740;&#x77A7;&#x300B;&#x3002;2008&#x5E74;&#x4E3B;
+                        &#x6F14;&#x6ED5;&#x534E;&#x6D9B;&#x6267;&#x5BFC;&#x7684;&#x7535;&#x89C6;&#x5267;&#x300A;&#x8717;&#x5C45;&#x300B;&#xFF0C;&#x9970;&#x6F14;80&#x540E;&#x57CE;&#x5E02;&#x9752;&#x5E74;&#x5C0F;&#x8D1D;&#x3002;[1]  2009
+                    </textarea>
+                </div>
+            </div>
+        </form>
+
+        <script src="jquery.min.js" charset="utf-8"></script>
+        <script src="002.js" charset="utf-8"></script>
+    </body>
+</html>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x591A;&amp;#x884C;&amp;#x6587;&amp;#
+    
+    </summary>
     
     
   </entry>
