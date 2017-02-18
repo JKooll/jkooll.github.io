@@ -1430,6 +1430,61 @@ $(&quot;element&quot;).bind(&quot;click&quot;,funciton(event){
     <link href="http://JKooll.github.io/2017/01/17/note-1/001/"/>
     <id>http://JKooll.github.io/2017/01/17/note-1/001/</id>
     <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-18T11:53:06.576Z</updated>
+    
+    <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x5355;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;</title>
+        <link rel="stylesheet" href="001.css">
+    </head>
+    <body>
+        <form action="#" method="post" id="regForm">
+            <fieldset>
+                <legend>&#x4E2A;&#x4EBA;&#x57FA;&#x672C;&#x4FE1;&#x606F;</legend>
+
+                <div>
+                    <label for="username">&#x540D;&#x79F0;&#xFF1A;</label>
+                    <input type="text" id="username">
+                </div>
+
+                <div>
+                    <label for="pass">&#x5BC6;&#x7801;&#xFF1A;</label>
+                    <input id="pass" type="password">
+                </div>
+
+                <div>
+                    <label for="msg">&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF1A;</label>
+                    <textarea id="msg"></textarea>
+                </div>
+            </fieldset>
+        </form>
+
+        <script src="jquery.min.js" charset="utf-8"></script>
+        <script src="001.js" charset="utf-8"></script>
+    </body>
+</html>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x5355;&amp;#x884C;&amp;#x6587;&amp;#
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/001/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/001/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
     <updated>2017-02-17T08:01:40.352Z</updated>
     
     <content type="html"><![CDATA[.focus {
@@ -1445,20 +1500,6 @@ $(&quot;element&quot;).bind(&quot;click&quot;,funciton(event){
     background: #fcc;
 }
 
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/005/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/005/</id>
-    <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-18T11:53:34.190Z</updated>
-    
-    <summary type="html">
     
     </summary>
     
@@ -1493,7 +1534,31 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&amp;&amp;&quot;set&quot;in e&amp;&a
     <link href="http://JKooll.github.io/2017/01/17/note-1/005/"/>
     <id>http://JKooll.github.io/2017/01/17/note-1/005/</id>
     <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-18T11:57:43.917Z</updated>
+    <updated>2017-02-18T13:04:00.130Z</updated>
+    
+    <content type="html"><![CDATA[$(function() {
+    
+});
+]]></content>
+    
+    <summary type="html">
+    
+      $(function() {
+    
+});
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/005/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/005/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-18T13:03:42.159Z</updated>
     
     <content type="html"><![CDATA[<!DOCTYPE html>
 <html>
@@ -1523,6 +1588,9 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&amp;&amp;&quot;set&quot;in e&amp;&a
                 <input type="reset" id="res">
             </div>
         </form>
+
+        <script src="jquery.min.js" charset="utf-8"></script>
+        <script src="005.js" charset="utf-8"></script>
     </body>
 </html>
 ]]></content>
@@ -1534,98 +1602,6 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&amp;&amp;&quot;set&quot;in e&amp;&a
     &lt;head&gt;
         &lt;meta charset=&quot;utf-8&quot;&gt;
         &lt;title&gt;&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x8868;&amp;#x5355;&amp;#x9A8C;&amp;#
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/002/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/002/</id>
-    <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-17T09:09:14.322Z</updated>
-    
-    <content type="html"><![CDATA[$(function() {
-    var $comment = $(&quot;#comment&quot;);
-
-    $(&quot;.bigger&quot;).click(function() {
-        if(!$comment.is(&quot;:animated&quot;)) {
-            if($comment.height() &lt; 500) {
-                $comment.animate({&quot;height&quot; : &quot;+=50&quot;}, 400);
-            }
-        }
-    });
-
-    $(&quot;.smaller&quot;).click(function() {
-        if(!$comment.is(&quot;:animated&quot;)) {
-            if($comment.height() &gt; 50) {
-                $comment.animate({&quot;height&quot; : &quot;-=50&quot;}, 400);
-            }
-        }
-    });
-
-    $(&quot;.up&quot;).click(function() {
-        if(!$comment.is(&quot;:animated&quot;)) {
-            $comment.animate({&quot;scrollTop&quot; : &quot;-=50&quot;}, 400);
-        }
-    });
-
-    $(&quot;.down&quot;).click(function() {
-        if(!$comment.is(&quot;animated&quot;)) {
-            $comment.animate({&quot;scrollTop&quot; : &quot;+=50&quot;}, 400);
-        }
-    })
-});
-]]></content>
-    
-    <summary type="html">
-    
-      $(function() {
-    var $comment = $(&amp;quot;#comment&amp;quot;);
-
-    $(&amp;quot;.bigger&amp;quot;).click(function() {
-        if(!$comment.is(&amp;quot;:ani
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/004/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/004/</id>
-    <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-17T11:42:17.796Z</updated>
-    
-    <content type="html"><![CDATA[$(function() {
-    $(&quot;#add&quot;).click(function() {
-        var $options = $(&quot;#select1 option:selected&quot;);
-        $options.appendTo(&quot;#select2&quot;);
-    });
-
-    $(&quot;#add_all&quot;).click(function() {
-        var $options = $(&quot;#select1 option&quot;);
-        $options.appendTo(&quot;#select2&quot;);
-    });
-
-    //&#x53CC;&#x51FB;&#x6DFB;&#x52A0;
-    $(&quot;#select1&quot;).dblclick(function() {
-        $option = $(&quot;option:selected&quot;, this);
-
-        $option.appendTo(&quot;#select2&quot;);
-    })
-});
-]]></content>
-    
-    <summary type="html">
-    
-      $(function() {
-    $(&amp;quot;#add&amp;quot;).click(function() {
-        var $options = $(&amp;quot;#select1 option:selected&amp;quot;);
-        $options.a
     
     </summary>
     
@@ -1695,6 +1671,45 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&amp;&amp;&quot;set&quot;in e&amp;&a
   
   <entry>
     <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/004/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/004/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-17T11:42:17.796Z</updated>
+    
+    <content type="html"><![CDATA[$(function() {
+    $(&quot;#add&quot;).click(function() {
+        var $options = $(&quot;#select1 option:selected&quot;);
+        $options.appendTo(&quot;#select2&quot;);
+    });
+
+    $(&quot;#add_all&quot;).click(function() {
+        var $options = $(&quot;#select1 option&quot;);
+        $options.appendTo(&quot;#select2&quot;);
+    });
+
+    //&#x53CC;&#x51FB;&#x6DFB;&#x52A0;
+    $(&quot;#select1&quot;).dblclick(function() {
+        $option = $(&quot;option:selected&quot;, this);
+
+        $option.appendTo(&quot;#select2&quot;);
+    })
+});
+]]></content>
+    
+    <summary type="html">
+    
+      $(function() {
+    $(&amp;quot;#add&amp;quot;).click(function() {
+        var $options = $(&amp;quot;#select1 option:selected&amp;quot;);
+        $options.a
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
     <link href="http://JKooll.github.io/2017/01/17/note-1/003/"/>
     <id>http://JKooll.github.io/2017/01/17/note-1/003/</id>
     <published>2017-01-16T16:00:00.000Z</published>
@@ -1744,40 +1759,32 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&amp;&amp;&quot;set&quot;in e&amp;&a
   
   <entry>
     <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/002/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/002/</id>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/003/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/003/</id>
     <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-18T11:53:14.376Z</updated>
+    <updated>2017-02-18T11:52:57.508Z</updated>
     
     <content type="html"><![CDATA[<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x591A;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;</title>
+        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x590D;&#x9009;&#x6846;&#x5E94;&#x7528;</title>
     </head>
     <body>
         <form>
-            <div class="msg">
-                <div class="msg_caption">
-                    <span class="bigger">&#x653E;&#x5927;</span>
-                    <span class="smaller">&#x7F29;&#x5C0F;</span>
-                    <span class="up">&#x5411;&#x4E0A;</span>
-                    <span class="down">&#x5411;&#x4E0B;</span>
-                </div>
-
-                <div>
-                    <textarea id="comment" rows="8" cols="20">
-                        2004&#x5E74;&#x53C2;&#x6F14;&#x7535;&#x89C6;&#x5267;&#x300A;&#x4E0E;&#x9752;&#x6625;&#x6709;&#x5173;&#x7684;&#x65E5;&#x5B50;&#x300B;&#xFF0C;&#x5F00;&#x59CB;&#x5728;&#x5F71;&#x89C6;&#x5708;&#x5D2D;&#x9732;&#x5934;&#x89D2;
-                        [1]  &#x3002;2005&#x5E74;&#x62CD;&#x6444;&#x53E4;&#x88C5;&#x5267;&#x300A;&#x9526;&#x8863;&#x536B;&#x300B;&#x3002;2007&#x5E74;&#x4E3B;&#x6F14;&#x8D75;&#x5B9D;&#x521A;&#x5BFC;&#x6F14;&#x7684;
-                        &#x9752;&#x6625;&#x5267;&#x300A;&#x594B;&#x6597;&#x300B;&#xFF1B;[2]  &#x540C;&#x5E74;&#xFF0C;&#x4E3B;&#x6F14;&#x9996;&#x90E8;&#x7535;&#x5F71;&#x300A;&#x8D70;&#x7740;&#x77A7;&#x300B;&#x3002;2008&#x5E74;&#x4E3B;
-                        &#x6F14;&#x6ED5;&#x534E;&#x6D9B;&#x6267;&#x5BFC;&#x7684;&#x7535;&#x89C6;&#x5267;&#x300A;&#x8717;&#x5C45;&#x300B;&#xFF0C;&#x9970;&#x6F14;80&#x540E;&#x57CE;&#x5E02;&#x9752;&#x5E74;&#x5C0F;&#x8D1D;&#x3002;[1]  2009
-                    </textarea>
-                </div>
-            </div>
+            &#x4F60;&#x7231;&#x597D;&#x7684;&#x8FD0;&#x52A8;&#x662F;&#xFF1F;<br>
+            <input type="checkbox" name="items" value="&#x8DB3;&#x7403;">&#x8DB3;&#x7403;
+            <input type="checkbox" name="items" value="&#x7BEE;&#x7403;">&#x7BEE;&#x7403;
+            <input type="checkbox" name="items" value="&#x7FBD;&#x6BDB;&#x7403;">&#x7FBD;&#x6BDB;&#x7403;
+            <input type="checkbox" name="items" value="&#x4E52;&#x4E53;&#x7403;">&#x4E52;&#x4E53;&#x7403;
+            <input type="button" id="CheckedAll" value="&#x5168; &#x9009;">
+            <input type="button" id="CheckedNo" value="&#x5168;&#x4E0D;&#x9009;">
+            <input type="button" id="CheckedRev" value="&#x53CD;&#x9009;">
+            <input type="button" id="send" value="&#x63D0; &#x4EA4;">
         </form>
 
         <script src="jquery.min.js" charset="utf-8"></script>
-        <script src="002.js" charset="utf-8"></script>
+        <script src="003.js" charset="utf-8"></script>
     </body>
 </html>
 ]]></content>
@@ -1788,7 +1795,7 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&amp;&amp;&quot;set&quot;in e&amp;&a
 &lt;html&gt;
     &lt;head&gt;
         &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;title&gt;&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x591A;&amp;#x884C;&amp;#x6587;&amp;#
+        &lt;title&gt;&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x590D;&amp;#x9009;&amp;#x6846;&amp;#
     
     </summary>
     
