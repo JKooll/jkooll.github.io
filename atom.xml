@@ -1456,24 +1456,21 @@ $(&quot;element&quot;).bind(&quot;click&quot;,funciton(event){
     <link href="http://JKooll.github.io/2017/01/17/note-1/001/"/>
     <id>http://JKooll.github.io/2017/01/17/note-1/001/</id>
     <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-17T08:03:24.699Z</updated>
+    <updated>2017-02-17T08:01:40.352Z</updated>
     
-    <content type="html"><![CDATA[$(function() {
-    $(&quot;:input&quot;).focus(function() {
-        $(this).addClass(&quot;focus&quot;);
-    }) .blur(function(){
-        $(this).removeClass(&quot;focus&quot;);
-    });
-});
+    <content type="html"><![CDATA[.focus {
+    border: 1px solid #f00;
+    background: #fcc;
+}
 ]]></content>
     
     <summary type="html">
     
-      $(function() {
-    $(&amp;quot;:input&amp;quot;).focus(function() {
-        $(this).addClass(&amp;quot;focus&amp;quot;);
-    }) .blur(function(){
-        $(
+      .focus {
+    border: 1px solid #f00;
+    background: #fcc;
+}
+
     
     </summary>
     
@@ -1610,55 +1607,6 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&amp;&amp;&quot;set&quot;in e&amp;&a
   
   <entry>
     <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/003/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/003/</id>
-    <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-17T11:14:31.164Z</updated>
-    
-    <content type="html"><![CDATA[$(function() {
-    var $items = $(&quot;[name=items]:checkbox&quot;);
-    $(&quot;#CheckedAll&quot;).click(function() {
-
-        $items.attr(&quot;checked&quot;, true);
-    });
-
-    $(&quot;#CheckedNo&quot;).click(function() {
-        $items.attr(&quot;checked&quot;, false);
-    });
-
-    $(&quot;#CheckedRev&quot;).click(function() {
-        $(&quot;[name=items]:checkbox&quot;).each(function() {
-            this.checked = !this.checked;
-        });
-    });
-
-    $(&quot;#send&quot;).click(function() {
-        let str = &quot;&#x9009;&#x4E2D;&#x7684;&#x662F;&#xFF1A; \r\n&quot;;
-
-        $(&quot;[name=items]:checkbox:checked&quot;).each(function() {
-            str += $(this).val()+&quot;\r\n&quot;;
-        });
-
-        alert(str);
-    });
-});
-]]></content>
-    
-    <summary type="html">
-    
-      $(function() {
-    var $items = $(&amp;quot;[name=items]:checkbox&amp;quot;);
-    $(&amp;quot;#CheckedAll&amp;quot;).click(function() {
-
-        $items.attr
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
     <link href="http://JKooll.github.io/2017/01/17/note-1/004/"/>
     <id>http://JKooll.github.io/2017/01/17/note-1/004/</id>
     <published>2017-01-16T16:00:00.000Z</published>
@@ -1723,6 +1671,55 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&amp;&amp;&quot;set&quot;in e&amp;&a
     <link href="http://JKooll.github.io/2017/01/17/note-1/003/"/>
     <id>http://JKooll.github.io/2017/01/17/note-1/003/</id>
     <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-17T11:14:31.164Z</updated>
+    
+    <content type="html"><![CDATA[$(function() {
+    var $items = $(&quot;[name=items]:checkbox&quot;);
+    $(&quot;#CheckedAll&quot;).click(function() {
+
+        $items.attr(&quot;checked&quot;, true);
+    });
+
+    $(&quot;#CheckedNo&quot;).click(function() {
+        $items.attr(&quot;checked&quot;, false);
+    });
+
+    $(&quot;#CheckedRev&quot;).click(function() {
+        $(&quot;[name=items]:checkbox&quot;).each(function() {
+            this.checked = !this.checked;
+        });
+    });
+
+    $(&quot;#send&quot;).click(function() {
+        let str = &quot;&#x9009;&#x4E2D;&#x7684;&#x662F;&#xFF1A; \r\n&quot;;
+
+        $(&quot;[name=items]:checkbox:checked&quot;).each(function() {
+            str += $(this).val()+&quot;\r\n&quot;;
+        });
+
+        alert(str);
+    });
+});
+]]></content>
+    
+    <summary type="html">
+    
+      $(function() {
+    var $items = $(&amp;quot;[name=items]:checkbox&amp;quot;);
+    $(&amp;quot;#CheckedAll&amp;quot;).click(function() {
+
+        $items.attr
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/003/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/003/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
     <updated>2017-02-18T11:52:57.508Z</updated>
     
     <content type="html"><![CDATA[<!DOCTYPE html>
@@ -1765,24 +1762,51 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&amp;&amp;&quot;set&quot;in e&amp;&a
   
   <entry>
     <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/001/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/001/</id>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/002/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/002/</id>
     <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-17T08:01:40.352Z</updated>
+    <updated>2017-02-17T09:09:14.322Z</updated>
     
-    <content type="html"><![CDATA[.focus {
-    border: 1px solid #f00;
-    background: #fcc;
-}
+    <content type="html"><![CDATA[$(function() {
+    var $comment = $(&quot;#comment&quot;);
+
+    $(&quot;.bigger&quot;).click(function() {
+        if(!$comment.is(&quot;:animated&quot;)) {
+            if($comment.height() &lt; 500) {
+                $comment.animate({&quot;height&quot; : &quot;+=50&quot;}, 400);
+            }
+        }
+    });
+
+    $(&quot;.smaller&quot;).click(function() {
+        if(!$comment.is(&quot;:animated&quot;)) {
+            if($comment.height() &gt; 50) {
+                $comment.animate({&quot;height&quot; : &quot;-=50&quot;}, 400);
+            }
+        }
+    });
+
+    $(&quot;.up&quot;).click(function() {
+        if(!$comment.is(&quot;:animated&quot;)) {
+            $comment.animate({&quot;scrollTop&quot; : &quot;-=50&quot;}, 400);
+        }
+    });
+
+    $(&quot;.down&quot;).click(function() {
+        if(!$comment.is(&quot;animated&quot;)) {
+            $comment.animate({&quot;scrollTop&quot; : &quot;+=50&quot;}, 400);
+        }
+    })
+});
 ]]></content>
     
     <summary type="html">
     
-      .focus {
-    border: 1px solid #f00;
-    background: #fcc;
-}
+      $(function() {
+    var $comment = $(&amp;quot;#comment&amp;quot;);
 
+    $(&amp;quot;.bigger&amp;quot;).click(function() {
+        if(!$comment.is(&amp;quot;:ani
     
     </summary>
     
