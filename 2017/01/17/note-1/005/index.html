@@ -86,31 +86,34 @@
 
 
 
-<meta name="description" content="&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x8868;&amp;#x5355;&amp;#x9A8C;&amp;#x8BC1;
-    
-    
-        
-            
-                &amp;#x7528;&amp;#x6237;&amp;#x540D;&amp;#xFF1A;">
+<meta name="description" content="$(function() {
+    $(&amp;quot;form :input.required&amp;quot;).each(function() {
+        var $required = $(&amp;quot; *&amp;quot;);
+        $(this).parent().append($required);
+    });
+
+    $(&amp;quot;form :input&amp;quot;).">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JKol-Blog">
 <meta property="og:url" content="http://JKooll.github.io/2017/01/17/note-1/005/index.html">
 <meta property="og:site_name" content="JKol-Blog">
-<meta property="og:description" content="&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x8868;&amp;#x5355;&amp;#x9A8C;&amp;#x8BC1;
-    
-    
-        
-            
-                &amp;#x7528;&amp;#x6237;&amp;#x540D;&amp;#xFF1A;">
-<meta property="og:updated_time" content="2017-02-18T13:03:42.159Z">
+<meta property="og:description" content="$(function() {
+    $(&amp;quot;form :input.required&amp;quot;).each(function() {
+        var $required = $(&amp;quot; *&amp;quot;);
+        $(this).parent().append($required);
+    });
+
+    $(&amp;quot;form :input&amp;quot;).">
+<meta property="og:updated_time" content="2017-02-18T13:37:41.857Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JKol-Blog">
-<meta name="twitter:description" content="&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x8868;&amp;#x5355;&amp;#x9A8C;&amp;#x8BC1;
-    
-    
-        
-            
-                &amp;#x7528;&amp;#x6237;&amp;#x540D;&amp;#xFF1A;">
+<meta name="twitter:description" content="$(function() {
+    $(&amp;quot;form :input.required&amp;quot;).each(function() {
+        var $required = $(&amp;quot; *&amp;quot;);
+        $(this).parent().append($required);
+    });
+
+    $(&amp;quot;form :input&amp;quot;).">
 
 
 
@@ -412,39 +415,54 @@
       
 
       
-        <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x8868;&#x5355;&#x9A8C;&#x8BC1;</title>
-    </head>
-    <body>
-        <form action="" method="post">
-            <div class="int">
-                <label for="username">&#x7528;&#x6237;&#x540D;&#xFF1A;</label>
-                <input type="text" id="username" class="required">
-            </div>
+        $(function() {
+    $(&quot;form :input.required&quot;).each(function() {
+        var $required = $(&quot;<strong class="high"> *</strong>&quot;);
+        $(this).parent().append($required);
+    });
 
-            <div class="int">
-                <label for="email">&#x90AE;&#x7BB1;&#xFF1A;</label>
-                <input type="text" id="email" class="required">
-            </div>
+    $(&quot;form :input&quot;).blur(function(){
+        var $parent = $(this).parent();
 
-            <div class="int">
-                <label for="personinfo">&#x4E2A;&#x4EBA;&#x8D44;&#x6599;&#xFF1A;</label>
-                <input type="text" id="personinfo">
-            </div>
+        $parent.find(&quot;.formtips&quot;).remove();
 
-            <div class="sub">
-                <input type="submit" id="send" value="&#x63D0;&#x4EA4;">
-                <input type="reset" id="res">
-            </div>
-        </form>
+        if($(this).is(&apos;#username&apos;)) {
+            if( this.value == &quot;&quot; || this.value.length &lt; 6) {
+                var errorMsg = &quot;&#x8BF7;&#x8F93;&#x5165;&#x81F3;&#x5C11;6&#x4F4D;&#x7684;&#x7528;&#x6237;&#x540D;.&quot;;
 
-        <script src="jquery.min.js" charset="utf-8"></script>
-        <script src="005.js" charset="utf-8"></script>
-    </body>
-</html>
+                $parent.append(&apos;<span class="formtips onError">&apos; + errorMsg + &apos;</span>&apos;);
+            } else {
+                var okMsg = &quot;&#x8F93;&#x5165;&#x6B63;&#x786E;.&quot;;
+
+                $parent.append(&apos;<span class="formtips onSuccess">&apos; + okMsg + &apos;</span>&apos;);
+            }
+        }
+
+        if($(this).is(&apos;#email&apos;)) {
+            if(this.value == &quot;&quot; || (this.value != &quot;&quot; &amp;&amp; !/.+@.+\.[a-zA-Z]{2,4}$/.test(this.value))) {
+                var errorMsg = &quot;&#x8BF7;&#x8F93;&#x5165;&#x6B63;&#x786E;&#x7684;E-Mail&#x5730;&#x5740;.&quot;;
+
+                $parent.append(&apos;<span class="formtips onError">&apos; + errorMsg + &apos;</span>&apos;);
+            } else {
+                var okMsg = &apos;&#x8F93;&#x5165;&#x6B63;&#x786E;.&apos;;
+
+                $parent.append(&apos;<span class="formtips onSuccess">&apos; + okMsg + &apos;</span>&apos;);
+            }
+        }
+    });
+
+    $(&apos;#send&apos;).click(function() {
+        $(&apos;form .required:input&apos;).trigger(&apos;blur&apos;);
+
+        var numError = $(&apos;form .onError&apos;).length;
+
+        if(numError) {
+            return false;
+        }
+
+        alert(&quot;&#x53D1;&#x9001;&#x6210;&#x529F;&#xFF01;&quot;);
+    });
+});
 
       
     </div>
@@ -487,7 +505,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/17/note-1/006/" rel="next" title="">
+              <a href="/2017/01/17/note-1/004/" rel="next" title="">
                 <i class="fa fa-chevron-left"></i> 
               </a>
             
@@ -497,7 +515,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/01/17/note-1/005/" rel="prev" title="">
+              <a href="/2017/01/17/note-1/006/" rel="prev" title="">
                  <i class="fa fa-chevron-right"></i>
               </a>
             
