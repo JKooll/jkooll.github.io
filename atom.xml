@@ -508,7 +508,7 @@ function merge_jsonobject(jsonobj1, jsonobj2)
     <link href="http://JKooll.github.io/2017/01/17/note-1/"/>
     <id>http://JKooll.github.io/2017/01/17/note-1/</id>
     <published>2017-01-17T09:50:53.000Z</published>
-    <updated>2017-01-28T11:10:06.298Z</updated>
+    <updated>2017-02-19T07:18:40.521Z</updated>
     
     <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title="$()"></a>$()</h2><ul>
 <li><p>$(document).ready(function() {});</p>
@@ -1338,7 +1338,7 @@ $(&quot;element&quot;).bind(&quot;click&quot;,funciton(event){
 <li><p>fadeTo() //&#x628A;&#x5143;&#x7D20;&#x7684;&#x4E0D;&#x900F;&#x660E;&#x5EA6;&#x4EE5;&#x6E10;&#x8FDB;&#x65B9;&#x5F0F;&#x8C03;&#x6574;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x503C;&#x3002;</p>
 </li>
 </ul>
-<h2 id="jQuery&#x5BF9;&#x8868;&#x5355;&#xFF0C;&#x8868;&#x683C;&#x7684;&#x64CD;&#x4F5C;&#x53CA;&#x66F4;&#x591A;&#x5E94;&#x7528;"><a href="#jQuery&#x5BF9;&#x8868;&#x5355;&#xFF0C;&#x8868;&#x683C;&#x7684;&#x64CD;&#x4F5C;&#x53CA;&#x66F4;&#x591A;&#x5E94;&#x7528;" class="headerlink" title="jQuery&#x5BF9;&#x8868;&#x5355;&#xFF0C;&#x8868;&#x683C;&#x7684;&#x64CD;&#x4F5C;&#x53CA;&#x66F4;&#x591A;&#x5E94;&#x7528;"></a>jQuery&#x5BF9;&#x8868;&#x5355;&#xFF0C;&#x8868;&#x683C;&#x7684;&#x64CD;&#x4F5C;&#x53CA;&#x66F4;&#x591A;&#x5E94;&#x7528;</h2><h3 id="&#x8868;&#x5355;&#x5E94;&#x7528;-&#x6D4B;&#x8BD5;"><a href="#&#x8868;&#x5355;&#x5E94;&#x7528;-&#x6D4B;&#x8BD5;" class="headerlink" title="&#x8868;&#x5355;&#x5E94;&#x7528; &#x6D4B;&#x8BD5;"></a>&#x8868;&#x5355;&#x5E94;&#x7528; <a href="test.html">&#x6D4B;&#x8BD5;</a></h3><h4 id="&#x5355;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;"><a href="#&#x5355;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;" class="headerlink" title="&#x5355;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;"></a>&#x5355;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;</h4><h4 id="&#x591A;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;"><a href="#&#x591A;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;" class="headerlink" title="&#x591A;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;"></a>&#x591A;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;</h4><h4 id="&#x590D;&#x9009;&#x6846;&#x5E94;&#x7528;"><a href="#&#x590D;&#x9009;&#x6846;&#x5E94;&#x7528;" class="headerlink" title="&#x590D;&#x9009;&#x6846;&#x5E94;&#x7528;"></a>&#x590D;&#x9009;&#x6846;&#x5E94;&#x7528;</h4><h4 id="&#x4E0B;&#x62C9;&#x6846;&#x5E94;&#x7528;"><a href="#&#x4E0B;&#x62C9;&#x6846;&#x5E94;&#x7528;" class="headerlink" title="&#x4E0B;&#x62C9;&#x6846;&#x5E94;&#x7528;"></a>&#x4E0B;&#x62C9;&#x6846;&#x5E94;&#x7528;</h4><h4 id="&#x8868;&#x5355;&#x9A8C;&#x8BC1;"><a href="#&#x8868;&#x5355;&#x9A8C;&#x8BC1;" class="headerlink" title="&#x8868;&#x5355;&#x9A8C;&#x8BC1;"></a>&#x8868;&#x5355;&#x9A8C;&#x8BC1;</h4><h3 id="&#x8868;&#x683C;&#x5E94;&#x7528;"><a href="#&#x8868;&#x683C;&#x5E94;&#x7528;" class="headerlink" title="&#x8868;&#x683C;&#x5E94;&#x7528;"></a>&#x8868;&#x683C;&#x5E94;&#x7528;</h3><h4 id="&#x8868;&#x683C;&#x53D8;&#x8272;"><a href="#&#x8868;&#x683C;&#x53D8;&#x8272;" class="headerlink" title="&#x8868;&#x683C;&#x53D8;&#x8272;"></a>&#x8868;&#x683C;&#x53D8;&#x8272;</h4><h4 id="&#x8868;&#x683C;&#x5C55;&#x5F00;&#x5173;&#x95ED;"><a href="#&#x8868;&#x683C;&#x5C55;&#x5F00;&#x5173;&#x95ED;" class="headerlink" title="&#x8868;&#x683C;&#x5C55;&#x5F00;&#x5173;&#x95ED;"></a>&#x8868;&#x683C;&#x5C55;&#x5F00;&#x5173;&#x95ED;</h4><h4 id="&#x8868;&#x683C;&#x5185;&#x5BB9;&#x7B5B;&#x9009;"><a href="#&#x8868;&#x683C;&#x5185;&#x5BB9;&#x7B5B;&#x9009;" class="headerlink" title="&#x8868;&#x683C;&#x5185;&#x5BB9;&#x7B5B;&#x9009;"></a>&#x8868;&#x683C;&#x5185;&#x5BB9;&#x7B5B;&#x9009;</h4><h3 id="&#x5176;&#x4ED6;&#x5E94;&#x7528;"><a href="#&#x5176;&#x4ED6;&#x5E94;&#x7528;" class="headerlink" title="&#x5176;&#x4ED6;&#x5E94;&#x7528;"></a>&#x5176;&#x4ED6;&#x5E94;&#x7528;</h3><h4 id="&#x7F51;&#x9875;&#x6587;&#x5B57;&#x5927;&#x5C0F;"><a href="#&#x7F51;&#x9875;&#x6587;&#x5B57;&#x5927;&#x5C0F;" class="headerlink" title="&#x7F51;&#x9875;&#x6587;&#x5B57;&#x5927;&#x5C0F;"></a>&#x7F51;&#x9875;&#x6587;&#x5B57;&#x5927;&#x5C0F;</h4><h4 id="&#x7F51;&#x9875;&#x9009;&#x9879;&#x5361;"><a href="#&#x7F51;&#x9875;&#x9009;&#x9879;&#x5361;" class="headerlink" title="&#x7F51;&#x9875;&#x9009;&#x9879;&#x5361;"></a>&#x7F51;&#x9875;&#x9009;&#x9879;&#x5361;</h4><h4 id="&#x7F51;&#x9875;&#x6362;&#x80A4;"><a href="#&#x7F51;&#x9875;&#x6362;&#x80A4;" class="headerlink" title="&#x7F51;&#x9875;&#x6362;&#x80A4;"></a>&#x7F51;&#x9875;&#x6362;&#x80A4;</h4><h2 id="jQuery&#x4E0E;Ajax"><a href="#jQuery&#x4E0E;Ajax" class="headerlink" title="jQuery&#x4E0E;Ajax"></a>jQuery&#x4E0E;Ajax</h2><h3 id="Ajax&#x7684;&#x4F18;&#x52BF;&#x548C;&#x4E0D;&#x8DB3;"><a href="#Ajax&#x7684;&#x4F18;&#x52BF;&#x548C;&#x4E0D;&#x8DB3;" class="headerlink" title="Ajax&#x7684;&#x4F18;&#x52BF;&#x548C;&#x4E0D;&#x8DB3;"></a>Ajax&#x7684;&#x4F18;&#x52BF;&#x548C;&#x4E0D;&#x8DB3;</h3><h4 id="Ajax&#x7684;&#x4F18;&#x52BF;"><a href="#Ajax&#x7684;&#x4F18;&#x52BF;" class="headerlink" title="Ajax&#x7684;&#x4F18;&#x52BF;"></a>Ajax&#x7684;&#x4F18;&#x52BF;</h4><h4 id="Ajax&#x7684;&#x4E0D;&#x8DB3;"><a href="#Ajax&#x7684;&#x4E0D;&#x8DB3;" class="headerlink" title="Ajax&#x7684;&#x4E0D;&#x8DB3;"></a>Ajax&#x7684;&#x4E0D;&#x8DB3;</h4><h3 id="Ajax&#x7684;XMLHttpRequest&#x5BF9;&#x8C61;"><a href="#Ajax&#x7684;XMLHttpRequest&#x5BF9;&#x8C61;" class="headerlink" title="Ajax&#x7684;XMLHttpRequest&#x5BF9;&#x8C61;"></a>Ajax&#x7684;XMLHttpRequest&#x5BF9;&#x8C61;</h3><h3 id="&#x5B89;&#x88C5;Web&#x73AF;&#x5883;-&#x2013;-AppServ"><a href="#&#x5B89;&#x88C5;Web&#x73AF;&#x5883;-&#x2013;-AppServ" class="headerlink" title="&#x5B89;&#x88C5;Web&#x73AF;&#x5883; &#x2013; AppServ"></a>&#x5B89;&#x88C5;Web&#x73AF;&#x5883; &#x2013; AppServ</h3><h3 id="&#x7F16;&#x5199;&#x7B2C;&#x4E00;&#x4E2A;Ajax&#x4F8B;&#x5B50;"><a href="#&#x7F16;&#x5199;&#x7B2C;&#x4E00;&#x4E2A;Ajax&#x4F8B;&#x5B50;" class="headerlink" title="&#x7F16;&#x5199;&#x7B2C;&#x4E00;&#x4E2A;Ajax&#x4F8B;&#x5B50;"></a>&#x7F16;&#x5199;&#x7B2C;&#x4E00;&#x4E2A;Ajax&#x4F8B;&#x5B50;</h3><h3 id="jQuery&#x4E2D;&#x7684;Ajax"><a href="#jQuery&#x4E2D;&#x7684;Ajax" class="headerlink" title="jQuery&#x4E2D;&#x7684;Ajax"></a>jQuery&#x4E2D;&#x7684;Ajax</h3><h4 id="load"><a href="#load" class="headerlink" title="load()"></a>load()</h4><h4 id="get-amp-post"><a href="#get-amp-post" class="headerlink" title="$.get() &amp; $.post()"></a>$.get() &amp; $.post()</h4><h4 id="ajax"><a href="#ajax" class="headerlink" title="$.ajax()"></a>$.ajax()</h4><h3 id="&#x5E8F;&#x5217;&#x5316;&#x5143;&#x7D20;"><a href="#&#x5E8F;&#x5217;&#x5316;&#x5143;&#x7D20;" class="headerlink" title="&#x5E8F;&#x5217;&#x5316;&#x5143;&#x7D20;"></a>&#x5E8F;&#x5217;&#x5316;&#x5143;&#x7D20;</h3><h3 id="jQuery&#x4E2D;&#x7684;Ajax&#x5168;&#x5C40;&#x4E8B;&#x4EF6;"><a href="#jQuery&#x4E2D;&#x7684;Ajax&#x5168;&#x5C40;&#x4E8B;&#x4EF6;" class="headerlink" title="jQuery&#x4E2D;&#x7684;Ajax&#x5168;&#x5C40;&#x4E8B;&#x4EF6;"></a>jQuery&#x4E2D;&#x7684;Ajax&#x5168;&#x5C40;&#x4E8B;&#x4EF6;</h3><h3 id="&#x57FA;&#x4E8E;jQuery&#x7684;Ajax&#x804A;&#x5929;&#x5BA4;&#x7A0B;&#x5E8F;"><a href="#&#x57FA;&#x4E8E;jQuery&#x7684;Ajax&#x804A;&#x5929;&#x5BA4;&#x7A0B;&#x5E8F;" class="headerlink" title="&#x57FA;&#x4E8E;jQuery&#x7684;Ajax&#x804A;&#x5929;&#x5BA4;&#x7A0B;&#x5E8F;"></a>&#x57FA;&#x4E8E;jQuery&#x7684;Ajax&#x804A;&#x5929;&#x5BA4;&#x7A0B;&#x5E8F;</h3><h2 id="&#x63D2;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#x548C;&#x5199;&#x6CD5;"><a href="#&#x63D2;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#x548C;&#x5199;&#x6CD5;" class="headerlink" title="&#x63D2;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#x548C;&#x5199;&#x6CD5;"></a>&#x63D2;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#x548C;&#x5199;&#x6CD5;</h2><h3 id="jQuery&#x8868;&#x5355;&#x9A8C;&#x8BC1;&#x63D2;&#x4EF6;&#x2013;Vaildation"><a href="#jQuery&#x8868;&#x5355;&#x9A8C;&#x8BC1;&#x63D2;&#x4EF6;&#x2013;Vaildation" class="headerlink" title="jQuery&#x8868;&#x5355;&#x9A8C;&#x8BC1;&#x63D2;&#x4EF6;&#x2013;Vaildation"></a>jQuery&#x8868;&#x5355;&#x9A8C;&#x8BC1;&#x63D2;&#x4EF6;&#x2013;Vaildation</h3><h3 id="jQuery&#x8868;&#x5355;&#x63D2;&#x4EF6;-&#x2013;-Form"><a href="#jQuery&#x8868;&#x5355;&#x63D2;&#x4EF6;-&#x2013;-Form" class="headerlink" title="jQuery&#x8868;&#x5355;&#x63D2;&#x4EF6; &#x2013; Form"></a>jQuery&#x8868;&#x5355;&#x63D2;&#x4EF6; &#x2013; Form</h3><h3 id="&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#x63D2;&#x4EF6;-&#x2013;-livequery"><a href="#&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#x63D2;&#x4EF6;-&#x2013;-livequery" class="headerlink" title="&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#x63D2;&#x4EF6; &#x2013; livequery"></a>&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#x63D2;&#x4EF6; &#x2013; livequery</h3><h3 id="jQuery-UI&#x63D2;&#x4EF6;"><a href="#jQuery-UI&#x63D2;&#x4EF6;" class="headerlink" title="jQuery UI&#x63D2;&#x4EF6;"></a>jQuery UI&#x63D2;&#x4EF6;</h3><h3 id="&#x7BA1;&#x7406;Cookie&#x7684;&#x63D2;&#x4EF6;-&#x2013;-Cookie"><a href="#&#x7BA1;&#x7406;Cookie&#x7684;&#x63D2;&#x4EF6;-&#x2013;-Cookie" class="headerlink" title="&#x7BA1;&#x7406;Cookie&#x7684;&#x63D2;&#x4EF6; &#x2013; Cookie"></a>&#x7BA1;&#x7406;Cookie&#x7684;&#x63D2;&#x4EF6; &#x2013; Cookie</h3><h3 id="&#x7F16;&#x5199;jQuery&#x63D2;&#x4EF6;"><a href="#&#x7F16;&#x5199;jQuery&#x63D2;&#x4EF6;" class="headerlink" title="&#x7F16;&#x5199;jQuery&#x63D2;&#x4EF6;"></a>&#x7F16;&#x5199;jQuery&#x63D2;&#x4EF6;</h3>]]></content>
+<h2 id="jQuery&#x5BF9;&#x8868;&#x5355;&#xFF0C;&#x8868;&#x683C;&#x7684;&#x64CD;&#x4F5C;&#x53CA;&#x66F4;&#x591A;&#x5E94;&#x7528;"><a href="#jQuery&#x5BF9;&#x8868;&#x5355;&#xFF0C;&#x8868;&#x683C;&#x7684;&#x64CD;&#x4F5C;&#x53CA;&#x66F4;&#x591A;&#x5E94;&#x7528;" class="headerlink" title="jQuery&#x5BF9;&#x8868;&#x5355;&#xFF0C;&#x8868;&#x683C;&#x7684;&#x64CD;&#x4F5C;&#x53CA;&#x66F4;&#x591A;&#x5E94;&#x7528;"></a>jQuery&#x5BF9;&#x8868;&#x5355;&#xFF0C;&#x8868;&#x683C;&#x7684;&#x64CD;&#x4F5C;&#x53CA;&#x66F4;&#x591A;&#x5E94;&#x7528;</h2><h3 id="&#x8868;&#x5355;&#x5E94;&#x7528;"><a href="#&#x8868;&#x5355;&#x5E94;&#x7528;" class="headerlink" title="&#x8868;&#x5355;&#x5E94;&#x7528;"></a>&#x8868;&#x5355;&#x5E94;&#x7528;</h3><h4 id="&#x5355;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;"><a href="#&#x5355;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;" class="headerlink" title="&#x5355;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;"></a><a href="001.html">&#x5355;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;</a></h4><h4 id="&#x591A;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;"><a href="#&#x591A;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;" class="headerlink" title="&#x591A;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;"></a><a href="002.html">&#x591A;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;</a></h4><h4 id="&#x590D;&#x9009;&#x6846;&#x5E94;&#x7528;"><a href="#&#x590D;&#x9009;&#x6846;&#x5E94;&#x7528;" class="headerlink" title="&#x590D;&#x9009;&#x6846;&#x5E94;&#x7528;"></a><a href="003.html">&#x590D;&#x9009;&#x6846;&#x5E94;&#x7528;</a></h4><h4 id="&#x4E0B;&#x62C9;&#x6846;&#x5E94;&#x7528;"><a href="#&#x4E0B;&#x62C9;&#x6846;&#x5E94;&#x7528;" class="headerlink" title="&#x4E0B;&#x62C9;&#x6846;&#x5E94;&#x7528;"></a><a href="004.html">&#x4E0B;&#x62C9;&#x6846;&#x5E94;&#x7528;</a></h4><h4 id="&#x8868;&#x5355;&#x9A8C;&#x8BC1;"><a href="#&#x8868;&#x5355;&#x9A8C;&#x8BC1;" class="headerlink" title="&#x8868;&#x5355;&#x9A8C;&#x8BC1;"></a><a href="005.html">&#x8868;&#x5355;&#x9A8C;&#x8BC1;</a></h4><h3 id="&#x8868;&#x683C;&#x5E94;&#x7528;"><a href="#&#x8868;&#x683C;&#x5E94;&#x7528;" class="headerlink" title="&#x8868;&#x683C;&#x5E94;&#x7528;"></a>&#x8868;&#x683C;&#x5E94;&#x7528;</h3><h4 id="&#x8868;&#x683C;&#x53D8;&#x8272;"><a href="#&#x8868;&#x683C;&#x53D8;&#x8272;" class="headerlink" title="&#x8868;&#x683C;&#x53D8;&#x8272;"></a><a href="006.html">&#x8868;&#x683C;&#x53D8;&#x8272;</a></h4><h4 id="&#x8868;&#x683C;&#x5C55;&#x5F00;&#x5173;&#x95ED;"><a href="#&#x8868;&#x683C;&#x5C55;&#x5F00;&#x5173;&#x95ED;" class="headerlink" title="&#x8868;&#x683C;&#x5C55;&#x5F00;&#x5173;&#x95ED;"></a><a href="007.html">&#x8868;&#x683C;&#x5C55;&#x5F00;&#x5173;&#x95ED;</a></h4><h4 id="&#x8868;&#x683C;&#x5185;&#x5BB9;&#x7B5B;&#x9009;"><a href="#&#x8868;&#x683C;&#x5185;&#x5BB9;&#x7B5B;&#x9009;" class="headerlink" title="&#x8868;&#x683C;&#x5185;&#x5BB9;&#x7B5B;&#x9009;"></a><a href="008.html">&#x8868;&#x683C;&#x5185;&#x5BB9;&#x7B5B;&#x9009;</a></h4><h3 id="&#x5176;&#x4ED6;&#x5E94;&#x7528;"><a href="#&#x5176;&#x4ED6;&#x5E94;&#x7528;" class="headerlink" title="&#x5176;&#x4ED6;&#x5E94;&#x7528;"></a>&#x5176;&#x4ED6;&#x5E94;&#x7528;</h3><h4 id="&#x7F51;&#x9875;&#x6587;&#x5B57;&#x5927;&#x5C0F;"><a href="#&#x7F51;&#x9875;&#x6587;&#x5B57;&#x5927;&#x5C0F;" class="headerlink" title="&#x7F51;&#x9875;&#x6587;&#x5B57;&#x5927;&#x5C0F;"></a><a href="009.html">&#x7F51;&#x9875;&#x6587;&#x5B57;&#x5927;&#x5C0F;</a></h4><h4 id="&#x7F51;&#x9875;&#x9009;&#x9879;&#x5361;"><a href="#&#x7F51;&#x9875;&#x9009;&#x9879;&#x5361;" class="headerlink" title="&#x7F51;&#x9875;&#x9009;&#x9879;&#x5361;"></a><a href="010.html">&#x7F51;&#x9875;&#x9009;&#x9879;&#x5361;</a></h4><h4 id="&#x7F51;&#x9875;&#x6362;&#x80A4;"><a href="#&#x7F51;&#x9875;&#x6362;&#x80A4;" class="headerlink" title="&#x7F51;&#x9875;&#x6362;&#x80A4;"></a><a href="011.html">&#x7F51;&#x9875;&#x6362;&#x80A4;</a></h4><h2 id="jQuery&#x4E0E;Ajax"><a href="#jQuery&#x4E0E;Ajax" class="headerlink" title="jQuery&#x4E0E;Ajax"></a>jQuery&#x4E0E;Ajax</h2><h3 id="Ajax&#x7684;&#x4F18;&#x52BF;&#x548C;&#x4E0D;&#x8DB3;"><a href="#Ajax&#x7684;&#x4F18;&#x52BF;&#x548C;&#x4E0D;&#x8DB3;" class="headerlink" title="Ajax&#x7684;&#x4F18;&#x52BF;&#x548C;&#x4E0D;&#x8DB3;"></a>Ajax&#x7684;&#x4F18;&#x52BF;&#x548C;&#x4E0D;&#x8DB3;</h3><h4 id="Ajax&#x7684;&#x4F18;&#x52BF;"><a href="#Ajax&#x7684;&#x4F18;&#x52BF;" class="headerlink" title="Ajax&#x7684;&#x4F18;&#x52BF;"></a>Ajax&#x7684;&#x4F18;&#x52BF;</h4><h4 id="Ajax&#x7684;&#x4E0D;&#x8DB3;"><a href="#Ajax&#x7684;&#x4E0D;&#x8DB3;" class="headerlink" title="Ajax&#x7684;&#x4E0D;&#x8DB3;"></a>Ajax&#x7684;&#x4E0D;&#x8DB3;</h4><h3 id="Ajax&#x7684;XMLHttpRequest&#x5BF9;&#x8C61;"><a href="#Ajax&#x7684;XMLHttpRequest&#x5BF9;&#x8C61;" class="headerlink" title="Ajax&#x7684;XMLHttpRequest&#x5BF9;&#x8C61;"></a>Ajax&#x7684;XMLHttpRequest&#x5BF9;&#x8C61;</h3><h3 id="&#x5B89;&#x88C5;Web&#x73AF;&#x5883;-&#x2013;-AppServ"><a href="#&#x5B89;&#x88C5;Web&#x73AF;&#x5883;-&#x2013;-AppServ" class="headerlink" title="&#x5B89;&#x88C5;Web&#x73AF;&#x5883; &#x2013; AppServ"></a>&#x5B89;&#x88C5;Web&#x73AF;&#x5883; &#x2013; AppServ</h3><h3 id="&#x7F16;&#x5199;&#x7B2C;&#x4E00;&#x4E2A;Ajax&#x4F8B;&#x5B50;"><a href="#&#x7F16;&#x5199;&#x7B2C;&#x4E00;&#x4E2A;Ajax&#x4F8B;&#x5B50;" class="headerlink" title="&#x7F16;&#x5199;&#x7B2C;&#x4E00;&#x4E2A;Ajax&#x4F8B;&#x5B50;"></a>&#x7F16;&#x5199;&#x7B2C;&#x4E00;&#x4E2A;Ajax&#x4F8B;&#x5B50;</h3><h3 id="jQuery&#x4E2D;&#x7684;Ajax"><a href="#jQuery&#x4E2D;&#x7684;Ajax" class="headerlink" title="jQuery&#x4E2D;&#x7684;Ajax"></a>jQuery&#x4E2D;&#x7684;Ajax</h3><h4 id="load"><a href="#load" class="headerlink" title="load()"></a>load()</h4><h4 id="get-amp-post"><a href="#get-amp-post" class="headerlink" title="$.get() &amp; $.post()"></a>$.get() &amp; $.post()</h4><h4 id="ajax"><a href="#ajax" class="headerlink" title="$.ajax()"></a>$.ajax()</h4><h3 id="&#x5E8F;&#x5217;&#x5316;&#x5143;&#x7D20;"><a href="#&#x5E8F;&#x5217;&#x5316;&#x5143;&#x7D20;" class="headerlink" title="&#x5E8F;&#x5217;&#x5316;&#x5143;&#x7D20;"></a>&#x5E8F;&#x5217;&#x5316;&#x5143;&#x7D20;</h3><h3 id="jQuery&#x4E2D;&#x7684;Ajax&#x5168;&#x5C40;&#x4E8B;&#x4EF6;"><a href="#jQuery&#x4E2D;&#x7684;Ajax&#x5168;&#x5C40;&#x4E8B;&#x4EF6;" class="headerlink" title="jQuery&#x4E2D;&#x7684;Ajax&#x5168;&#x5C40;&#x4E8B;&#x4EF6;"></a>jQuery&#x4E2D;&#x7684;Ajax&#x5168;&#x5C40;&#x4E8B;&#x4EF6;</h3><h3 id="&#x57FA;&#x4E8E;jQuery&#x7684;Ajax&#x804A;&#x5929;&#x5BA4;&#x7A0B;&#x5E8F;"><a href="#&#x57FA;&#x4E8E;jQuery&#x7684;Ajax&#x804A;&#x5929;&#x5BA4;&#x7A0B;&#x5E8F;" class="headerlink" title="&#x57FA;&#x4E8E;jQuery&#x7684;Ajax&#x804A;&#x5929;&#x5BA4;&#x7A0B;&#x5E8F;"></a>&#x57FA;&#x4E8E;jQuery&#x7684;Ajax&#x804A;&#x5929;&#x5BA4;&#x7A0B;&#x5E8F;</h3><h2 id="&#x63D2;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#x548C;&#x5199;&#x6CD5;"><a href="#&#x63D2;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#x548C;&#x5199;&#x6CD5;" class="headerlink" title="&#x63D2;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#x548C;&#x5199;&#x6CD5;"></a>&#x63D2;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#x548C;&#x5199;&#x6CD5;</h2><h3 id="jQuery&#x8868;&#x5355;&#x9A8C;&#x8BC1;&#x63D2;&#x4EF6;&#x2013;Vaildation"><a href="#jQuery&#x8868;&#x5355;&#x9A8C;&#x8BC1;&#x63D2;&#x4EF6;&#x2013;Vaildation" class="headerlink" title="jQuery&#x8868;&#x5355;&#x9A8C;&#x8BC1;&#x63D2;&#x4EF6;&#x2013;Vaildation"></a>jQuery&#x8868;&#x5355;&#x9A8C;&#x8BC1;&#x63D2;&#x4EF6;&#x2013;Vaildation</h3><h3 id="jQuery&#x8868;&#x5355;&#x63D2;&#x4EF6;-&#x2013;-Form"><a href="#jQuery&#x8868;&#x5355;&#x63D2;&#x4EF6;-&#x2013;-Form" class="headerlink" title="jQuery&#x8868;&#x5355;&#x63D2;&#x4EF6; &#x2013; Form"></a>jQuery&#x8868;&#x5355;&#x63D2;&#x4EF6; &#x2013; Form</h3><h3 id="&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#x63D2;&#x4EF6;-&#x2013;-livequery"><a href="#&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#x63D2;&#x4EF6;-&#x2013;-livequery" class="headerlink" title="&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#x63D2;&#x4EF6; &#x2013; livequery"></a>&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#x63D2;&#x4EF6; &#x2013; livequery</h3><h3 id="jQuery-UI&#x63D2;&#x4EF6;"><a href="#jQuery-UI&#x63D2;&#x4EF6;" class="headerlink" title="jQuery UI&#x63D2;&#x4EF6;"></a>jQuery UI&#x63D2;&#x4EF6;</h3><h3 id="&#x7BA1;&#x7406;Cookie&#x7684;&#x63D2;&#x4EF6;-&#x2013;-Cookie"><a href="#&#x7BA1;&#x7406;Cookie&#x7684;&#x63D2;&#x4EF6;-&#x2013;-Cookie" class="headerlink" title="&#x7BA1;&#x7406;Cookie&#x7684;&#x63D2;&#x4EF6; &#x2013; Cookie"></a>&#x7BA1;&#x7406;Cookie&#x7684;&#x63D2;&#x4EF6; &#x2013; Cookie</h3><h3 id="&#x7F16;&#x5199;jQuery&#x63D2;&#x4EF6;"><a href="#&#x7F16;&#x5199;jQuery&#x63D2;&#x4EF6;" class="headerlink" title="&#x7F16;&#x5199;jQuery&#x63D2;&#x4EF6;"></a>&#x7F16;&#x5199;jQuery&#x63D2;&#x4EF6;</h3>]]></content>
     
     <summary type="html">
     
@@ -1427,42 +1427,42 @@ $(&quot;element&quot;).bind(&quot;click&quot;,funciton(event){
   
   <entry>
     <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/001/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/001/</id>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/010/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/010/</id>
     <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-18T11:53:06.576Z</updated>
+    <updated>2017-02-19T02:58:09.100Z</updated>
     
     <content type="html"><![CDATA[<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x5355;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;</title>
-        <link rel="stylesheet" href="001.css">
+        <title>&#x7F51;&#x9875;&#x9009;&#x9879;&#x5361;</title>
+        <link rel="stylesheet" href="010.css">
     </head>
     <body>
-        <form action="#" method="post" id="regForm">
-            <fieldset>
-                <legend>&#x4E2A;&#x4EBA;&#x57FA;&#x672C;&#x4FE1;&#x606F;</legend>
-
+        <!-- <div class="tab"> -->
+            <div class="tab_menu">
+                <ul>
+                    <li class="selected">&#x65F6;&#x4E8B;</li>
+                    <li>&#x4F53;&#x80B2;</li>
+                    <li>&#x5A31;&#x4E50;</li>
+                </ul>
+            </div>
+            <div class="tab_box">
                 <div>
-                    <label for="username">&#x540D;&#x79F0;&#xFF1A;</label>
-                    <input type="text" id="username">
+                    &#x65F6;&#x4E8B;
                 </div>
-
-                <div>
-                    <label for="pass">&#x5BC6;&#x7801;&#xFF1A;</label>
-                    <input id="pass" type="password">
+                <div class="hide">
+                    &#x4F53;&#x80B2;
                 </div>
-
-                <div>
-                    <label for="msg">&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF1A;</label>
-                    <textarea id="msg"></textarea>
+                <div class="hide">
+                    &#x5A31;&#x4E50;
                 </div>
-            </fieldset>
-        </form>
+            </div>
+        
 
         <script src="jquery.min.js" charset="utf-8"></script>
-        <script src="001.js" charset="utf-8"></script>
+        <script src="010.js" charset="utf-8"></script>
     </body>
 </html>
 ]]></content>
@@ -1473,7 +1473,8 @@ $(&quot;element&quot;).bind(&quot;click&quot;,funciton(event){
 &lt;html&gt;
     &lt;head&gt;
         &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;title&gt;&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x5355;&amp;#x884C;&amp;#x6587;&amp;#
+        &lt;title&gt;&amp;#x7F51;&amp;#x9875;&amp;#x9009;&amp;#x9879;&amp;#x5361;&lt;/title&gt;
+        &lt;li
     
     </summary>
     
@@ -1482,24 +1483,254 @@ $(&quot;element&quot;).bind(&quot;click&quot;,funciton(event){
   
   <entry>
     <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/001/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/001/</id>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/009/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/009/</id>
     <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-17T08:01:40.352Z</updated>
+    <updated>2017-02-19T02:43:26.169Z</updated>
     
-    <content type="html"><![CDATA[.focus {
-    border: 1px solid #f00;
-    background: #fcc;
-}
+    <content type="html"><![CDATA[$(function() {
+    $(&quot;span&quot;).click(function() {
+        var thisEle = $(&quot;#para&quot;).css(&quot;font-size&quot;);
+
+        //&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;10&#x4EE3;&#x8868;&#x5341;&#x8FDB;&#x5236;
+        var textFontSize = parseFloat(thisEle, 10);
+
+        console.log(thisEle);
+        console.log(textFontSize);
+
+        //&#x83B7;&#x53D6;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x5355;&#x4F4D; px...
+        var unit = thisEle.slice(-2);
+
+        var cName = $(this).attr(&quot;class&quot;);
+
+        if(cName == &quot;bigger&quot;) {
+            textFontSize += 2;
+        } else if(cName == &quot;smaller&quot;) {
+            textFontSize -= 2;
+        }
+
+        $(&quot;#para&quot;).css(&quot;font-size&quot;, textFontSize + unit);
+    });
+});
 ]]></content>
     
     <summary type="html">
     
-      .focus {
-    border: 1px solid #f00;
-    background: #fcc;
-}
+      $(function() {
+    $(&amp;quot;span&amp;quot;).click(function() {
+        var thisEle = $(&amp;quot;#para&amp;quot;).css(&amp;quot;font-size&amp;quot;);
 
+        //
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/008/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/008/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-19T02:11:47.956Z</updated>
+    
+    <content type="html"><![CDATA[$(function() {
+    $(&quot;#filterName&quot;).keyup(function(event) {
+        $(&quot;table tr&quot;).hide()
+                        .filter(&quot;:contains(&quot; + $(this).val()+&quot;)&quot;)
+                        .show();
+    });
+});
+]]></content>
+    
+    <summary type="html">
+    
+      $(function() {
+    $(&amp;quot;#filterName&amp;quot;).keyup(function(event) {
+        $(&amp;quot;table tr&amp;quot;).hide()
+                        .filter
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/009/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/009/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-19T02:21:34.774Z</updated>
+    
+    <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>&#x7F51;&#x9875;&#x5B57;&#x4F53;&#x5927;&#x5C0F;</title>
+    </head>
+    <body>
+        <div class="msg">
+            <div class="msg_caption">
+                <span class="bigger">&#x653E;&#x5927;</span>
+                <span class="smaller">&#x7F29;&#x5C0F;</span>
+            </div>
+            <div>
+                <p id="para">
+                    This is some text.This is some text.
+                    This is some text.This is some text.
+                    This is some text.This is some text.
+                    This is some text.This is some text.
+                </p>
+            </div>
+        </div>
+
+        <script src="jquery.min.js" charset="utf-8"></script>
+        <script src="009.js" charset="utf-8"></script>
+    </body>
+</html>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;&amp;#x7F51;&amp;#x9875;&amp;#x5B57;&amp;#x4F53;&amp;#x5927;&amp;#x5C0F;&lt;/title&gt;
+   
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/007/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/007/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-18T15:12:42.943Z</updated>
+    
+    <content type="html"><![CDATA[$(function() {
+    $(&apos;li.parent&apos;).click(function() {
+        $(this)
+            .toggleClass(&quot;selected&quot;)
+            .siblings(&apos;.child_1&apos;).toggle();
+    });
+});
+]]></content>
+    
+    <summary type="html">
+    
+      $(function() {
+    $(&amp;apos;li.parent&amp;apos;).click(function() {
+        $(this)
+            .toggleClass(&amp;quot;selected&amp;quot;)
+            .s
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/008/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/008/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-19T01:22:35.773Z</updated>
+    
+    <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>&#x8868;&#x683C;&#x5E94;&#x7528;--&#x8868;&#x683C;&#x5185;&#x5BB9;&#x7B5B;&#x9009;</title>
+    </head>
+    <body>
+        <div>
+            <label for="filterName">&#x7B5B;&#x9009;:</label>
+            <input type="text" id="filterName" value="">
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>&#x59D3;&#x540D;</th><th>&#x5E74;&#x9F84;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>&#x5F20;&#x4E09;</th><th>13</th>
+                </tr>
+                <tr>
+                    <th>&#x5F20;&#x4E94;</th><th>23</th>
+                </tr>
+                <tr>
+                    <th>&#x738B;&#x7559;</th><th>18</th>
+                </tr>
+                <tr>
+                    <th>&#x5218;&#x4E8C;</th><th>21</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <script src="jquery.min.js" charset="utf-8"></script>
+        <script src="008.js" charset="utf-8"></script>
+    </body>
+</html>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;&amp;#x8868;&amp;#x683C;&amp;#x5E94;&amp;#x7528;--&amp;#x8868;&amp;#x683C;&amp;#x5185;&amp;#
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/007/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/007/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-19T00:20:39.611Z</updated>
+    
+    <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>&#x8868;&#x683C;&#x5E94;&#x7528;--&#x8868;&#x683C;&#x5C55;&#x5F00;&#x5173;&#x95ED;</title>
+        <link rel="stylesheet" href="007.css">
+    </head>
+    <body>
+        <ol>
+            <li class="parent" id="1">parent</li>
+            <ol class="child_1">
+                <li>child1</li>
+                <li>child2</li>
+                <li>child3</li>
+            </ol>
+
+        </ol>
+
+        <script src="jquery.min.js" charset="utf-8"></script>
+        <script src="007.js" charset="utf-8"></script>
+    </body>
+</html>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;&amp;#x8868;&amp;#x683C;&amp;#x5E94;&amp;#x7528;--&amp;#x8868;&amp;#x683C;&amp;#x5C55;&amp;#
     
     </summary>
     
@@ -1531,271 +1762,18 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&amp;&amp;&quot;set&quot;in e&amp;&a
   
   <entry>
     <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/005/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/005/</id>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/js.cookie.min/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/js.cookie.min/</id>
     <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-18T13:04:00.130Z</updated>
+    <updated>2017-02-19T03:57:23.942Z</updated>
     
-    <content type="html"><![CDATA[$(function() {
-    
-});
-]]></content>
+    <content type="html"><![CDATA[/*! js-cookie v2.1.3 | MIT */
+!function(a){var b=!1;if(&quot;function&quot;==typeof define&amp;&amp;define.amd&amp;&amp;(define(a),b=!0),&quot;object&quot;==typeof exports&amp;&amp;(module.exports=a(),b=!0),!b){var c=window.Cookies,d=window.Cookies=a();d.noConflict=function(){return window.Cookies=c,d}}}(function(){function a(){for(var a=0,b={};a<arguments.length;a++){var c="arguments[a];for(var" d="" in="" c)b[d]="c[d]}return" b}function="" b(c){function="" d(b,e,f){var="" g;if("undefined"!="typeof" document){if(arguments.length="">1){if(f=a({path:&quot;/&quot;},d.defaults,f),&quot;number&quot;==typeof f.expires){var h=new Date;h.setMilliseconds(h.getMilliseconds()+864e5*f.expires),f.expires=h}try{g=JSON.stringify(e),/^[\{\[]/.test(g)&amp;&amp;(e=g)}catch(i){}return e=c.write?c.write(e,b):encodeURIComponent(e+&quot;&quot;).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent),b=encodeURIComponent(b+&quot;&quot;),b=b.replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent),b=b.replace(/[\(\)]/g,escape),document.cookie=b+&quot;=&quot;+e+(f.expires?&quot;; expires=&quot;+f.expires.toUTCString():&quot;&quot;)+(f.path?&quot;; path=&quot;+f.path:&quot;&quot;)+(f.domain?&quot;; domain=&quot;+f.domain:&quot;&quot;)+(f.secure?&quot;; secure&quot;:&quot;&quot;)}b||(g={});for(var j=document.cookie?document.cookie.split(&quot;; &quot;):[],k=/(%[0-9A-Z]{2})+/g,l=0;l</arguments.length;a++){var>]]></content>
     
     <summary type="html">
     
-      $(function() {
-    
-});
-
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/005/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/005/</id>
-    <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-18T13:03:42.159Z</updated>
-    
-    <content type="html"><![CDATA[<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x8868;&#x5355;&#x9A8C;&#x8BC1;</title>
-    </head>
-    <body>
-        <form action="" method="post">
-            <div class="int">
-                <label for="username">&#x7528;&#x6237;&#x540D;&#xFF1A;</label>
-                <input type="text" id="username" class="required">
-            </div>
-
-            <div class="int">
-                <label for="email">&#x90AE;&#x7BB1;&#xFF1A;</label>
-                <input type="text" id="email" class="required">
-            </div>
-
-            <div class="int">
-                <label for="personinfo">&#x4E2A;&#x4EBA;&#x8D44;&#x6599;&#xFF1A;</label>
-                <input type="text" id="personinfo">
-            </div>
-
-            <div class="sub">
-                <input type="submit" id="send" value="&#x63D0;&#x4EA4;">
-                <input type="reset" id="res">
-            </div>
-        </form>
-
-        <script src="jquery.min.js" charset="utf-8"></script>
-        <script src="005.js" charset="utf-8"></script>
-    </body>
-</html>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;title&gt;&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x8868;&amp;#x5355;&amp;#x9A8C;&amp;#
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/004/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/004/</id>
-    <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-18T11:52:45.913Z</updated>
-    
-    <content type="html"><![CDATA[<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x4E0B;&#x62C9;&#x6846;&#x5E94;&#x7528;</title>
-    </head>
-    <body>
-        <div class="centent">
-            <select multiple id="select1" style="width:100px;height:160px;">
-                <option value="1">&#x9009;&#x9879;1</option>
-                <option value="2">&#x9009;&#x9879;2</option>
-                <option value="3">&#x9009;&#x9879;3</option>
-                <option value="4">&#x9009;&#x9879;4</option>
-                <option value="5">&#x9009;&#x9879;5</option>
-                <option value="6">&#x9009;&#x9879;6</option>
-                <option value="7">&#x9009;&#x9879;7</option>
-                <option value="8">&#x9009;&#x9879;8</option>
-                <option value="9">&#x9009;&#x9879;9</option>
-            </select>
-
-            <div>
-                <span id="add">&#x9009;&#x4E2D;&#x6DFB;&#x52A0;&#x5230;&#x53F3;&#x8FB9;&gt;&gt;</span>
-                <span id="add_all">&#x5168;&#x90E8;&#x6DFB;&#x52A0;&#x5230;&#x53F3;&#x8FB9;&gt;&gt;</span>
-            </div>
-        </div>
-
-        <div class="centent">
-            <select multiple id="select2" style="width:100px;height:160px;"></select>
-
-            <div>
-                <span id="remove">&lt;&lt;&#x9009;&#x4E2D;&#x5220;&#x9664;&#x5230;&#x5DE6;&#x8FB9;</span>
-                <span id="remove_all">&lt;&lt;&#x5168;&#x90E8;&#x5220;&#x9664;&#x5230;&#x5DE6;&#x8FB9;</span>
-            </div>
-        </div>
-
-        <script src="jquery.min.js" charset="utf-8"></script>
-        <script src="004.js" charset="utf-8"></script>
-    </body>
-</html>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;title&gt;&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x4E0B;&amp;#x62C9;&amp;#x6846;&amp;#
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/004/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/004/</id>
-    <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-17T11:42:17.796Z</updated>
-    
-    <content type="html"><![CDATA[$(function() {
-    $(&quot;#add&quot;).click(function() {
-        var $options = $(&quot;#select1 option:selected&quot;);
-        $options.appendTo(&quot;#select2&quot;);
-    });
-
-    $(&quot;#add_all&quot;).click(function() {
-        var $options = $(&quot;#select1 option&quot;);
-        $options.appendTo(&quot;#select2&quot;);
-    });
-
-    //&#x53CC;&#x51FB;&#x6DFB;&#x52A0;
-    $(&quot;#select1&quot;).dblclick(function() {
-        $option = $(&quot;option:selected&quot;, this);
-
-        $option.appendTo(&quot;#select2&quot;);
-    })
-});
-]]></content>
-    
-    <summary type="html">
-    
-      $(function() {
-    $(&amp;quot;#add&amp;quot;).click(function() {
-        var $options = $(&amp;quot;#select1 option:selected&amp;quot;);
-        $options.a
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/003/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/003/</id>
-    <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-17T11:14:31.164Z</updated>
-    
-    <content type="html"><![CDATA[$(function() {
-    var $items = $(&quot;[name=items]:checkbox&quot;);
-    $(&quot;#CheckedAll&quot;).click(function() {
-
-        $items.attr(&quot;checked&quot;, true);
-    });
-
-    $(&quot;#CheckedNo&quot;).click(function() {
-        $items.attr(&quot;checked&quot;, false);
-    });
-
-    $(&quot;#CheckedRev&quot;).click(function() {
-        $(&quot;[name=items]:checkbox&quot;).each(function() {
-            this.checked = !this.checked;
-        });
-    });
-
-    $(&quot;#send&quot;).click(function() {
-        let str = &quot;&#x9009;&#x4E2D;&#x7684;&#x662F;&#xFF1A; \r\n&quot;;
-
-        $(&quot;[name=items]:checkbox:checked&quot;).each(function() {
-            str += $(this).val()+&quot;\r\n&quot;;
-        });
-
-        alert(str);
-    });
-});
-]]></content>
-    
-    <summary type="html">
-    
-      $(function() {
-    var $items = $(&amp;quot;[name=items]:checkbox&amp;quot;);
-    $(&amp;quot;#CheckedAll&amp;quot;).click(function() {
-
-        $items.attr
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/003/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/003/</id>
-    <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-18T11:52:57.508Z</updated>
-    
-    <content type="html"><![CDATA[<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x590D;&#x9009;&#x6846;&#x5E94;&#x7528;</title>
-    </head>
-    <body>
-        <form>
-            &#x4F60;&#x7231;&#x597D;&#x7684;&#x8FD0;&#x52A8;&#x662F;&#xFF1F;<br>
-            <input type="checkbox" name="items" value="&#x8DB3;&#x7403;">&#x8DB3;&#x7403;
-            <input type="checkbox" name="items" value="&#x7BEE;&#x7403;">&#x7BEE;&#x7403;
-            <input type="checkbox" name="items" value="&#x7FBD;&#x6BDB;&#x7403;">&#x7FBD;&#x6BDB;&#x7403;
-            <input type="checkbox" name="items" value="&#x4E52;&#x4E53;&#x7403;">&#x4E52;&#x4E53;&#x7403;
-            <input type="button" id="CheckedAll" value="&#x5168; &#x9009;">
-            <input type="button" id="CheckedNo" value="&#x5168;&#x4E0D;&#x9009;">
-            <input type="button" id="CheckedRev" value="&#x53CD;&#x9009;">
-            <input type="button" id="send" value="&#x63D0; &#x4EA4;">
-        </form>
-
-        <script src="jquery.min.js" charset="utf-8"></script>
-        <script src="003.js" charset="utf-8"></script>
-    </body>
-</html>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;title&gt;&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x590D;&amp;#x9009;&amp;#x6846;&amp;#
+      /*! js-cookie v2.1.3 | MIT */
+!function(a){var b=!1;if(&amp;quot;function&amp;quot;==typeof define&amp;amp;&amp;amp;define.amd&amp;amp;&amp;amp;(define(a),b=!0),&amp;qu
     
     </summary>
     
