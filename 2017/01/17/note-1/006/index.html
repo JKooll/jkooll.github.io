@@ -86,22 +86,34 @@
 
 
 
-<meta name="description" content=".even{background: #FFF28F;}
-.odd{background: #FFFFEE;}
-.selected{background: #ff0066};">
+<meta name="description" content="$(function() {
+
+    //&amp;#x9694;&amp;#x884C;&amp;#x53D8;&amp;#x8272;
+    $(&amp;quot;#gehang&amp;quot;).click(function() {
+        $(&amp;quot;tr:odd&amp;quot;).addClass(&amp;quot;odd&amp;quot;);
+
+        $(&amp;quot;tr:even&amp;quot;).addClass(&amp;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JKol-Blog">
 <meta property="og:url" content="http://JKooll.github.io/2017/01/17/note-1/006/index.html">
 <meta property="og:site_name" content="JKol-Blog">
-<meta property="og:description" content=".even{background: #FFF28F;}
-.odd{background: #FFFFEE;}
-.selected{background: #ff0066};">
-<meta property="og:updated_time" content="2017-02-18T13:57:05.303Z">
+<meta property="og:description" content="$(function() {
+
+    //&amp;#x9694;&amp;#x884C;&amp;#x53D8;&amp;#x8272;
+    $(&amp;quot;#gehang&amp;quot;).click(function() {
+        $(&amp;quot;tr:odd&amp;quot;).addClass(&amp;quot;odd&amp;quot;);
+
+        $(&amp;quot;tr:even&amp;quot;).addClass(&amp;">
+<meta property="og:updated_time" content="2017-02-18T14:46:36.317Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JKol-Blog">
-<meta name="twitter:description" content=".even{background: #FFF28F;}
-.odd{background: #FFFFEE;}
-.selected{background: #ff0066};">
+<meta name="twitter:description" content="$(function() {
+
+    //&amp;#x9694;&amp;#x884C;&amp;#x53D8;&amp;#x8272;
+    $(&amp;quot;#gehang&amp;quot;).click(function() {
+        $(&amp;quot;tr:odd&amp;quot;).addClass(&amp;quot;odd&amp;quot;);
+
+        $(&amp;quot;tr:even&amp;quot;).addClass(&amp;">
 
 
 
@@ -403,9 +415,50 @@
       
 
       
-        .even{background: #FFF28F;}
-.odd{background: #FFFFEE;}
-.selected{background: #ff0066};
+        $(function() {
+
+    //&#x9694;&#x884C;&#x53D8;&#x8272;
+    $(&quot;#gehang&quot;).click(function() {
+        $(&quot;tr:odd&quot;).addClass(&quot;odd&quot;);
+
+        $(&quot;tr:even&quot;).addClass(&quot;even&quot;);
+    });
+
+    //&#x542B;&#x6709;&#x7279;&#x5B9A;&#x5185;&#x5BB9;&#x7684;&#x884C;&#x53D8;&#x8272;
+    $(&quot;#zhiding&quot;).click(function() {
+        $(&quot;tr:contains(&apos;&#x738B;&#x4E94;&apos;)&quot;).addClass(&quot;selected&quot;);
+    });
+
+    //&#x70B9;&#x51FB;&#x53D8;&#x8272;--&#x5355;&#x9009;
+    $(&quot;#dianji&quot;).click(function() {
+        $(&apos;tbody&gt;tr&apos;).click(function() {
+            $(this)
+                    .addClass(&apos;selected&apos;)
+                    .siblings().removeClass(&apos;selected&apos;)
+                    .end();
+        });
+    });
+
+    //&#x70B9;&#x51FB;&#x884C;&#x53D8;&#x8272;--&#x591A;&#x9009;
+    $(&quot;#duoxuan&quot;).click(function() {
+        $(&apos;tbody&gt;tr&apos;).unbind(&apos;click&apos;);
+
+        $(&apos;tbody&gt;tr&apos;).click(function() {
+            // if($(this).hasClass(&apos;selected&apos;)) {
+            //     $(this)
+            //             .removeClass(&apos;selected&apos;);
+            // } else {
+            //     $(this)
+            //             .addClass(&apos;selected&apos;);
+            // }
+
+            var hasSelected = $(this).hasClass(&apos;selected&apos;);
+
+            $(this)[hasSelected?&quot;removeClass&quot;:&quot;addClass&quot;](&apos;selected&apos;);
+        });
+    });
+
+});
 
       
     </div>
@@ -448,8 +501,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/17/note-1/007/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2017/01/16/note-1/" rel="next" title="nodejs && npm">
+                <i class="fa fa-chevron-left"></i> nodejs && npm
               </a>
             
           </div>
@@ -458,7 +511,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/01/17/note-1/004/" rel="prev" title="">
+              <a href="/2017/01/17/note-1/006/" rel="prev" title="">
                  <i class="fa fa-chevron-right"></i>
               </a>
             
