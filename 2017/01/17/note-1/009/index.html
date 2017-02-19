@@ -86,34 +86,28 @@
 
 
 
-<meta name="description" content="&amp;#x7F51;&amp;#x9875;&amp;#x5B57;&amp;#x4F53;&amp;#x5927;&amp;#x5C0F;
-    
-    
-        
-            
-                &amp;#x653E;&amp;#x5927;
-                &amp;#x7F29;&amp;#x5C0F;">
+<meta name="description" content="$(function() {
+    $(&amp;quot;span&amp;quot;).click(function() {
+        var thisEle = $(&amp;quot;#para&amp;quot;).css(&amp;quot;font-size&amp;quot;);
+
+        //&amp;#x5C06;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&amp;#x8F6C;&amp;#x6362;&amp;#x6210;&amp;#x6">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JKol-Blog">
 <meta property="og:url" content="http://JKooll.github.io/2017/01/17/note-1/009/index.html">
 <meta property="og:site_name" content="JKol-Blog">
-<meta property="og:description" content="&amp;#x7F51;&amp;#x9875;&amp;#x5B57;&amp;#x4F53;&amp;#x5927;&amp;#x5C0F;
-    
-    
-        
-            
-                &amp;#x653E;&amp;#x5927;
-                &amp;#x7F29;&amp;#x5C0F;">
-<meta property="og:updated_time" content="2017-02-19T02:21:34.774Z">
+<meta property="og:description" content="$(function() {
+    $(&amp;quot;span&amp;quot;).click(function() {
+        var thisEle = $(&amp;quot;#para&amp;quot;).css(&amp;quot;font-size&amp;quot;);
+
+        //&amp;#x5C06;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&amp;#x8F6C;&amp;#x6362;&amp;#x6210;&amp;#x6">
+<meta property="og:updated_time" content="2017-02-19T02:43:26.169Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JKol-Blog">
-<meta name="twitter:description" content="&amp;#x7F51;&amp;#x9875;&amp;#x5B57;&amp;#x4F53;&amp;#x5927;&amp;#x5C0F;
-    
-    
-        
-            
-                &amp;#x653E;&amp;#x5927;
-                &amp;#x7F29;&amp;#x5C0F;">
+<meta name="twitter:description" content="$(function() {
+    $(&amp;quot;span&amp;quot;).click(function() {
+        var thisEle = $(&amp;quot;#para&amp;quot;).css(&amp;quot;font-size&amp;quot;);
+
+        //&amp;#x5C06;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&amp;#x8F6C;&amp;#x6362;&amp;#x6210;&amp;#x6">
 
 
 
@@ -415,32 +409,30 @@
       
 
       
-        <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>&#x7F51;&#x9875;&#x5B57;&#x4F53;&#x5927;&#x5C0F;</title>
-    </head>
-    <body>
-        <div class="msg">
-            <div class="msg_caption">
-                <span class="bigger">&#x653E;&#x5927;</span>
-                <span class="smaller">&#x7F29;&#x5C0F;</span>
-            </div>
-            <div>
-                <p id="para">
-                    This is some text.This is some text.
-                    This is some text.This is some text.
-                    This is some text.This is some text.
-                    This is some text.This is some text.
-                </p>
-            </div>
-        </div>
+        $(function() {
+    $(&quot;span&quot;).click(function() {
+        var thisEle = $(&quot;#para&quot;).css(&quot;font-size&quot;);
 
-        <script src="jquery.min.js" charset="utf-8"></script>
-        <script src="009.js" charset="utf-8"></script>
-    </body>
-</html>
+        //&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;10&#x4EE3;&#x8868;&#x5341;&#x8FDB;&#x5236;
+        var textFontSize = parseFloat(thisEle, 10);
+
+        console.log(thisEle);
+        console.log(textFontSize);
+
+        //&#x83B7;&#x53D6;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x5355;&#x4F4D; px...
+        var unit = thisEle.slice(-2);
+
+        var cName = $(this).attr(&quot;class&quot;);
+
+        if(cName == &quot;bigger&quot;) {
+            textFontSize += 2;
+        } else if(cName == &quot;smaller&quot;) {
+            textFontSize -= 2;
+        }
+
+        $(&quot;#para&quot;).css(&quot;font-size&quot;, textFontSize + unit);
+    });
+});
 
       
     </div>
@@ -493,7 +485,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/01/17/note-1/008/" rel="prev" title="">
+              <a href="/2017/01/17/note-1/009/" rel="prev" title="">
                  <i class="fa fa-chevron-right"></i>
               </a>
             
