@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>JKol-Blog</title>
+  <title>Jack Online</title>
   <subtitle>仅仅只是记录</subtitle>
   <link href="/atom.xml" rel="self"/>
   
@@ -339,7 +339,7 @@ function merge_jsonobject(jsonobj1, jsonobj2)
     <link href="http://JKooll.github.io/2017/01/22/plan/"/>
     <id>http://JKooll.github.io/2017/01/22/plan/</id>
     <published>2017-01-22T10:28:21.000Z</published>
-    <updated>2017-01-22T08:34:21.964Z</updated>
+    <updated>2017-02-19T10:51:18.420Z</updated>
     
     <content type="html"><![CDATA[<table>
 <thead>
@@ -355,7 +355,7 @@ function merge_jsonobject(jsonobj1, jsonobj2)
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://jkooll.github.io/2017/01/17/note-1/">&#x950B;&#x5229;&#x7684;JQuery</a></td>
-<td style="text-align:left">&#x8FDB;&#x884C;&#x4E2D;</td>
+<td style="text-align:left">&#x8BFB;&#x5B8C;</td>
 </tr>
 </tbody>
 </table>
@@ -1652,69 +1652,53 @@ $(&quot;element&quot;).bind(&quot;click&quot;,funciton(event){
   
   <entry>
     <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/003/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/003/</id>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/001/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/001/</id>
     <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-17T11:14:31.164Z</updated>
+    <updated>2017-02-18T11:53:06.576Z</updated>
     
-    <content type="html"><![CDATA[$(function() {
-    var $items = $(&quot;[name=items]:checkbox&quot;);
-    $(&quot;#CheckedAll&quot;).click(function() {
+    <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x5355;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;</title>
+        <link rel="stylesheet" href="001.css">
+    </head>
+    <body>
+        <form action="#" method="post" id="regForm">
+            <fieldset>
+                <legend>&#x4E2A;&#x4EBA;&#x57FA;&#x672C;&#x4FE1;&#x606F;</legend>
 
-        $items.attr(&quot;checked&quot;, true);
-    });
+                <div>
+                    <label for="username">&#x540D;&#x79F0;&#xFF1A;</label>
+                    <input type="text" id="username">
+                </div>
 
-    $(&quot;#CheckedNo&quot;).click(function() {
-        $items.attr(&quot;checked&quot;, false);
-    });
+                <div>
+                    <label for="pass">&#x5BC6;&#x7801;&#xFF1A;</label>
+                    <input id="pass" type="password">
+                </div>
 
-    $(&quot;#CheckedRev&quot;).click(function() {
-        $(&quot;[name=items]:checkbox&quot;).each(function() {
-            this.checked = !this.checked;
-        });
-    });
+                <div>
+                    <label for="msg">&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF1A;</label>
+                    <textarea id="msg"></textarea>
+                </div>
+            </fieldset>
+        </form>
 
-    $(&quot;#send&quot;).click(function() {
-        let str = &quot;&#x9009;&#x4E2D;&#x7684;&#x662F;&#xFF1A; \r\n&quot;;
-
-        $(&quot;[name=items]:checkbox:checked&quot;).each(function() {
-            str += $(this).val()+&quot;\r\n&quot;;
-        });
-
-        alert(str);
-    });
-});
+        <script src="jquery.min.js" charset="utf-8"></script>
+        <script src="001.js" charset="utf-8"></script>
+    </body>
+</html>
 ]]></content>
     
     <summary type="html">
     
-      $(function() {
-    var $items = $(&amp;quot;[name=items]:checkbox&amp;quot;);
-    $(&amp;quot;#CheckedAll&amp;quot;).click(function() {
-
-        $items.attr
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/010/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/010/</id>
-    <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-19T03:12:34.307Z</updated>
-    
-    <content type="html"><![CDATA[.selected{background: #ff0066;}
-.hide{display: none;}
-]]></content>
-    
-    <summary type="html">
-    
-      .selected{background: #ff0066;}
-.hide{display: none;}
-
+      &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x5355;&amp;#x884C;&amp;#x6587;&amp;#
     
     </summary>
     
@@ -1769,75 +1753,20 @@ $(&quot;element&quot;).bind(&quot;click&quot;,funciton(event){
   
   <entry>
     <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/009/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/009/</id>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/010/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/010/</id>
     <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-19T02:21:34.774Z</updated>
+    <updated>2017-02-19T03:12:34.307Z</updated>
     
-    <content type="html"><![CDATA[<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>&#x7F51;&#x9875;&#x5B57;&#x4F53;&#x5927;&#x5C0F;</title>
-    </head>
-    <body>
-        <div class="msg">
-            <div class="msg_caption">
-                <span class="bigger">&#x653E;&#x5927;</span>
-                <span class="smaller">&#x7F29;&#x5C0F;</span>
-            </div>
-            <div>
-                <p id="para">
-                    This is some text.This is some text.
-                    This is some text.This is some text.
-                    This is some text.This is some text.
-                    This is some text.This is some text.
-                </p>
-            </div>
-        </div>
+    <content type="html"><![CDATA[.selected{background: #ff0066;}
+.hide{display: none;}
+]]></content>
+    
+    <summary type="html">
+    
+      .selected{background: #ff0066;}
+.hide{display: none;}
 
-        <script src="jquery.min.js" charset="utf-8"></script>
-        <script src="009.js" charset="utf-8"></script>
-    </body>
-</html>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;title&gt;&amp;#x7F51;&amp;#x9875;&amp;#x5B57;&amp;#x4F53;&amp;#x5927;&amp;#x5C0F;&lt;/title&gt;
-   
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/008/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/008/</id>
-    <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-19T02:11:47.956Z</updated>
-    
-    <content type="html"><![CDATA[$(function() {
-    $(&quot;#filterName&quot;).keyup(function(event) {
-        $(&quot;table tr&quot;).hide()
-                        .filter(&quot;:contains(&quot; + $(this).val()+&quot;)&quot;)
-                        .show();
-    });
-});
-]]></content>
-    
-    <summary type="html">
-    
-      $(function() {
-    $(&amp;quot;#filterName&amp;quot;).keyup(function(event) {
-        $(&amp;quot;table tr&amp;quot;).hide()
-                        .filter
     
     </summary>
     
@@ -1906,6 +1835,83 @@ $(&quot;element&quot;).bind(&quot;click&quot;,funciton(event){
   
   <entry>
     <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/008/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/008/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-19T02:11:47.956Z</updated>
+    
+    <content type="html"><![CDATA[$(function() {
+    $(&quot;#filterName&quot;).keyup(function(event) {
+        $(&quot;table tr&quot;).hide()
+                        .filter(&quot;:contains(&quot; + $(this).val()+&quot;)&quot;)
+                        .show();
+    });
+});
+]]></content>
+    
+    <summary type="html">
+    
+      $(function() {
+    $(&amp;quot;#filterName&amp;quot;).keyup(function(event) {
+        $(&amp;quot;table tr&amp;quot;).hide()
+                        .filter
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/009/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/009/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-02-19T02:21:34.774Z</updated>
+    
+    <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>&#x7F51;&#x9875;&#x5B57;&#x4F53;&#x5927;&#x5C0F;</title>
+    </head>
+    <body>
+        <div class="msg">
+            <div class="msg_caption">
+                <span class="bigger">&#x653E;&#x5927;</span>
+                <span class="smaller">&#x7F29;&#x5C0F;</span>
+            </div>
+            <div>
+                <p id="para">
+                    This is some text.This is some text.
+                    This is some text.This is some text.
+                    This is some text.This is some text.
+                    This is some text.This is some text.
+                </p>
+            </div>
+        </div>
+
+        <script src="jquery.min.js" charset="utf-8"></script>
+        <script src="009.js" charset="utf-8"></script>
+    </body>
+</html>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;&amp;#x7F51;&amp;#x9875;&amp;#x5B57;&amp;#x4F53;&amp;#x5927;&amp;#x5C0F;&lt;/title&gt;
+   
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
     <link href="http://JKooll.github.io/2017/01/17/note-1/007/"/>
     <id>http://JKooll.github.io/2017/01/17/note-1/007/</id>
     <published>2017-01-16T16:00:00.000Z</published>
@@ -1935,42 +1941,64 @@ $(&quot;element&quot;).bind(&quot;click&quot;,funciton(event){
   
   <entry>
     <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/007/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/007/</id>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/006/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/006/</id>
     <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-19T00:20:39.611Z</updated>
+    <updated>2017-02-18T14:46:36.317Z</updated>
     
-    <content type="html"><![CDATA[<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>&#x8868;&#x683C;&#x5E94;&#x7528;--&#x8868;&#x683C;&#x5C55;&#x5F00;&#x5173;&#x95ED;</title>
-        <link rel="stylesheet" href="007.css">
-    </head>
-    <body>
-        <ol>
-            <li class="parent" id="1">parent</li>
-            <ol class="child_1">
-                <li>child1</li>
-                <li>child2</li>
-                <li>child3</li>
-            </ol>
+    <content type="html"><![CDATA[$(function() {
 
-        </ol>
+    //&#x9694;&#x884C;&#x53D8;&#x8272;
+    $(&quot;#gehang&quot;).click(function() {
+        $(&quot;tr:odd&quot;).addClass(&quot;odd&quot;);
 
-        <script src="jquery.min.js" charset="utf-8"></script>
-        <script src="007.js" charset="utf-8"></script>
-    </body>
-</html>
+        $(&quot;tr:even&quot;).addClass(&quot;even&quot;);
+    });
+
+    //&#x542B;&#x6709;&#x7279;&#x5B9A;&#x5185;&#x5BB9;&#x7684;&#x884C;&#x53D8;&#x8272;
+    $(&quot;#zhiding&quot;).click(function() {
+        $(&quot;tr:contains(&apos;&#x738B;&#x4E94;&apos;)&quot;).addClass(&quot;selected&quot;);
+    });
+
+    //&#x70B9;&#x51FB;&#x53D8;&#x8272;--&#x5355;&#x9009;
+    $(&quot;#dianji&quot;).click(function() {
+        $(&apos;tbody&gt;tr&apos;).click(function() {
+            $(this)
+                    .addClass(&apos;selected&apos;)
+                    .siblings().removeClass(&apos;selected&apos;)
+                    .end();
+        });
+    });
+
+    //&#x70B9;&#x51FB;&#x884C;&#x53D8;&#x8272;--&#x591A;&#x9009;
+    $(&quot;#duoxuan&quot;).click(function() {
+        $(&apos;tbody&gt;tr&apos;).unbind(&apos;click&apos;);
+
+        $(&apos;tbody&gt;tr&apos;).click(function() {
+            // if($(this).hasClass(&apos;selected&apos;)) {
+            //     $(this)
+            //             .removeClass(&apos;selected&apos;);
+            // } else {
+            //     $(this)
+            //             .addClass(&apos;selected&apos;);
+            // }
+
+            var hasSelected = $(this).hasClass(&apos;selected&apos;);
+
+            $(this)[hasSelected?&quot;removeClass&quot;:&quot;addClass&quot;](&apos;selected&apos;);
+        });
+    });
+
+});
 ]]></content>
     
     <summary type="html">
     
-      &lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;title&gt;&amp;#x8868;&amp;#x683C;&amp;#x5E94;&amp;#x7528;--&amp;#x8868;&amp;#x683C;&amp;#x5C55;&amp;#
+      $(function() {
+
+    //&amp;#x9694;&amp;#x884C;&amp;#x53D8;&amp;#x8272;
+    $(&amp;quot;#gehang&amp;quot;).click(function() {
+        $(&amp;quot;tr:odd&amp;quot;).addClass(
     
     </summary>
     
@@ -2002,18 +2030,45 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&amp;&amp;&quot;set&quot;in e&amp;&a
   
   <entry>
     <title></title>
-    <link href="http://JKooll.github.io/2017/01/17/note-1/js.cookie.min/"/>
-    <id>http://JKooll.github.io/2017/01/17/note-1/js.cookie.min/</id>
+    <link href="http://JKooll.github.io/2017/01/17/note-1/011/"/>
+    <id>http://JKooll.github.io/2017/01/17/note-1/011/</id>
     <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-02-19T03:57:23.942Z</updated>
+    <updated>2017-02-19T03:59:43.140Z</updated>
     
-    <content type="html"><![CDATA[/*! js-cookie v2.1.3 | MIT */
-!function(a){var b=!1;if(&quot;function&quot;==typeof define&amp;&amp;define.amd&amp;&amp;(define(a),b=!0),&quot;object&quot;==typeof exports&amp;&amp;(module.exports=a(),b=!0),!b){var c=window.Cookies,d=window.Cookies=a();d.noConflict=function(){return window.Cookies=c,d}}}(function(){function a(){for(var a=0,b={};a<arguments.length;a++){var c="arguments[a];for(var" d="" in="" c)b[d]="c[d]}return" b}function="" b(c){function="" d(b,e,f){var="" g;if("undefined"!="typeof" document){if(arguments.length="">1){if(f=a({path:&quot;/&quot;},d.defaults,f),&quot;number&quot;==typeof f.expires){var h=new Date;h.setMilliseconds(h.getMilliseconds()+864e5*f.expires),f.expires=h}try{g=JSON.stringify(e),/^[\{\[]/.test(g)&amp;&amp;(e=g)}catch(i){}return e=c.write?c.write(e,b):encodeURIComponent(e+&quot;&quot;).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent),b=encodeURIComponent(b+&quot;&quot;),b=b.replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent),b=b.replace(/[\(\)]/g,escape),document.cookie=b+&quot;=&quot;+e+(f.expires?&quot;; expires=&quot;+f.expires.toUTCString():&quot;&quot;)+(f.path?&quot;; path=&quot;+f.path:&quot;&quot;)+(f.domain?&quot;; domain=&quot;+f.domain:&quot;&quot;)+(f.secure?&quot;; secure&quot;:&quot;&quot;)}b||(g={});for(var j=document.cookie?document.cookie.split(&quot;; &quot;):[],k=/(%[0-9A-Z]{2})+/g,l=0;l</arguments.length;a++){var>]]></content>
+    <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>&#x7F51;&#x9875;&#x6362;&#x80A4;</title>
+
+        <link rel="stylesheet" href="011.css">
+        <link rel="stylesheet" href="011_1.css" id="skin_source">
+    </head>
+    <body>
+        <ul id="skin">
+            <li id="011_1" title="&#x7070;&#x8272;" class="selected">&#x7070;&#x8272;</li>
+            <li id="011_2" title="&#x7D2B;&#x8272;">&#x7D2B;&#x8272;</li>
+            <li id="011_3" title="&#x7EA2;&#x8272;">&#x7EA2;&#x8272;</li>
+        </ul>
+
+        <button type="button">&#x6211;&#x7684;&#x989C;&#x8272;&#x4F1A;&#x53D8;&#x54E6;</button>
+
+        <script src="jquery.min.js" charset="utf-8"></script>
+        <script src="js.cookie.min.js" charset="utf-8"></script>
+        <script src="011.js" charset="utf-8"></script>
+    </body>
+</html>
+]]></content>
     
     <summary type="html">
     
-      /*! js-cookie v2.1.3 | MIT */
-!function(a){var b=!1;if(&amp;quot;function&amp;quot;==typeof define&amp;amp;&amp;amp;define.amd&amp;amp;&amp;amp;(define(a),b=!0),&amp;qu
+      &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;&amp;#x7F51;&amp;#x9875;&amp;#x6362;&amp;#x80A4;&lt;/title&gt;
+
+        &lt;link rel=
     
     </summary>
     
