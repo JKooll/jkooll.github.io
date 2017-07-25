@@ -86,34 +86,31 @@
 
 
 
-<meta name="description" content="&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x591A;&amp;#x884C;&amp;#x6587;&amp;#x672C;&amp;#x6846;&amp;#x5E94;&amp;#x7528;
-    
-    
-        
-            
-                
-                    &amp;#x653E;&amp;#x5927;">
+<meta name="description" content="$(function() {
+    var $comment = $(&amp;quot;#comment&amp;quot;);
+
+    $(&amp;quot;.bigger&amp;quot;).click(function() {
+        if(!$comment.is(&amp;quot;:animated&amp;quot;)) {
+            if($comment.height() &amp;lt; 500) {">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Jack Online">
 <meta property="og:url" content="http://JKooll.github.io/2017/01/17/note-1/002/index.html">
 <meta property="og:site_name" content="Jack Online">
-<meta property="og:description" content="&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x591A;&amp;#x884C;&amp;#x6587;&amp;#x672C;&amp;#x6846;&amp;#x5E94;&amp;#x7528;
-    
-    
-        
-            
-                
-                    &amp;#x653E;&amp;#x5927;">
-<meta property="og:updated_time" content="2017-02-18T11:53:14.376Z">
+<meta property="og:description" content="$(function() {
+    var $comment = $(&amp;quot;#comment&amp;quot;);
+
+    $(&amp;quot;.bigger&amp;quot;).click(function() {
+        if(!$comment.is(&amp;quot;:animated&amp;quot;)) {
+            if($comment.height() &amp;lt; 500) {">
+<meta property="og:updated_time" content="2017-02-17T09:09:14.322Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jack Online">
-<meta name="twitter:description" content="&amp;#x8868;&amp;#x5355;&amp;#x5E94;&amp;#x7528;--&amp;#x591A;&amp;#x884C;&amp;#x6587;&amp;#x672C;&amp;#x6846;&amp;#x5E94;&amp;#x7528;
-    
-    
-        
-            
-                
-                    &amp;#x653E;&amp;#x5927;">
+<meta name="twitter:description" content="$(function() {
+    var $comment = $(&amp;quot;#comment&amp;quot;);
+
+    $(&amp;quot;.bigger&amp;quot;).click(function() {
+        if(!$comment.is(&amp;quot;:animated&amp;quot;)) {
+            if($comment.height() &amp;lt; 500) {">
 
 
 
@@ -415,37 +412,37 @@
       
 
       
-        <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>&#x8868;&#x5355;&#x5E94;&#x7528;--&#x591A;&#x884C;&#x6587;&#x672C;&#x6846;&#x5E94;&#x7528;</title>
-    </head>
-    <body>
-        <form>
-            <div class="msg">
-                <div class="msg_caption">
-                    <span class="bigger">&#x653E;&#x5927;</span>
-                    <span class="smaller">&#x7F29;&#x5C0F;</span>
-                    <span class="up">&#x5411;&#x4E0A;</span>
-                    <span class="down">&#x5411;&#x4E0B;</span>
-                </div>
+        $(function() {
+    var $comment = $(&quot;#comment&quot;);
 
-                <div>
-                    <textarea id="comment" rows="8" cols="20">
-                        2004&#x5E74;&#x53C2;&#x6F14;&#x7535;&#x89C6;&#x5267;&#x300A;&#x4E0E;&#x9752;&#x6625;&#x6709;&#x5173;&#x7684;&#x65E5;&#x5B50;&#x300B;&#xFF0C;&#x5F00;&#x59CB;&#x5728;&#x5F71;&#x89C6;&#x5708;&#x5D2D;&#x9732;&#x5934;&#x89D2;
-                        [1]  &#x3002;2005&#x5E74;&#x62CD;&#x6444;&#x53E4;&#x88C5;&#x5267;&#x300A;&#x9526;&#x8863;&#x536B;&#x300B;&#x3002;2007&#x5E74;&#x4E3B;&#x6F14;&#x8D75;&#x5B9D;&#x521A;&#x5BFC;&#x6F14;&#x7684;
-                        &#x9752;&#x6625;&#x5267;&#x300A;&#x594B;&#x6597;&#x300B;&#xFF1B;[2]  &#x540C;&#x5E74;&#xFF0C;&#x4E3B;&#x6F14;&#x9996;&#x90E8;&#x7535;&#x5F71;&#x300A;&#x8D70;&#x7740;&#x77A7;&#x300B;&#x3002;2008&#x5E74;&#x4E3B;
-                        &#x6F14;&#x6ED5;&#x534E;&#x6D9B;&#x6267;&#x5BFC;&#x7684;&#x7535;&#x89C6;&#x5267;&#x300A;&#x8717;&#x5C45;&#x300B;&#xFF0C;&#x9970;&#x6F14;80&#x540E;&#x57CE;&#x5E02;&#x9752;&#x5E74;&#x5C0F;&#x8D1D;&#x3002;[1]  2009
-                    </textarea>
-                </div>
-            </div>
-        </form>
+    $(&quot;.bigger&quot;).click(function() {
+        if(!$comment.is(&quot;:animated&quot;)) {
+            if($comment.height() &lt; 500) {
+                $comment.animate({&quot;height&quot; : &quot;+=50&quot;}, 400);
+            }
+        }
+    });
 
-        <script src="jquery.min.js" charset="utf-8"></script>
-        <script src="002.js" charset="utf-8"></script>
-    </body>
-</html>
+    $(&quot;.smaller&quot;).click(function() {
+        if(!$comment.is(&quot;:animated&quot;)) {
+            if($comment.height() &gt; 50) {
+                $comment.animate({&quot;height&quot; : &quot;-=50&quot;}, 400);
+            }
+        }
+    });
+
+    $(&quot;.up&quot;).click(function() {
+        if(!$comment.is(&quot;:animated&quot;)) {
+            $comment.animate({&quot;scrollTop&quot; : &quot;-=50&quot;}, 400);
+        }
+    });
+
+    $(&quot;.down&quot;).click(function() {
+        if(!$comment.is(&quot;animated&quot;)) {
+            $comment.animate({&quot;scrollTop&quot; : &quot;+=50&quot;}, 400);
+        }
+    })
+});
 
       
     </div>
@@ -488,7 +485,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/17/note-1/006/" rel="next" title="">
+              <a href="/2017/01/17/note-1/004/" rel="next" title="">
                 <i class="fa fa-chevron-left"></i> 
               </a>
             
@@ -498,7 +495,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/01/17/note-1/002/" rel="prev" title="">
+              <a href="/2017/01/17/note-1/003/" rel="prev" title="">
                  <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -566,7 +563,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">60</span>
+              <span class="site-state-item-count">61</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -583,7 +580,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
