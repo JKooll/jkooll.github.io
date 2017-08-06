@@ -203,6 +203,7 @@ var delete_item = function() {
     clear_toggle();
 }
 
+//判断items是否为空
 var isItemsEmpty = function() {
     let times = 0;
     items.forEach(function(item) {
@@ -211,6 +212,26 @@ var isItemsEmpty = function() {
     return !times;
 }
 
+/**
+ * 获取从speeds select中speeds值
+ */
 var get_speeds = function() {
     speed = 100 / +($('select[name=speeds] option:selected').val());
 }
+
+/**
+ * 注册服务进程
+ */
+ var regist_service_worker = function() {
+     if ('serviceWorker' in navigator) {
+         window.addEventListener('load', function() {
+             navigator.serviceWorker.register('../sw.js').then(function(registration) {
+                 // Registration was successful
+                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
+             }).catch(function(err) {
+                 // registration failed :(
+                 console.log('ServiceWorker registration failed: ', err);
+             });
+         });
+     }
+ }
