@@ -87,16 +87,30 @@ var go_to_page = function(page = "first_page") {
 }
 
 var start_game = function() {
-    console.log(speed);
     timer = setInterval(changeItem, speed);
 
     change_game_status('start');
 }
 
+var first_item = '';
 var changeItem = function() {
     let item_content = items.shift();
+
     items.push(item_content);
+
+    if (first_item == '') {
+        first_item = item_content;
+    }
+
+    if (item_content == first_item) {
+        random_items();
+    }
+
     $('#item_content').text(item_content);
+}
+
+var random_items = function() {
+    items.sort(function(){ return 0.5 - Math.random() });
 }
 
 var stop_game = function() {

@@ -2,6 +2,10 @@ body {
     background-image: url('../src/bg.png');
 }
 
+.container {
+    margin: 15px;
+}
+
 .buttons {
     margin-top: 50px;
 }
