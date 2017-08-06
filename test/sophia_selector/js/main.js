@@ -50,6 +50,8 @@ function init()
     $('[name=stop]').hide();
     $('[name=restart]').hide();
     $('[name=new]').hide();
+
+    $('[name=speeds]').change(get_speeds);
 }
 
 var clear_toggle = function() {
@@ -85,6 +87,7 @@ var go_to_page = function(page = "first_page") {
 }
 
 var start_game = function() {
+    console.log(speed);
     timer = setInterval(changeItem, speed);
 
     change_game_status('start');
@@ -192,4 +195,8 @@ var isItemsEmpty = function() {
         times++;
     });
     return !times;
+}
+
+var get_speeds = function() {
+    speed = 100 / +($('select[name=speeds] option:selected').val());
 }
