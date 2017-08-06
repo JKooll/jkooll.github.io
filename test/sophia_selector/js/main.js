@@ -30,6 +30,9 @@ $(function() {
 
 function init()
 {
+    //注册服务进程
+    regist_service_worker();
+
     current_page = 'first_page';
     isFirstTime = false;
     $('#second_page').hide();
