@@ -10,5 +10,6 @@
     "name": "JKol",
     "url": "http://jkooll.github.io/"
   },
-  "default_locale": "zh"
+  "default_locale": "zh",
+  "type": "certified"
 }
