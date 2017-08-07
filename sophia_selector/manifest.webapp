@@ -9,5 +9,6 @@
   "developer": {
     "name": "JKol",
     "url": "http://jkooll.github.io/"
-  }
+  },
+  "chrome": { "navigation": true }
 }
