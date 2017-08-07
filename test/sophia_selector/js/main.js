@@ -105,7 +105,7 @@ var changeItem = function() {
         first_item = item_content;
     }
 
-    if (item_content == first_item) {
+    if (items_count() > 10 && item_content == first_item) {
         random_items();
     }
 
@@ -206,12 +206,22 @@ var delete_item = function() {
     clear_toggle();
 }
 
-//判断items是否为空
-var isItemsEmpty = function() {
+/**
+ * Get items count.
+ *
+ * @return int
+ */
+var items_count = function() {
     let times = 0;
     items.forEach(function(item) {
         times++;
     });
+    return times;
+}
+
+//判断items是否为空
+var isItemsEmpty = function() {
+    let times = items_count();
     return !times;
 }
 
