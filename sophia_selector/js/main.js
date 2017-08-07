@@ -236,6 +236,7 @@ var get_speeds = function() {
  * 注册服务进程
  */
  var regist_service_worker = function() {
+     navigator.mozApps.install()
      if ('serviceWorker' in navigator) {
          window.addEventListener('load', function() {
              navigator.serviceWorker.register('sw.js').then(function(registration) {
