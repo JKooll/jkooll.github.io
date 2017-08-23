@@ -419,4 +419,4 @@ protected $storage;
 下面是我的测试结果：
 获取我的bucket中的内容列表
 
-![](http://upload-images.jianshu.io/upload_images/2754701-178b4e80c70ac4b6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/2754701-178b4e80c70ac4b6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
