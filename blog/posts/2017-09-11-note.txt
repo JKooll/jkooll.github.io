@@ -42,8 +42,9 @@ function logout() {
 	setcookie("password", "");
 }
 ?>
+</code>
 
-<!DOCTYPE html>
+<pre><code class="html"><!DOCTYPE html>
 <html>
 <head>
 	<title>Title</title>
@@ -65,5 +66,4 @@ function logout() {
 Nothing
 <?php endswitch; ?>
 </body>
-</html>
-</code>
+</html></code><pre>
