@@ -1,5 +1,5 @@
 # 使用cookie实现跨页面认证 （PHP版本）
-<code class="php">
+<code>
 <?php 
 $action = '';
 $user_action = empty($_REQUEST['action']) ? '' : $_REQUEST['action'];
@@ -43,7 +43,7 @@ function logout() {
 }
 ?>
 
-<pre><code class="html"><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Title</title>
@@ -65,4 +65,5 @@ function logout() {
 Nothing
 <?php endswitch; ?>
 </body>
-</html></code></pre>
+</html>
+</code>
