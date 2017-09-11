@@ -56,10 +56,10 @@ function renderPost(mkString)
   			pedantic: false,
   			sanitize: false,
   			smartLists: true,
-  			smartypants: false,
-  			highlight: function (code) {
-    		return hljs.highlightAuto(code).value;
-  		}
+  			smartypants: false
+  		// 	highlight: function (code) {
+    // 		return hljs.highlightAuto(code).value;
+  		// }
 	});
 }
 
