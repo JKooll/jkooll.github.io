@@ -1,0 +1,3 @@
+# 使用cookie实现跨页面认证 （PHP版本）
+<code class="php">
+</code>
