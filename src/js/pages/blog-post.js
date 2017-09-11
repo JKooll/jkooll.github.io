@@ -56,7 +56,7 @@ function renderPost(mkString)
   			pedantic: false,
   			sanitize: false,
   			smartLists: true,
-  			smartypants: false
+  			smartypants: true
   		// 	highlight: function (code) {
     // 		return hljs.highlightAuto(code).value;
   		// }
