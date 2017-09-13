@@ -81,7 +81,7 @@ function getContent() {
 	this.getResource(url, success, fail);
 }
 
-function highlight(code)
+function highlight(code, lang)
 {
-	return Prism.highlight(code, Prism.languages.markup)
+	return Prism.highlight(code, eval("Prism.languages." + lang));
 }

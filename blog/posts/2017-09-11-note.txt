@@ -14,16 +14,18 @@
 
 ## 思路
 直接上代码：
-<pre><code class="language-php">
+```php
+
     if (empty($_COOKIE['username']) || empty($_COOKIE['password'])) {
         echo '你还未登录';
     } else {
         echo '你的用户名是：' . $_COOKIE['username'] . ' 你的密码是：' . $_COOKIE['password'];
     }
-</code></pre>
+
+```
 $_COOKIE是PHP的一个超全局变量，它存储用户访问携带的HTTP Cookies， 这里通过判断用户的cookies中是否有'username'
 和'password'这两个字段来判断当前用户是否已经登录。
-<pre><code class="language-php">
+```php
 
     //判断当前用户行为
     $action = $_REQUEST['action'];
@@ -61,8 +63,8 @@ $_COOKIE是PHP的一个超全局变量，它存储用户访问携带的HTTP Cook
     
     //认证用户登录凭证
     function auth($username, $password) {};
-    
-</code></pre>
+
+```
 上面的代码就实现了使用cookie进行登录认证， 这里登录是通过将用户登录凭证保存在cookie中实现的，
 退出的登录是通过将cookie中的登录凭证清空实现的。
 
