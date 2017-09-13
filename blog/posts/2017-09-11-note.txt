@@ -1,5 +1,24 @@
 # 使用cookie实现跨页面认证 （PHP版本）
+## 介绍
+本文通过cookie实现用户登录
+
+## 创建一个文件 -- index.php， 将下面的代码复制到index.php中
 <pre>
-<code class="html">
+<code class="language-html">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Auth Cookie</title>
+    </head>
+    <body>
+    <form method="get" action="index.php">
+        <input type="text" name="action" value="login" hidden>
+        <input type="text" name="username">
+        <input type="text" name="password">
+        <input type="submit" value="Submit">
+    </form>
+    <button><a href="main.php?action=logout">Logout</a></button>
+    </body>
+    </html>
 </code>
 </pre>
