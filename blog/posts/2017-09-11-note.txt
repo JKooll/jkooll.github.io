@@ -12,13 +12,13 @@
         &lt;title&gt;Auth Cookie&lt;/title&gt;
     &lt;/head&gt;
 
-    &lt;body&rgt;
+    &lt;body&gt;
         &lt;form method="get" action="index.php"&gt;
             &lt;input type="text" name="action" value="login" hidden&gt;
             &lt;input type="text" name="username"&gt;
             &lt;input type="text" name="password"&gt;
             &lt;input type="submit" value="Submit"&gt;
-        &lt;/form&rgt;
+        &lt;/form&gt;
         &lt;button&gt;&lt;a href="main.php?action=logout"&gt;Logout&lt;/a&gt;&lt;/button&gt;
     &lt;/body&gt;
 
