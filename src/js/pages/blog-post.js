@@ -83,5 +83,5 @@ function getContent() {
 
 function highlight(code)
 {
-	return Prism.highlightA(code, Prism.languages.markup)
+	return Prism.highlight(code, Prism.languages.markup)
 }
