@@ -10,6 +10,7 @@ var vm = new Vue({
 		posts: function(val, oldVal) {
 			this.post = val[this.id];
 			this.getContent();
+			this.renderPageTitle();
 		}
 	},
 	methods: {
@@ -18,7 +19,8 @@ var vm = new Vue({
 		},
 		getContent: getContent,
 		getPostsJson: getPostsJson,
-		renderPost: renderPost
+		renderPost: renderPost,
+		renderPageTitle: renderPageTitle
 	},
 	mounted: mounted
 });
@@ -84,4 +86,9 @@ function getContent() {
 function highlight(code, lang)
 {
 	return Prism.highlight(code, eval("Prism.languages." + lang));
+}
+
+function renderPageTitle()
+{
+	document.querySelector("head title").textContent = this.post['title'];
 }
