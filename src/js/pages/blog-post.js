@@ -57,9 +57,6 @@ function renderPost(mkString)
   			sanitize: false,
   			smartLists: true,
   			smartypants: true
-  		// 	highlight: function (code) {
-    // 		return hljs.highlightAuto(code).value;
-  		// }
 	});
 }
 
