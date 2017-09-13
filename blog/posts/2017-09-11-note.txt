@@ -1,27 +1,74 @@
-# 使用cookie实现跨页面认证 （PHP版本）
+# 使用cookie实现登录认证 （PHP版本）
+
+## 什么是cookie
+自行[google](https://www.google.com)搜索
+
 ## 介绍
-本文通过cookie实现用户登录
+本文主要通过一个小示例讲解如何使用cookie实现登录认证，一般的登录认证是通过用户填写登录表单，
+然后将表单提交到服务器，服务器判断用户提交的登录凭证是否正确（例如用户名和密码是否匹配等），
+如果正确则登录成功，否则登录失败，但是这里有一个问题就是如果用户关闭当前页面之后再次访问
+时会提示用户再次登录，这会影响用户访问网站的效率，要想让用户在一定时间内不用登录就可以访问
+网站，也就是说用户的上一次登录认证成功之后会有一段时间的有效期，解决方法是给用户分配一个令牌（token），
+用户可以拿着这个token在token有效期内再次访问网站而不用登录，当然token的作用不止帮助用户登录，
+但是我们这里只讨论登录认证相关的问题，所以关于token更多的作用需要你在读完本文之后自己去挖掘。
 
-## 创建一个文件 -- index.php， 将下面的代码复制到index.php中
-<pre>
-<code class="language-html">
-    &lt;!DOCTYPE html&gt;
-    &lt;html&gt;
+## 思路
+直接上代码：
+<pre><code class="language-php">
+    if (empty($_COOKIE['username']) || empty($_COOKIE['password'])) {
+        echo '你还未登录';
+    } else {
+        echo '你的用户名是：' . $_COOKIE['username'] . ' 你的密码是：' . $_COOKIE['password'];
+    }
+</code></pre>
+$_COOKIE是PHP的一个超全局变量，它存储用户访问携带的HTTP Cookies， 这里通过判断用户的cookies中是否有'username'
+和'password'这两个字段来判断当前用户是否已经登录。
+<pre><code class="language-php">
+    //判断当前用户行为
+    $action = $_REQUEST['action'];
+    
+    switch ($action) {
+        case 'login' :
+            login($_REQUEST['username'], $_REQUEST['password']);
+            break;
+        case 'logout' :
+            logout();
+            break;
+        default :
+            echo "action???";
+    }
 
-    &lt;head&gt;
-        &lt;title&gt;Auth Cookie&lt;/title&gt;
-    &lt;/head&gt;
+    //登录
+    function login($username, $password) 
+    {
+        if (auth($username, $password)) {
+            //认证通过
+            $_COOKIE['username'] = $username;
+            $_COOKIE['password'] = $password;
+        } else {
+            //认证未通过
+            echo "认证失败";
+        }
+    }
 
-    &lt;body&gt;
-        &lt;form method="get" action="index.php"&gt;
-            &lt;input type="text" name="action" value="login" hidden&gt;
-            &lt;input type="text" name="username"&gt;
-            &lt;input type="text" name="password"&gt;
-            &lt;input type="submit" value="Submit"&gt;
-        &lt;/form&gt;
-        &lt;button&gt;&lt;a href="main.php?action=logout"&gt;Logout&lt;/a&gt;&lt;/button&gt;
-    &lt;/body&gt;
+    //退出登录
+    function logout()
+    {
+        $_COOKIE['username'] = '';
+        $_COOKIE['password'] = '';
+    }
+    
+    //认证用户登录凭证
+    function auth($username, $password) {};
+</code></pre>
+上面的代码就实现了使用cookie进行登录认证， 这里登录是通过将用户登录凭证保存在cookie中实现的，
+退出的登录是通过将cookie中的登录凭证清空实现的。
 
-    &lt;/html&gt;
-</code>
-</pre>
+## 完整的示例
+- <a href="2017-9-11-note/main.php" download="main.php">main.php</a>
+- <a href="2017-9-11-note/test.php" download="test.php">test.php</a>
+
+## 参考
+- RFC2109 : https://www.ietf.org/rfc/rfc2109.txt
+- setcookie : http://php.net/manual/zh/function.setcookie.php
+- $_COOKIE : http://php.net/manual/zh/reserved.variables.cookies.php
