@@ -56,7 +56,8 @@ function renderPost(mkString)
   			pedantic: false,
   			sanitize: false,
   			smartLists: true,
-  			smartypants: true
+			smartypants: true,
+			highlight: highlight  
 	});
 }
 
@@ -78,4 +79,9 @@ function getContent() {
 	};
 
 	this.getResource(url, success, fail);
+}
+
+function highlight(code)
+{
+	return Prism.highlightA(code, Prism.languages.markup)
 }
