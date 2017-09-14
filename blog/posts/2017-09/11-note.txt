@@ -69,8 +69,8 @@ $_COOKIE是PHP的一个超全局变量，它存储用户访问携带的HTTP Cook
 退出的登录是通过将cookie中的登录凭证清空实现的。
 
 ## 完整的示例
-- <a href="2017-9-11-note/main.php" download="main.php">main.php</a>
-- <a href="2017-9-11-note/test.php" download="test.php">test.php</a>
+- <a href="posts/2017-09/11-note/main.txt" download="main.php">main.php</a>
+- <a href="posts/2017-09/11-note/test.txt" download="test.php">test.php</a>
 
 ## 参考
 - RFC2109 : https://www.ietf.org/rfc/rfc2109.txt

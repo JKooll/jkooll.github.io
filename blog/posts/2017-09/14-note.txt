@@ -1,0 +1,222 @@
+# PHP流程控制的替代语法总结
+
+## if
+标准语法：
+```php
+
+<?php
+$a = 5;
+if ($a == 5) {
+    echo 'A is equal to 5';
+}
+?>
+
+```
+替代语法：
+```php
+
+<?php $a = 5; ?>
+<?php if ($a == 5): ?>
+A is equal to 5
+<?php endif; ?>
+
+```
+
+## if else
+标准语法：
+```php
+
+<?php
+$a = 5;
+if ($a == 5) {
+    echo 'a equals 5';
+    echo '...';
+} elseif ($a == 6) {
+    echo 'a equals 6';
+    echo '!!!';
+} else {
+    echo 'a is neither 5 nor 6';
+}
+?>
+
+```
+替代语法 1：
+```php
+
+<?php
+$a = 5;
+if ($a == 5):
+    echo 'a equals 5';
+    echo '...';
+elseif ($a == 6):
+    echo 'a equals 6';
+    echo '!!!';
+else:
+    echo 'a is neither 5 nor 6';
+endif;
+?>
+
+```
+替代语法 2：
+```php
+
+<?php $a = 5; ?>
+<?php if ($a == 5): ?>
+    a equals 5...
+<?php elseif ($a == 6): ?>
+    a equals 6!!!
+<?php else: ?>
+    a is neither 5 nor 6 
+<?php endif; ?>
+```
+
+## switch
+标准语法：
+```php
+
+<?php
+$a = 5;
+switch ($a) {
+    case 5:
+        echo 'a equals 5';
+        echo '...';
+        break;
+    case 6:
+        echo 'a equals 6';
+        echo '!!!';
+        break;
+    default:
+        echo 'a is neither 5 nor 6';
+}
+?>
+
+```
+替代语法：
+```php
+
+<?php $a = 5; ?>
+//switch和第一个case之间不能有任何输出（包括空格）
+<?php switch ($a): ?>
+<?php case 5: ?>
+a equals 5
+<?php break; ?>
+
+<?php case 6: ?>
+a equals 6
+<?php break; ?>
+
+<?php default: ?>
+a is neither 5 nor 6
+
+<?php endswitch; ?>
+
+```
+
+## while
+标准语法：
+```php
+
+<?php
+$i = 1;
+while ($i <= 10) {
+    echo $i++;
+}
+?>
+
+```
+替代语法 1：
+```php
+
+<?php 
+$i = 1;
+while ($i <= 10):
+    echo $i;
+    $i++;
+endwhile;
+?>
+
+```
+替代语法 2：
+```php
+
+<?php 
+    $arr = ['apple', 'orange', 'peach'];
+    $i = 0;
+?>
+<?php while($i < count($arr)): ?>
+Eat: <?php echo $arr[$i]; ?> <br>
+<?php $i++; ?>
+<?php endwhile;  ?>
+
+```
+
+## for
+标准语法：
+```php
+
+<?php
+$arr = ['apple', 'orange', 'peach'];
+for ($i = 0; $i < count($arr); $i++) {
+    echo "Eat: {$arr[$i]} <br>";
+}
+?>
+
+```
+替代语法 1：
+```php
+
+<?php
+$arr = ['apple', 'orange', 'peach'];
+for ($i = 0; $i < count($arr); $i++):
+    echo "Eat: {$arr[$i]} <br>";
+endfor;
+?>
+
+```
+替代语法 2：
+```php
+
+<?php $arr = ['apple', 'orange', 'peach']?>
+<?php for ($i = 0; $i < count($arr); $i++): ?>
+    Eat: <?php echo $arr[$i] ;?> <br>
+<?php endfor; ?>
+
+```
+
+## foreach
+标准语法:
+```php
+
+<?php
+    $arr = ['apple', 'orange', 'peach'];
+    foreach ($arr as $key => $val) {
+        echo "$key : $val <br>";
+    }
+?>
+
+```
+替代语法 1：
+```php
+
+<?php
+    $arr = ['apple', 'orange', 'peach'];
+    foreach ($arr as $key => $val):
+        echo "$key : $val <br>";
+    endforeach;
+?>
+
+```
+替代语法 2：
+```php
+
+<?php $arr = ['apple', 'orange', 'peach']; ?>
+<?php foreach ($arr as $key => $val): ?>
+    <?php echo "$key : $val"; ?> <br>
+<?php endforeach; ?>
+
+```
+## 流程控制替代语法的作用
+替代语法做常见的用法是内嵌在HTML代码中，动态控制元素的渲染结果。
+
+## 参考
+- 流程控制的替代语法 : http://php.net/manual/zh/control-structures.alternative-syntax.phps

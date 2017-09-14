@@ -1,22 +1,27 @@
 [
 	{
+		"title": "PHP流程控制的替代语法总结",
+		"summary": "if, switch, while, for, foreach",
+		"path": "2017-09/14-note.txt"
+	},
+	{
 		"title": "使用cookie实现跨页面认证 （PHP版本）",
-		"summary": "",
-		"path": "2017-09-11-note.txt"
+		"summary": "$_COOKIE, setcookie",
+		"path": "2017-09/11-note.txt"
 	},
 	{
 		"title": "Github+Hexo+Next创建自己的博客",
-		"summary": "真的不知道该写点什么在这里",
+		"summary": "",
 		"path": "2016-10-03.txt"
 	},
 	{
 		"title": "flysystem中集成SCS（新浪云存储）",
-		"summary": "本来想复制粘贴上一个的，还是算了",
+		"summary": "",
 		"path": "2016-10-03-1.txt"
 	},
 	{
 		"title": "PHP程序员进阶学习书籍参考指南",
-		"summary": "...还是写点什么吧",
+		"summary": "",
 		"path": "2016-10-05.txt"
 	},
 	{
