@@ -33,16 +33,18 @@ https://hexo.io/zh-cn/docs/setup.html文档即可创建自己的博客了。
 ## 部署
 最后就是将博客部署到github上去了，可以参考一下这个(https://hexo.io/zh-cn/docs/deployment.html)，
 - 安装 hexo-deployer-git
-<code>$ npm install hexo-deployer-git --save</code>
+```bash
+$ npm install hexo-deployer-git --save
+```
 - 配置_config.yml
 打开博客根目录下的_config.yml，找到deploy,将配置修改为
-<code>
+```yaml
         deploy:
         type: git
         repo: <repository url>//刚才建的git仓url，可在clone下找到
         branch: [branch]//分支
         message: [message]//commit信息
-</code>
+```
 配置完成之后就可以通过下面三步部署博客了
 - hexo clean
 - hexo generate

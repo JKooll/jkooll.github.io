@@ -13,37 +13,57 @@ tags:
 # 单独下载每个文件，安装
 
 ## 安装apache2
+```bash
 >apt-get install apache2
+```
 
 ## 查看apache2是否安装成功
+```bash
 >apache2 -v
+```
 
 ## 安装php5/php7
+```bash
 >apt-get install php5/php7
+```
 
 ## 查看php是否安装成功
+```bash
 > php5/php7 -v
+```
 
 ## 查看apache2中是否有php.load模块
+```bash
 >cat /etc/apache2/mods-enabled/{php5.load | php7.load}
+```
 
 如果没有对应php版本的.load,就安装libapache2-mod-php5/libapache2-mod-php7
 
 ## 安装MySQL
+```bash
 >apt-get install mysql-server
+```
 
 ## 查看MySQL是否安装成功
+```bash
 >mysql -V
+```
 
 ## 查看php是否有mysql配置文件
+```bash
 >cat /etc/{php5/php7}/conf.d/mysql.ini
+```
 
 如果没有对应php版本的mysql.ini, 就安装php5-mysql/php7-mysql
 
 ## 重启服务
+```bash
 >service mysql restart
 
 >service apache2 restart
+```
 
 # 使用集成包安装
+```bash
 >tasksel install lamp-server
+```

@@ -1,9 +1,0 @@
----
-title: PHP 标准规范
-date: 2016-12-23 18:35:03
-categories:
-- 笔记
-- PHP
-tags:
----
-url:https://psr.phphub.org/

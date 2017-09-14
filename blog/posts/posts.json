@@ -55,26 +55,6 @@
 		"path": "2016-12-18-note.txt"
 	},
 	{
-		"title": "PHP文档学习笔记",
-		"summary": "",
-		"path": "2016-12-21-note.txt"
-	},
-	{
-		"title": "PHP 标准规范",
-		"summary": "",
-		"path": "2016-12-23-note.txt"
-	},
-	{
-		"title": "理解PHP 依赖注入|Laravel IoC容器",
-		"summary": "",
-		"path": "2016-12-24-note.txt"
-	},
-	{
-		"title": "技术博客列表",
-		"summary": "",
-		"path": "2016-12-24-plan.txt"
-	},
-	{
 		"title": "win10无限重启修复笔记",
 		"summary": "",
 		"path": "2017-01-03-note.txt"
@@ -123,11 +103,6 @@
 		"title": "HTML特殊字符编码",
 		"summary": "",
 		"path": "2017-01-22-note.txt"
-	},
-	{
-		"title": "书单[2017]",
-		"summary": "",
-		"path": "2017-01-22-plan.txt"
 	},
 	{
 		"title": "一段神奇的 CSS 调试代码",

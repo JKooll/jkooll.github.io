@@ -11,8 +11,8 @@ tags:
 
 ## 我的代码
 
-<pre>
-#include &lt;stdio.h&gt;
+```c
+#include <stdio.h>
 int main()
 {
     unsigned long start = 0, end = 0, _start = 0, _end = 0, count = 0, max = 0, i = 0, num = 0;
@@ -60,15 +60,14 @@ int main()
 
     return 0;
 }
-
-</pre>
+```
 
 ## 参考别人的代码
-<pre>
+```c
 /*
 *url https://quickgrid.wordpress.com/2015/02/06/uva-problem-100-the-3n-1-problem-solution/
 */
-#include &lt;stdio.h&gt;
+#include <stdio.h>
 #define SIZE 1000002
 
 long int table[SIZE];
@@ -139,8 +138,7 @@ int main()
 
     return 0;
 }
-
-</pre>
+```
 
 >注意事项：数据长度unsigned 或者 long；每次读入的两个数的大小，例如读入<code>a b</code>,如果a > b,需要交换a b，但是输出的时候要按照读入的顺序输出.
 <p>参考代码使用了与运算判奇偶，奇数与1做与运算，奇数二进制最低位为1，偶数二进制最低位为0，所以偶数与1做与运算为0，奇数与1做与运算大于等于1.<>

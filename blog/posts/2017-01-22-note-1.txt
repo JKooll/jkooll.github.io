@@ -8,7 +8,7 @@ tags:
 ---
 ## 怎样根据函数名字符串调用函数的方法？[参见](http://www.tonitech.com/2213.html)
 - 直接调用全局的函数
-<pre>
+```js
 //定义一个名为foo的函数
 funciton foo()
 {
@@ -18,10 +18,10 @@ funciton foo()
 window['foo']();
 //第二种调用方式
 eval('foo()');
-</pre>
+```
 
 - 在一个对象里面调用对象自己的属性函数
-<pre>
+```js
 var test = {
     foo : funciton(a) {
         alert(a);
@@ -37,7 +37,7 @@ var test = {
     }
 };
 test.bar();
-</pre>
+```
 
 ## 对象或数组转换成JSON字符串 [参见](https://msdn.microsoft.com/zh-cn/library/cc836459(v=vs.94).aspx)
 - JSON.stringify()
@@ -46,7 +46,7 @@ test.bar();
 - JSON.parse()
 
 ## 拼接两个json对象
-<pre>
+```js
 //拼接两个json对象
 function merge_jsonobject(jsonobj1, jsonobj2)
 {
@@ -62,6 +62,6 @@ function merge_jsonobject(jsonobj1, jsonobj2)
 
     return result_json;
 }
-</pre>
+```
 
 ## 类型转换 [参见](http://javascript.ruanyifeng.com/grammar/conversion.html#toc3)

@@ -19,23 +19,31 @@ linux一般不支持NTFS文件系统，在挂在硬盘时，会出现只读现�
 
 ### 安装ntfs-3g
 
-<code>sudo apt-get install ntfs-3g</code>
+```bash
+sudo apt-get install ntfs-3g
+```
 
 ### 查看要挂在的NTFS文件系统硬盘
 
-<code>sudo fdisk -l | grep NTFS<code>
+```bash
+sudo fdisk -l | grep NTFS
+```
 
 ### 挂载
 
 #### 手动挂载
 
-<code>mount -t ntfs-3g /dev/<your-NTFS-partition> /{mnt,...}/<folder></code>
+```bash
+mount -t ntfs-3g /dev/<your-NTFS-partition> /{mnt,...}/<folder>
+```
 
 例如：mount -t ntfs-3g /dev/sdb1 /mnt/d
 
 或
 
-<code>ntfs-3g /dev/<your-NTFS-partition> /mnt/<mount point><code>
+```bash
+ntfs-3g /dev/<your-NTFS-partition> /mnt/<mount point>
+```
 
 例如：ntfs-3g /dev/sda1 /mnt/c
 

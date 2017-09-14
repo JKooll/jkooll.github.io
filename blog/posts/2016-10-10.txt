@@ -243,7 +243,6 @@ class Flag
 
 $flag = new Flag(200);
 $flag->drawFlag();
-
 ```
 效果图:
 ![](posts/2016-10-10/001.png)
