@@ -1,11 +1,4 @@
----
-title: flysystem中集成SCS（新浪云存储）
-date: 2016-10-03 15:35:13
-categories:
-- 笔记
-- Laravel
-tags:
----
+# flysystem中集成SCS（新浪云存储）
 
 注：本文使用的是laravel 5.2
 
@@ -35,14 +28,14 @@ SCS SDK
 
 首先安装SCS SDK
 
-```
+```bash
 composer require cloudmario/scs dev-master
 ```
 安装完之后
 打开    `{项目的根目录}/vendor/cloudmario/scs/class`    里面有两个文件SCS.php和SCSWrapper.php
 现在我们现在需要的是SCS.php.
 在刚才打开的`{项目的根目录}/vendor/cloudmario/scs/class`文件夹中创建一个SCSAdapter适配器
-```
+```php
 <?php
 
 use League\Flysystem\Adapter\AbstractAdapter;
@@ -57,11 +50,11 @@ class SCSAdapter extends AbstractAdapter
 这里面需要写的方法一会讲到Filesystem时再说。
 接下来接下来就是创建驱动，其实驱动就是一个ServiceProvider,我们就按照创建ServiceProvider的方法创建一个SCSFilesystemServiceProvider.
 下面是我创建 SCSFilesystemServiceProvider的代码，当然创建的位置无所谓，只要能加载上就可以了
-```
+```php
 php artisan make:provider SCSFilesystemServiceProvider
 ```
 然后将服务注册一下，在config/app.php中添加
-```
+```php
 'providers' => [
     //...
     App\Providers\SCSFilesystemServiceProvider::class,
@@ -107,7 +100,7 @@ class SCSFilesystemServiceProvider extends ServiceProvider
 ```
 注意这里要把刚才创建的SCSAdapter以及刚才安装的SCS.php引入进来，这里我用的是use SCS和use SCSAdapter，可以根据实际情况自己写，出错可不管哦。
 在SCSFilesystemServiceProvider的boot方法中定义SCS驱动，这里格式和文档中一样，不明白可以参考文档，然后注意这里Storage::extend中的闭包函数要求必须返回League\Flysystem\Filesystem的实例，这就是刚才我没说的，在SCSAdapter中要实现的方法的线索，从Filesystem的源代码可以看出，调用云存储驱动的过程大概是
-```
+```php
 Storage::disk('scs') -----> Filesystem::Method -----> SCSAdapter::Method -----> SCSStorage::Method
 ```
 上面只是一个示意图，而且如果配置正确的话Storage::disk('scs')返回的已经是驱动为SCS的Filesystem实例，有些地方表述的有些歧义，不过能明白意思就行，这里就不做过深的讨论了。
