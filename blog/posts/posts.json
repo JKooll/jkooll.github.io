@@ -15,6 +15,11 @@
 		"path": "2017-09/11-note.txt"
 	},
 	{
+		"title": "发布第一个安卓应用 -- 我的Github",
+		"summary": "",
+		"path": "2017-07-25-post.txt"
+	},
+	{
 		"title": "Github+Hexo+Next创建自己的博客",
 		"summary": "",
 		"path": "2016-10-03.txt"
@@ -113,10 +118,5 @@
 		"title": "Uva >> The 3n + 1 problem [#18694054]",
 		"summary": "",
 		"path": "2017-01-29-note.txt"
-	},
-	{
-		"title": "发布第一个安卓应用 -- 我的Github",
-		"summary": "",
-		"path": "2017-07-25-post.txt"
 	}
 ]

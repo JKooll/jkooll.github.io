@@ -1,18 +1,19 @@
 # TODO List (PHP版)
 
 ## 介绍
-本文通过PHP实现一个简单的todo list app，实现简单的几个功能：
-- 添加todo -- add
-- 删除todo -- delete
-- 更新todo -- update
-- 获取todo -- select
-- 连接数据库 -- db_connect
-- 关闭数据库连接 -- db_close
-编程语言：
-- PHP
-- HTML
-数据库：
-- MySQL
+本文通过PHP实现一个简单的todo list app>
+- 功能：
+    - 添加todo -- add
+    - 删除todo -- delete
+    - 更新todo -- update
+    - 获取todo -- select
+    - 连接数据库 -- db_connect
+    - 关闭数据库连接 -- db_close
+- 编程语言：
+  - PHP
+  - HTML
+- 数据库：
+  - MySQL
 
 
 ## 思路
