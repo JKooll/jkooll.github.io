@@ -219,4 +219,4 @@ endfor;
 替代语法做常见的用法是内嵌在HTML代码中，动态控制元素的渲染结果。
 
 ## 参考
-- 流程控制的替代语法 : http://php.net/manual/zh/control-structures.alternative-syntax.phps
+- 流程控制的替代语法 : http://php.net/manual/zh/control-structures.alternative-syntax.php
