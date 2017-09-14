@@ -5,10 +5,10 @@
 ```php
 
 <?php
-$a = 5;
-if ($a == 5) {
-    echo 'A is equal to 5';
-}
+    $a = 5;
+    if ($a == 5) {
+        echo 'A is equal to 5';
+    }
 ?>
 
 ```
@@ -27,16 +27,16 @@ A is equal to 5
 ```php
 
 <?php
-$a = 5;
-if ($a == 5) {
-    echo 'a equals 5';
-    echo '...';
-} elseif ($a == 6) {
-    echo 'a equals 6';
-    echo '!!!';
-} else {
-    echo 'a is neither 5 nor 6';
-}
+    $a = 5;
+    if ($a == 5) {
+        echo 'a equals 5';
+        echo '...';
+    } elseif ($a == 6) {
+        echo 'a equals 6';
+        echo '!!!';
+    } else {
+        echo 'a is neither 5 nor 6';
+    }
 ?>
 
 ```
@@ -44,16 +44,16 @@ if ($a == 5) {
 ```php
 
 <?php
-$a = 5;
-if ($a == 5):
-    echo 'a equals 5';
-    echo '...';
-elseif ($a == 6):
-    echo 'a equals 6';
-    echo '!!!';
-else:
-    echo 'a is neither 5 nor 6';
-endif;
+    $a = 5;
+    if ($a == 5):
+        echo 'a equals 5';
+        echo '...';
+    elseif ($a == 6):
+        echo 'a equals 6';
+        echo '!!!';
+    else:
+        echo 'a is neither 5 nor 6';
+    endif;
 ?>
 
 ```
@@ -75,19 +75,19 @@ endif;
 ```php
 
 <?php
-$a = 5;
-switch ($a) {
-    case 5:
-        echo 'a equals 5';
-        echo '...';
-        break;
-    case 6:
-        echo 'a equals 6';
-        echo '!!!';
-        break;
-    default:
-        echo 'a is neither 5 nor 6';
-}
+    $a = 5;
+    switch ($a) {
+        case 5:
+            echo 'a equals 5';
+            echo '...';
+            break;
+        case 6:
+            echo 'a equals 6';
+            echo '!!!';
+            break;
+        default:
+            echo 'a is neither 5 nor 6';
+    }
 ?>
 
 ```
@@ -117,10 +117,10 @@ a is neither 5 nor 6
 ```php
 
 <?php
-$i = 1;
-while ($i <= 10) {
-    echo $i++;
-}
+    $i = 1;
+    while ($i <= 10) {
+        echo $i++;
+    }
 ?>
 
 ```
@@ -128,11 +128,11 @@ while ($i <= 10) {
 ```php
 
 <?php 
-$i = 1;
-while ($i <= 10):
-    echo $i;
-    $i++;
-endwhile;
+    $i = 1;
+    while ($i <= 10):
+        echo $i;
+        $i++;
+    endwhile;
 ?>
 
 ```
@@ -155,10 +155,10 @@ Eat: <?php echo $arr[$i]; ?> <br>
 ```php
 
 <?php
-$arr = ['apple', 'orange', 'peach'];
-for ($i = 0; $i < count($arr); $i++) {
-    echo "Eat: {$arr[$i]} <br>";
-}
+    $arr = ['apple', 'orange', 'peach'];
+    for ($i = 0; $i < count($arr); $i++) {
+        echo "Eat: {$arr[$i]} <br>";
+    }
 ?>
 
 ```
@@ -166,10 +166,10 @@ for ($i = 0; $i < count($arr); $i++) {
 ```php
 
 <?php
-$arr = ['apple', 'orange', 'peach'];
-for ($i = 0; $i < count($arr); $i++):
-    echo "Eat: {$arr[$i]} <br>";
-endfor;
+    $arr = ['apple', 'orange', 'peach'];
+    for ($i = 0; $i < count($arr); $i++):
+        echo "Eat: {$arr[$i]} <br>";
+    endfor;
 ?>
 
 ```
