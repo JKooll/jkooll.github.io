@@ -1,7 +1,7 @@
 # 使用cookie实现登录认证 （PHP版本）
 
 ## 什么是cookie
-自行[google](https://www.google.com)搜索
+[Google](https://www.google.com)一下就知道 :)
 
 ## 介绍
 本文主要通过一个小示例讲解如何使用cookie实现登录认证，一般的登录认证是通过用户填写登录表单，
@@ -66,11 +66,17 @@ $_COOKIE是PHP的一个超全局变量，它存储用户访问携带的HTTP Cook
 
 ```
 上面的代码就实现了使用cookie进行登录认证， 这里登录是通过将用户登录凭证保存在cookie中实现的，
-退出的登录是通过将cookie中的登录凭证清空实现的。
+退出登录是通过将cookie中的登录凭证清空实现的。
 
 ## 完整的示例
+
+### 文件
 - <a href="posts/2017-09/11-note/main.txt" download="main.php">main.php</a>
 - <a href="posts/2017-09/11-note/test.txt" download="test.php">test.php</a>
+
+### 用法
+将两个下载下来，放到同级目录下，main.php实现了简单的登录和退出功能，test.php为测试文件，显示
+当前cookie。
 
 ## 参考
 - RFC2109 : https://www.ietf.org/rfc/rfc2109.txt
