@@ -3,29 +3,24 @@
 ## if
 标准语法：
 ```php
-
 <?php
     $a = 5;
     if ($a == 5) {
         echo 'A is equal to 5';
     }
 ?>
-
 ```
 替代语法：
 ```php
-
 <?php $a = 5; ?>
 <?php if ($a == 5): ?>
 A is equal to 5
 <?php endif; ?>
-
 ```
 
 ## if else
 标准语法：
 ```php
-
 <?php
     $a = 5;
     if ($a == 5) {
@@ -38,11 +33,9 @@ A is equal to 5
         echo 'a is neither 5 nor 6';
     }
 ?>
-
 ```
 替代语法 1：
 ```php
-
 <?php
     $a = 5;
     if ($a == 5):
@@ -55,11 +48,9 @@ A is equal to 5
         echo 'a is neither 5 nor 6';
     endif;
 ?>
-
 ```
 替代语法 2：
 ```php
-
 <?php $a = 5; ?>
 <?php if ($a == 5): ?>
     a equals 5...
@@ -73,7 +64,6 @@ A is equal to 5
 ## switch
 标准语法：
 ```php
-
 <?php
     $a = 5;
     switch ($a) {
@@ -89,11 +79,9 @@ A is equal to 5
             echo 'a is neither 5 nor 6';
     }
 ?>
-
 ```
 替代语法：
 ```php
-
 <?php $a = 5; ?>
 //switch和第一个case之间不能有任何输出（包括空格）
 <?php switch ($a): ?>
@@ -109,24 +97,20 @@ a equals 6
 a is neither 5 nor 6
 
 <?php endswitch; ?>
-
 ```
 
 ## while
 标准语法：
 ```php
-
 <?php
     $i = 1;
     while ($i <= 10) {
         echo $i++;
     }
 ?>
-
 ```
 替代语法 1：
 ```php
-
 <?php 
     $i = 1;
     while ($i <= 10):
@@ -134,11 +118,9 @@ a is neither 5 nor 6
         $i++;
     endwhile;
 ?>
-
 ```
 替代语法 2：
 ```php
-
 <?php 
     $arr = ['apple', 'orange', 'peach'];
     $i = 0;
@@ -147,73 +129,60 @@ a is neither 5 nor 6
 Eat: <?php echo $arr[$i]; ?> <br>
 <?php $i++; ?>
 <?php endwhile;  ?>
-
 ```
 
 ## for
 标准语法：
 ```php
-
 <?php
     $arr = ['apple', 'orange', 'peach'];
     for ($i = 0; $i < count($arr); $i++) {
         echo "Eat: {$arr[$i]} <br>";
     }
 ?>
-
 ```
 替代语法 1：
 ```php
-
 <?php
     $arr = ['apple', 'orange', 'peach'];
     for ($i = 0; $i < count($arr); $i++):
         echo "Eat: {$arr[$i]} <br>";
     endfor;
 ?>
-
 ```
 替代语法 2：
 ```php
-
 <?php $arr = ['apple', 'orange', 'peach']?>
 <?php for ($i = 0; $i < count($arr); $i++): ?>
     Eat: <?php echo $arr[$i] ;?> <br>
 <?php endfor; ?>
-
 ```
 
 ## foreach
 标准语法:
 ```php
-
 <?php
     $arr = ['apple', 'orange', 'peach'];
     foreach ($arr as $key => $val) {
         echo "$key : $val <br>";
     }
 ?>
-
 ```
 替代语法 1：
 ```php
-
 <?php
     $arr = ['apple', 'orange', 'peach'];
     foreach ($arr as $key => $val):
         echo "$key : $val <br>";
     endforeach;
 ?>
-
 ```
 替代语法 2：
 ```php
-
 <?php $arr = ['apple', 'orange', 'peach']; ?>
 <?php foreach ($arr as $key => $val): ?>
     <?php echo "$key : $val"; ?> <br>
 <?php endforeach; ?>
-
 ```
 ## 流程控制替代语法的作用
 替代语法做常见的用法是内嵌在HTML代码中，动态控制元素的渲染结果。
