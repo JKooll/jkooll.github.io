@@ -1,5 +1,10 @@
 [
 	{
+		"title": "使用session实现登录认证",
+		"summary": "session",
+		"path": "2017-09/19-note.txt"
+	},
+	{
 		"title": "TODO List (PHP版)",
 		"summary": "一个轻量级的PHP TODO list。",
 		"path": "2017-09/15-note.txt"
