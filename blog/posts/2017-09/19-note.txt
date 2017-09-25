@@ -1,6 +1,7 @@
-# 使用session实现登录认证
+# :tada:使用session实现登录认证
 
-## 创建文件
+## 简单认证
+### 创建文件
 创建一个index.php文件
 
 ## 将下面的html代码加入到index.php文件
@@ -47,7 +48,7 @@
 </html>
 ```
 
-## 通过action判断当前用户行为
+### 通过action判断当前用户行为
 ```php
 <?php
 $action = @$_GET['action'];
@@ -60,7 +61,7 @@ if ($action) {
 ```
 将上面的代码插入到前面html代码的前面，用浏览器测试login和logout按钮。
 
-## 如果上面显示正常的结果，则将上面的php代码替换成下面的代码
+### 如果上面显示正常的结果，则将上面的php代码替换成下面的代码
 ```php
 <?php
 session_start();
@@ -103,7 +104,7 @@ function hasLogined()
 ```
 如果显示未登录，则代码运行成功。
 
-## 将html代码替换成下面这样
+### 将html代码替换成下面这样
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -153,5 +154,19 @@ function hasLogined()
 </html>
 ```
 
-## 最终文件
+### 最终文件
 - <a href="posts/2017-09/19-note/session.php" download="session.php">session.php</a>
+
+## 同一目录下，独立认证机制
+
+### What?
+这个认证主要只用于同一域名下并且不能更改二级域名，需要两种不同的认证机制的情况。分别给两个项目设置不同
+的session_name,这样就相当于当用户分别进入这两个系统的时候需要分别进行认证。
+
+### 创建如下目录结构
+![](posts/2017-09/19-note/01.png)
+
+### 最终文件
+- <a href="posts/2017-09/19-note/a_init.php" download="a_init.php">a_init.php => /a/init.php</a>
+- <a href="posts/2017-09/19-note/b_init.php" download="b_init.php">b_init.php => /b/init.php</a>
+- <a href="posts/2017-09/19-note/config.php" download="config.php">config.php => /config.php</a>
