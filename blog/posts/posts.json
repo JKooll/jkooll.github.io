@@ -1,5 +1,10 @@
 [
 	{
+		"title": "玩扫雷的正确姿势",
+		"summary": "js, chrome extension",
+		"path": "2017-09/27-note.txt"
+	},
+	{
 		"title": "使用session实现登录认证",
 		"summary": "session",
 		"path": "2017-09/19-note.txt"
