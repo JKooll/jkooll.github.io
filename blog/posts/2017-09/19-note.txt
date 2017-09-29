@@ -155,7 +155,7 @@ function hasLogined()
 ```
 
 ### 最终文件
-- <a href="posts/2017-09/19-note/session.php" download="session.php">session.php</a>
+- <a href="posts/2017-09/19-note/main.php" download="main.php">main.php</a>
 
 ## 同一目录下，独立认证机制
 
