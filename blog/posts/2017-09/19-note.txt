@@ -170,3 +170,10 @@ function hasLogined()
 - <a href="posts/2017-09/19-note/a_init.php" download="a_init.php">a_init.php => /a/init.php</a>
 - <a href="posts/2017-09/19-note/b_init.php" download="b_init.php">b_init.php => /b/init.php</a>
 - <a href="posts/2017-09/19-note/config.php" download="config.php">config.php => /config.php</a>
+
+## Q & A
+1. session_start()必须放到php文件的第一行吗？
+
+session_start()不必放到第一行，只要保证在session_start()之前不能有任何输出即可。
+
+参考：https://github.com/phpforlan/ArtisanPHP/issues/6
