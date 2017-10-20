@@ -11,18 +11,6 @@ var vm = new Vue({
 		},
 		postUrl: function(index) {
 			return "post.html?id=" + index;
-		},
-		showFullPost: function(post) {
-			let url = 'posts/' + post.path;
-			let success = function(response) {
-				console.log('post full content is: ');
-				console.log(response);
-			};
-			let fail = function(response) {
-				console.log('post get fail.');
-				console.log(response);
-			};
-			this.getResource(url, success, fail);
 		}
 	},
 	
@@ -43,6 +31,23 @@ function mounted() {
 
 	this.getResource(url, success, fail);
 }
+
+//leancloud
+var APP_ID = 'uT370dqXQhwykyNce80IX0Je-gzGzoHsz';
+var APP_KEY = '70uFUFG9h1W7uqE6S1oHXX9a';
+
+AV.init({
+	appId: APP_ID,
+	appKey: APP_KEY
+});
+
+var TestObject = AV.Object.extend('TestObject');
+var testObject = new TestObject();
+testObject.save({
+	words: 'Hello World!!!'
+}).then(function(object) {
+	alert('hahahah');
+});
 
 	
 
