@@ -1,5 +1,10 @@
 [
 	{
+		"title": "English Speaking",
+		"summary": "English",
+		"path": "2018-06/08.md"
+	},
+	{
 		"title": "Hello World!",
 		"summary": "多种编程语言输出\"Hello World!\"",
 		"path": "2018-03/21-note.md"
