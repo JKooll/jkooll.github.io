@@ -1,5 +1,10 @@
 [
 	{
+		"title": "The Snake Game",
+		"summary": "使用javascript写贪吃蛇游戏",
+		"path": "2018-06/24.md"
+	},
+	{
 		"title": "English Speaking",
 		"summary": "English",
 		"path": "2018-06/08.md"

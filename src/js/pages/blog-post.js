@@ -85,6 +85,8 @@ function getContent() {
 
 function highlight(code, lang)
 {
+	console.log(lang);
+
 	return Prism.highlight(code, eval("Prism.languages." + lang));
 }
 
