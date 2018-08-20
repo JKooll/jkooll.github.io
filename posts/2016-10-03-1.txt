@@ -1,0 +1,415 @@
+# flysystem中集成SCS（新浪云存储）
+
+注：本文使用的是laravel 5.2
+
+laravel自带的flysystem驱动除了本地磁盘存储驱动，还有两个云存储驱动Amazon S3、以及 Rackspace，但是这两个由于种种原因导致国内访问速度比较慢，我经常使用SCS访问速度比较稳定，本文就如何在laravel中安装SCS驱动展开讨论。
+
+## 材料：
+
+laravel 5.2（其他版本暂未测试）
+
+SCS SDK
+
+## 步骤：
+
+1.下载安装SCS SDK
+
+2.创建Adapter
+
+3.创建驱动
+
+3.修改flysystem配置文件，添加SCS驱动
+
+4.测试
+
+## 正文：
+
+在laravel中集成SCS，需要一个Adapter和一个storage类，Adapter是作为适配器类似于接口的类，storage用来实现SCS操作.
+
+首先安装SCS SDK
+
+```bash
+composer require cloudmario/scs dev-master
+```
+安装完之后
+打开    `{项目的根目录}/vendor/cloudmario/scs/class`    里面有两个文件SCS.php和SCSWrapper.php
+现在我们现在需要的是SCS.php.
+在刚才打开的`{项目的根目录}/vendor/cloudmario/scs/class`文件夹中创建一个SCSAdapter适配器
+```php
+<?php
+
+use League\Flysystem\Adapter\AbstractAdapter;
+use League\Flysystem\Config;
+use League\Flysystem\Util;
+
+class SCSAdapter extends AbstractAdapter
+{
+    //
+}
+```
+这里面需要写的方法一会讲到Filesystem时再说。
+接下来接下来就是创建驱动，其实驱动就是一个ServiceProvider,我们就按照创建ServiceProvider的方法创建一个SCSFilesystemServiceProvider.
+下面是我创建 SCSFilesystemServiceProvider的代码，当然创建的位置无所谓，只要能加载上就可以了
+```php
+php artisan make:provider SCSFilesystemServiceProvider
+```
+然后将服务注册一下，在config/app.php中添加
+```php
+'providers' => [
+    //...
+    App\Providers\SCSFilesystemServiceProvider::class,
+    //...
+]
+```
+接下来是写一下驱动，这个在文档里面有描述，我在这里只是写一下关于SCS的，不明白的可以点[这里](http://laravel-china.org/docs/5.1/filesystem#自定义文件系统).
+费话不多说，直接上代码.
+```php
+<?php
+namespace App\Providers;
+
+use Illuminate\Session\FileSessionHandler;
+use Storage;
+use League\Flysystem\Filesystem;
+use SCS;
+use SCSAdapter;
+use Illuminate\Support\ServiceProvider;
+
+class SCSFilesystemServiceProvider extends ServiceProvider
+{
+    /**
+     * Bootstrap the application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        Storage::extend('scs', function($app, $config){
+           $client = new SCS($config['accessKey'], $config['secretKey']);
+            return new Filesystem(new SCSAdapter($client, $config['bucket']));
+        });
+    }
+    /**
+     * Register the application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }}
+```
+注意这里要把刚才创建的SCSAdapter以及刚才安装的SCS.php引入进来，这里我用的是use SCS和use SCSAdapter，可以根据实际情况自己写，出错可不管哦。
+在SCSFilesystemServiceProvider的boot方法中定义SCS驱动，这里格式和文档中一样，不明白可以参考文档，然后注意这里Storage::extend中的闭包函数要求必须返回League\Flysystem\Filesystem的实例，这就是刚才我没说的，在SCSAdapter中要实现的方法的线索，从Filesystem的源代码可以看出，调用云存储驱动的过程大概是
+```php
+Storage::disk('scs') -----> Filesystem::Method -----> SCSAdapter::Method -----> SCSStorage::Method
+```
+上面只是一个示意图，而且如果配置正确的话Storage::disk('scs')返回的已经是驱动为SCS的Filesystem实例，有些地方表述的有些歧义，不过能明白意思就行，这里就不做过深的讨论了。
+从上面可以知道其实我们不是直接调用SCSAdapter，而是通过Filesystem封装成统一接口之后调用的，文档中也有说明，这样我们只要将Filesystem类中的方法实现以下就行了.
+下面是我列出的可能需要在SCSAdapter中实现的方法：（下面代码有点长，后面还有一点内容^_^，别错过哦）
+```php 
+protected $storage;
+    protected $bucket;
+
+    public function __construct(SCS $client, $bucket)
+    {
+        $this->storage = $client;
+        $this->bucket = $bucket;
+    }
+
+
+    /**
+     * Check whether a file exists.
+     *
+     * @param string $path
+     *
+     * @return array|bool|null
+     */
+    public function has($path)
+    {
+        //
+    }
+
+
+    /**
+     * Read a file.
+     *
+     * @param string $path
+     *
+     * @return array|false
+     */
+    public function read($path)
+    {
+        //
+    }
+
+
+    /**
+     * Read a file as a stream.
+     *
+     * @param string $path
+     *
+     * @return array|false
+     */
+    public function readStream($path)
+    {
+        //
+    }
+
+
+    /**
+     * List contents of a directory.
+     *
+     * @param string $directory
+     * @param bool   $recursive
+     *
+     * @return array
+     */
+    public function listContents($directory = '', $recursive = false)
+    {
+        //
+    }
+
+
+    /**
+     * Get all the meta data of a file or directory.
+     *
+     * @param string $path
+     *
+     * @return array|false
+     */
+    public function getMetadata($path)
+    {
+        //
+    }
+
+
+    /**
+     * Get all the meta data of a file or directory.
+     *
+     * @param string $path
+     *
+     * @return array|false
+     */
+    public function getSize($path)
+    {
+        //
+    }
+
+
+
+    /**
+     * Get the mimetype of a file.
+     *
+     * @param string $path
+     *
+     * @return array|false
+     */
+    public function getMimetype($path)
+    {
+        //
+    }
+
+
+
+    /**
+     * Get the timestamp of a file.
+     *
+     * @param string $path
+     *
+     * @return array|false
+     */
+    public function getTimestamp($path)
+    {
+        //
+    }
+
+
+
+    /**
+     * Get the visibility of a file.
+     *
+     * @param string $path
+     *
+     * @return array|false
+     */
+    public function getVisibility($path)
+    {
+        //
+    }
+
+
+    /////////////////////////////////////////////////////
+    /**
+     * @const  VISIBILITY_PUBLIC  public visibility
+     */
+    const VISIBILITY_PUBLIC = 'public';
+    /**
+     * @const  VISIBILITY_PRIVATE  private visibility
+     */
+    const VISIBILITY_PRIVATE = 'private';
+
+
+    /**
+     * Write a new file.
+     *
+     * @param string $path
+     * @param string $contents
+     * @param Config $config   Config object
+     *
+     * @return array|false false on failure file meta data on success
+     */
+    public function write($path, $contents, Config $config)
+    {
+        //
+    }
+
+
+    /**
+     * Write a new file using a stream.
+     *
+     * @param string   $path
+     * @param resource $resource
+     * @param Config   $config   Config object
+     *
+     * @return array|false false on failure file meta data on success
+     */
+    public function writeStream($path, $resource, Config $config)
+    {
+        //
+    }
+
+
+
+    /**
+     * Update a file.
+     *
+     * @param string $path
+     * @param string $contents
+     * @param Config $config   Config object
+     *
+     * @return array|false false on failure file meta data on success
+     */
+    public function update($path, $contents, Config $config)
+    {
+        //
+    }
+
+
+
+    /**
+     * Update a file using a stream.
+     *
+     * @param string   $path
+     * @param resource $resource
+     * @param Config   $config   Config object
+     *
+     * @return array|false false on failure file meta data on success
+     */
+    public function updateStream($path, $resource, Config $config)
+    {
+        //
+    }
+
+
+    /**
+     * Rename a file.
+     *
+     * @param string $path
+     * @param string $newpath
+     *
+     * @return bool
+     */
+    public function rename($path, $newpath)
+    {
+        //
+    }
+
+
+
+    /**
+     * Copy a file.
+     *
+     * @param string $path
+     * @param string $newpath
+     *
+     * @return bool
+     */
+    public function copy($path, $newpath)
+    {
+        //
+    }
+
+
+    /**
+     * Delete a file.
+     *
+     * @param string $path
+     *
+     * @return bool
+     */
+    public function delete($path)
+    {
+        //
+    }
+
+
+    /**
+     * Delete a directory.
+     *
+     * @param string $dirname
+     *
+     * @return bool
+     */
+    public function deleteDir($dirname)
+    {
+        //
+    }
+
+
+    /**
+     * Create a directory.
+     *
+     * @param string $dirname directory name
+     * @param Config $config
+     *
+     * @return array|false
+     */
+    public function createDir($dirname, Config $config)
+    {
+        //
+    }
+
+
+    /**
+     * Set the visibility for a file.
+     *
+     * @param string $path
+     * @param string $visibility
+     *
+     * @return array|false file meta data
+     */
+    public function setVisibility($path, $visibility)
+    {
+        //
+    }
+```
+
+要想调用SCS云存储，还差一步就是在config/filesystem.php中添加SCS配置
+``` php
+'disks' => [
+//...
+
+'scs' => [
+    'driver' => 'scs',
+    'accessKey' => 'your-accessKey',
+    'secretKey' => 'your-secretKey',
+    'bucket' => 'your-bucket',
+],
+
+//...
+]
+```
+下面是我的测试结果：
+获取我的bucket中的内容列表
+
+![](https://upload-images.jianshu.io/upload_images/2754701-178b4e80c70ac4b6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

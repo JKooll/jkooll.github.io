@@ -1,29 +1,134 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=decice-width,uer-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>毛线和小白兔</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Blog</title>
 
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="./src/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./src/css/pages/default.css">
+    <link rel="stylesheet" type="text/css" href="./src/css/pages/blog-index.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-7766826337498084",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-ND92JNJ');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92162429-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92162429-1');
+    </script>
 </head>
 <body>
-    <div id="background"></div>
-    <div id="chest">
-        <div class="heart left side top"></div>
-        <div class="heart center">&hearts;</div>
-        <div class="heart right side"></div>
-    </div>
-<div style="width: 500px; height: 500px; margin: 0 auto; text-align: center;">
-        <div>
-            <img src="maoxian.png" alt="">
-            <span style="font-size: 150px;">&</span>
-            <img src="rabbit.png" alt="">
-        </div>
-        <h1 style="font-family: 'Jua', sans-serif; display: inline;">送给我的小白兔</h1>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ND92JNJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  <div id="navigation" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    Jack online
+                </a>
+            </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="./resume.html">Resume</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="./index.html">Blog</a></li>
+                    <li><div id="google_translate_element"></div></li>
+                    <li><a type="button" data-toggle="modal" data-target="#meModal">Me</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
     </div>
-</body>
+
+    <!-- nav me -->
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="meModal">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content" style="padding: 10px 20px;">
+                <div>wechat: <img src="./src/images/wechat_qrcode.jpg" width="50%" alt="wechat QRcode image"> </div>
+                <div>email: <a href="mailto:jerryzhao1212@gmail.com" target="_top">jerryzhao1212@gmail.com</a></div>
+                <div>github: <a href="https://github.com/JKooll" target="_blank">JKooll</a></div>
+                <div>sina weibo: <a href="https://m.weibo.cn/u/5327302933?from=1079195010&wm=4260_0001&sourceType=weixin&uid=5327302933" target="_blank">
+                    JKol123</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="post-list" v-if="posts">
+        <div class="panel panel-default" v-for="(post, index) in posts">
+            <div class="panel-heading">
+                <a :href="postUrl(index)">     
+                    <div class="panel-title open-post-title">
+                        {{ post.title }}
+                    </div>
+                </a>
+            </div>
+            <div class="panel-body">
+                {{ post.summary }}
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./src/js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./src/js/bootstrap.min.js"></script>
+    <!-- vue开发版本 发布之后替换成生产版本 -->
+    <script src="./src/js/vue.js" charset="utf-8"></script>
+    <script src="./src/js/vue-resource.min.js"></script>
+    <script src="./src/js/av-min.js"></script>
+
+    <script src="./src/js/pages/blog-index.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>        
+  </body>
 </html>

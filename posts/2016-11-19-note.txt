@@ -1,0 +1,15 @@
+---
+title: Sorting Secret - Computerphile
+date: 2016-11-19 10:28:27
+categories:
+- 笔记
+- Youtube
+tags:
+- insert sort
+- Youtube
+---
+url:https://www.youtube.com/watch?v=pcJHkWwjNl4
+
+讲得还不错，学习一下！
+
+![](posts/2016-11-19-note/001.JPG)

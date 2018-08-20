@@ -1,0 +1,67 @@
+---
+title: JavaScript学习笔记
+date: 2017-01-22 19:16:52
+categories:
+- 笔记
+- JavaScript
+tags:
+---
+## 怎样根据函数名字符串调用函数的方法？[参见](http://www.tonitech.com/2213.html)
+- 直接调用全局的函数
+```js
+//定义一个名为foo的函数
+funciton foo()
+{
+    alert(1);
+}
+//第一种调用方式
+window['foo']();
+//第二种调用方式
+eval('foo()');
+```
+
+- 在一个对象里面调用对象自己的属性函数
+```js
+var test = {
+    foo : funciton(a) {
+        alert(a);
+    },
+    bar : function() {
+        ***var property = 'foo';***
+        var parameter = ['this is a test!'];
+        ***var fn = this[property];***
+        if(typeof fn === 'funciton') {
+            fn.apply(this, parameter);
+        }
+
+    }
+};
+test.bar();
+```
+
+## 对象或数组转换成JSON字符串 [参见](https://msdn.microsoft.com/zh-cn/library/cc836459(v=vs.94).aspx)
+- JSON.stringify()
+
+## JSON字符串转换成对象 [参见](https://msdn.microsoft.com/zh-cn/library/cc836466(v=vs.94).aspx)
+- JSON.parse()
+
+## 拼接两个json对象
+```js
+//拼接两个json对象
+function merge_jsonobject(jsonobj1, jsonobj2)
+{
+    let result_json = {};
+
+    for(let attr in jsonobj1) {
+        result_json[attr] = jsonobj1[attr];
+    }
+
+    for(let attr in jsonobj2) {
+        result_json[attr] = jsonobj2[attr];
+    }
+
+    return result_json;
+}
+```
+
+## 类型转换 [参见](http://javascript.ruanyifeng.com/grammar/conversion.html#toc3)

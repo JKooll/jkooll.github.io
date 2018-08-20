@@ -1,0 +1,14 @@
+---
+title: HTML特殊字符编码
+date: 2017-01-22 10:25:20
+categories:
+- 笔记
+- HTML
+tags:
+---
+参见:http://www.jb51.net/onlineread/htmlchar.htm
+
+| 特殊符号 | 命名实体| 十进制编码 |
+| :------------- | :------------- |
+| < | &lt; | &#60; |
+| > | &gt; | &#62; |

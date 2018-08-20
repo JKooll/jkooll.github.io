@@ -1,0 +1,21 @@
+---
+title: jQuery学习笔记
+date: 2017-01-22 20:31:23
+categories:
+- 笔记
+- JavaScript
+tags:
+- jQuery
+---
+参考：
+http://www.w3school.com.cn/jquery/index.asp
+
+## 同时获取多个元素，访问其中每一个元素
+- [jQuery遍历](http://www.w3school.com.cn/jquery/jquery_ref_traversing.asp)
+- 通过循环从jQuery对象中获取单个DOM元素，再讲单个DOM元素封装成jQuery对象。
+<pre>
+$items = $("p");
+for(var i = 0; i < $items.length; i++) {
+    $($items[i]);
+}
+</pre>

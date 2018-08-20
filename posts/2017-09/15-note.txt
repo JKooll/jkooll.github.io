@@ -1,0 +1,146 @@
+# TODO List (PHP版)
+
+## 介绍
+本文通过PHP实现一个简单的todo list app>
+- 功能：
+    - 添加todo -- add
+    - 删除todo -- delete
+    - 更新todo -- update
+    - 获取todo -- select
+    - 连接数据库 -- db_connect
+    - 关闭数据库连接 -- db_close
+- 编程语言：
+  - PHP
+  - HTML
+- 数据库：
+  - MySQL
+
+## 思路
+
+### 创建数据表
+```sql
+CREATE TABLE IF NOT EXISTS todolist (
+    id INT primary key auto_increment,
+    content varchar(50) NOT NULL,
+    status varchar(20) DEFAULT 'ongoing'
+) CHARSET utf8;
+```
+首先创建一个数据。
+- id //唯一标识一个todo
+- content //todo的内容
+- status //todo的状态，默认为正在进行(ongoing)
+
+### 连接数据库
+```php
+function db_connect()
+{
+    $db_host = 'localhost'; //不用修改
+    $db_username = 'your mysql username';
+    $db_password = 'your mysql password';
+    $db_name = 'your database name';
+
+    $link = @mysqli_connect($host, $username, $password, $dbname);
+
+    if (!$link) {
+        die('Connect Error (' . mysqli_connect_errno() . ') '
+            . mysqli_connect_error());
+    }
+
+    return $link;
+}
+```
+这里我们使用MySQL增强扩展库(mysqli)进行数据库相关的操作。
+
+### 关闭数据库
+```php
+function db_close($link)
+{
+    mysqli_close($link);
+}
+```
+
+### 添加todo
+```php
+function add($todo) 
+{
+    $link = db_connect();
+
+    if (!empty($todo)) {
+        $query = "INSERT INTO todolist(content) VALUES('$todo')";
+    
+        mysqli_query($link, $query);
+    } else {
+        echo "<script>alert('没有输入!!');</script>";
+    }
+    
+    db_close($link);
+}
+```
+
+### 更改todo状态
+```php
+function complete($id)
+{
+    $link = db_connect();
+
+    if (!empty($id)){    
+        $query = "UPDATE todolist SET status = 'completed' where id=$id";
+        
+        mysqli_query($link, $query);
+    }
+
+    db_close($link);
+}
+```
+
+### 删除todo
+```php
+function delete($id)
+{
+    $link = db_connect();
+
+    if (!empty($id)) {
+        $query = "DELETE FROM todolist WHERE id=$id";
+
+        mysqli_query($link, $query);
+    } else {
+        echo "<script>alert('没有输入id');</script>";
+    }
+
+    db_close($link);
+}
+```
+
+### 获取todo
+```php
+//获取正在进行的todo
+function showOngoing()
+{
+    $link = db_connect();
+
+    $get_todolist_query = "SELECT * FROM todolist where status='ongoing' ORDER BY id ASC";
+
+    $todolist_result = mysqli_query($link, $get_todolist_query);
+
+    $content = mysqli_fetch_all($todolist_result, MYSQLI_NUM);
+
+    return $content;
+}
+
+//获取完成的todo
+function showComplete()
+{
+    $link = db_connect();
+
+    $get_todolist_query = "SELECT * FROM todolist where status='completed' ORDER BY id ASC";
+
+    $todolist_result = mysqli_query($link, $get_todolist_query);
+
+    $todolist_completed_arr = mysqli_fetch_all($todolist_result, MYSQLI_NUM);
+
+    return $todolist_completed_arr;
+}
+```
+
+## 完整的实例
+- <a href="posts/2017-09/15-note/todolist.php" download="todolist.php">todolist.php</a>
