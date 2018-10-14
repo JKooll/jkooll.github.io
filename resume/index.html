@@ -1,153 +1,184 @@
 <!DOCTYPE html>
-<html lang="en" >
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>简历</title>
-  
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css'>
-  <link rel='stylesheet' href='https://s.plurk.com/0e89357f530f0a843c68440a020d4eb5.css'>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>赵树权的简历</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="../node_modules/vue/dist/vue.min.js"></script>
+    <script src="../node_modules/vue-i18n/dist/vue-i18n.min.js"></script>
+   
 </head>
-
 <body>
-<div class="resume">
-  <div class="base">
-    <div class="profile">
-      <div class="photo"><img src="./src/images/avatar.jpg"/></div>
-      <div class="info">
-        <h4 class="name">Jerry Zhao</h4><small class="job">PHP Developer</small>
-      </div>
-    </div>
-    <div class="about">
-      <h3>About me</h3>
-      正在努力学习。。。
-    </div>
-    <div class="contact">
-      <h3>Contact</h3>
-      <div class="call"><i class="fa fa-phone"></i><span>(+61) 432 482 397</span></div>
-      <div class="address"><i class="fa fa-map-marker"></i><span>Gold Coast, Brisban</span></div>
-      <div class="email"><i class="fa fa-envelope"></i><span><a href="mailto:jerryzhao1212@gmail.com">jerryzhao1212@gmail.com</a></span></div>
-      <div class="website"><a href="https://jkooll.github.io" target="_blank"> <i class="fa fa-home"></i><span>jkooll.github.io</span></a></div>
-    </div>
-    <div class="follow">
-      <h3>Follow</h3>
-      <div class="box"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a><a href="javascript:void(0);"><i class="pif-plurkapp"></i></a><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a><a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a><a href="javascript:void(0);"><i class="fa fa-tumblr"></i></a><a href="https://jkooll.github.io" target="_blank"><i class="fa fa-codepen"></i></a></div>
-    </div>
-  </div>
-  <div class="func">
-    <div class="work">
-      <h3><i class="fa fa-briefcase"></i>Work Exrerience</h3>
-      <ul>
-        <li><span>Front-end Web Designer</span><small>Apr 2016 - Now</small></li>
-        <li><span>Design Assistant</span><small>Mar 2015 - Dec 2015</small></li>
-        <li><span>Design Assistant (Part-time)</span><small>Oct 2014 - Jul 2015</small></li>
-      </ul>
-    </div>
-    <div class="edu">
-      <h3><i class="fa fa-graduation-cap"></i>Education</h3>
-      <ul>
-        <li><span>Department of Information Management</span><small>Set 2010 - Jun 2014</small></li>
-        <li><span>Department of Data Processing</span><small>Set 2007 - Jun 2010</small></li>
-      </ul>
-    </div>
-    <div class="skills-prog">
-      <h3><i class="fa fa-code"></i>Programming Skills</h3>
-      <ul>
-        <li data-percent="92"><span>HTML5 & PUG</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="96"><span>CSS3 & SASS</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="40"><span>JavaScript</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="60"><span>jQuery</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="33"><span>NodeJS</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="52"><span>VueJS</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="20"><span>PHP</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="skills-soft">
-      <h3><i class="fa fa-th-list"></i>Software Skills</h3>
-      <ul>
-        <li data-percent="94">
-          <svg viewbox="0 0 100 100">
-            <circle cx="50" cy="50" r="45"></circle>
-            <circle class="cbar" cx="50" cy="50" r="45"></circle>
-          </svg><span>Photoshop</span><small></small>
-        </li>
-        <li data-percent="80">
-          <svg viewbox="0 0 100 100">
-            <circle cx="50" cy="50" r="45"></circle>
-            <circle class="cbar" cx="50" cy="50" r="45"></circle>
-          </svg><span>Illustrator</span><small></small>
-        </li>
-        <li data-percent="89">
-          <svg viewbox="0 0 100 100">
-            <circle cx="50" cy="50" r="45"></circle>
-            <circle class="cbar" cx="50" cy="50" r="45"></circle>
-          </svg><span>Sublime Text</span><small></small>
-        </li>
-        <li data-percent="55">
-          <svg viewbox="0 0 100 100">
-            <circle cx="50" cy="50" r="45"></circle>
-            <circle class="cbar" cx="50" cy="50" r="45"></circle>
-          </svg><span>Dreamweaver</span><small></small>
-        </li>
-      </ul>
-    </div>
-    <div class="interests">
-      <h3><i class="fa fa-star"></i>Interests</h3>
-      <div class="interests-items">
-        <div class="draw"><i class="fa fa-paint-brush"></i><span>Draw</span></div>
-        <div class="guitar"><i class="guitar">
-            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 53.858 53.858">
-              <path d="M6.901,37.275l9.621,9.62l4.185-4.184l-9.622-9.624L6.901,37.275z M11.085,36.64l6.019,6.019l-0.593,0.618l-6.059-6.003L11.085,36.64z"></path>
-              <path d="M36.868,26.667c-0.353-0.705-0.856-1.542-1.346-2.242l-0.366-0.523l-0.088,0.06L50.797,8.235L49.02,6.461L27.277,28.204l0.252,0.754c0.543,1.579,0.152,3.29-1.022,4.464c-1.669,1.668-4.34,1.669-6.009-0.001c-0.784-0.782-1.232-1.9-1.232-3.067c0-1.143,0.438-2.21,1.232-3.005c1.124-1.123,2.881-1.546,4.408-1.018l0.748,0.25L47.396,4.839l-1.836-1.837L29.236,19.276l0.504-0.856l-0.705-0.473c-0.6-0.375-1.231-0.742-1.753-0.872c-0.72-0.227-1.862-0.498-3.213-0.498c-2.318,0-4.399,0.822-6.015,2.377c-1.597,1.533-2.323,3.29-2.875,4.812l-0.069,0.186c-0.09,0.246-0.268,0.732-0.365,0.901c-0.359,0.105-1.264,0.299-1.836,0.366c-2.677,0.509-6.723,1.279-9.691,4.248c-1.125,1.125-3.021,3.529-3.092,7.005c0,3.62,1.996,7.452,5.934,11.39c3.979,3.979,7.791,5.997,11.329,5.997c2.581,0,4.889-1.009,7.066-3.093c2.968-2.968,3.738-7.01,4.247-9.689c0.05-0.199,0.109-0.512,0.171-0.838c0.05-0.26,0.125-0.657,0.176-0.874c0.246-0.135,0.703-0.342,1.166-0.496c1.475-0.536,3.184-1.245,4.818-2.88c3.178-3.372,2.371-7.568,1.879-9.216L36.868,26.667zM24.847,23.653c-2.265-0.469-4.627,0.241-6.185,1.86c-2.652,2.652-2.652,6.967,0,9.621c1.259,1.259,3.001,1.981,4.78,1.981c1.778,0,3.52-0.723,4.779-1.981c1.623-1.621,2.318-3.96,1.86-6.184l3.281-3.282l0.108,0.162c0.365,0.545,0.758,1.166,0.907,1.616c0.554,1.884,0.782,4.579-1.271,6.727c-1.141,1.197-2.512,1.787-3.826,2.248c-1.058,0.377-1.802,0.715-2.28,1.264l-0.095,0.123c-0.237,0.396-0.427,1.125-0.699,2.692c-0.359,2.051-1.027,5.867-3.528,8.429c-1.555,1.556-3.305,2.344-5.2,2.344c-2.856,0.001-6.192-1.793-9.645-5.185c-3.499-3.497-5.244-6.729-5.188-9.615c0-2.383,1.275-4.16,2.345-5.229c2.489-2.488,6.207-3.139,8.424-3.527c1.591-0.265,2.321-0.47,2.786-0.782l0.122-0.106c0.477-0.407,0.74-1.046,1.046-1.786l0.279-0.68c0.464-1.169,0.99-2.494,2.163-3.612c1.147-1.097,2.573-1.652,4.237-1.652c1.184,0,2.166,0.288,2.466,0.376c0.149,0.05,0.391,0.183,0.625,0.312c0.214,0.118,0.432,0.236,0.628,0.324l0.381,0.254L24.847,23.653z"></path>
-              <path d="M23.458,26.252c-1.04,0.075-2.044,0.525-2.757,1.238c-0.762,0.762-1.174,1.772-1.161,2.844c0.013,1.041,0.429,2.003,1.161,2.699c0.77,0.771,1.739,1.178,2.804,1.178c1.035,0,2.056-0.43,2.803-1.177c0.77-0.769,1.177-1.739,1.177-2.802c0-1.034-0.43-2.056-1.177-2.802c-0.768-0.77-1.735-1.178-2.842-1.178C23.462,26.252,23.46,26.252,23.458,26.252z M22.477,29.327c0.265-0.265,0.659-0.43,1.027-0.43c0.409,0,0.735,0.136,1.07,0.468c0.198,0.166,0.326,0.529,0.326,0.928c0,0.408-0.137,0.735-0.43,1.028c-0.521,0.518-1.489,0.546-1.993,0C21.927,30.771,21.927,29.876,22.477,29.327z"></path>
-              <path d="M53.605,8.544l-0.002,0c-0.109-0.623-0.848-3.106-3.078-5.336c-2.085-2.084-4.648-2.96-5.332-3.079L44.546,0l-0.491,0.491c0,0-5.991,5.991-6.301,6.3l-0.457,0.455l1.775,1.776L45.295,2.8c0.867,0.332,2.211,0.988,3.455,2.184c1.186,1.185,1.848,2.562,2.184,3.455l-6.221,6.223l1.773,1.774l7.248-7.246L53.605,8.544z"></path>
-            </svg></i><span>Guitar</span></div>
-        <div class="movie"><i class="fa fa-film"></i><span>Movie</span></div>
-        <div class="music"><i class="fa fa-headphones"></i><span>Music</span></div>
-        <div class="game"><i class="fa fa-gamepad"></i><span>Game</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+    <div id="app">
+        <div class="container resume-languages">
+            <a v-on:click="show('zh')">ZH</a> / <a v-on:click="show('en')">EN</a>
+        </div>
+    
+        <div class="container" id="app">
+            <section>
+                <div>
+                    <div>
+                        <img src="imgs/avatar.jpg" alt="avatar" class="avatar">
+                    </div>
+                </div>
+                <div>
+                    <div class="my-name">{{$t("name")}}</div>
+                    <div class="my-title">{{$t('title')}}</div>
+                    <div class="links">
+                        <div class="link-item">
+                            <svg class="icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg>
+                            <a href="https://blog.man-ing.com" target="_blank">blog.man-ing.com</a>
+                        </div>
+                        <div class="link-item">
+                            <svg class="icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"/></svg>
+                            <a href="mailto:jerryzhao1212@gmail.com">jerryzhao1212@gmail.com</a>
+                        </div>
+                        <div class="link-item">
+                            <svg  class="icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1600 1240q0 27-10 70.5t-21 68.5q-21 50-122 106-94 51-186 51-27 0-53-3.5t-57.5-12.5-47-14.5-55.5-20.5-49-18q-98-35-175-83-127-79-264-216t-216-264q-48-77-83-175-3-9-18-49t-20.5-55.5-14.5-47-12.5-57.5-3.5-53q0-92 51-186 56-101 106-122 25-11 68.5-21t70.5-10q14 0 21 3 18 6 53 76 11 19 30 54t35 63.5 31 53.5q3 4 17.5 25t21.5 35.5 7 28.5q0 20-28.5 50t-62 55-62 53-28.5 46q0 9 5 22.5t8.5 20.5 14 24 11.5 19q76 137 174 235t235 174q2 1 19 11.5t24 14 20.5 8.5 22.5 5q18 0 46-28.5t53-62 55-62 50-28.5q14 0 28.5 7t35.5 21.5 25 17.5q25 15 53.5 31t63.5 35 54 30q70 35 76 53 3 7 3 21z"/></svg>
+                            <a href="tel:+61 432-482-397">+61 432-482-397</a>
+                        </div>
+                    </div>
+    
+                    <p>
+                        {{$t("profile")}}
+                    </p>
+                </div>
+            </section>
+    
+            <section>
+                <div class="section-title">
+                    {{$t('labels.experience')}}
+                </div>
+    
+                <div>
+                    <div class="job">
+                        <div class="job-title-container">
+                            <div>
+                                <div class="job-company">{{$t('experience.item_1.job_company')}}</div>
+                                <div class="job-title">{{$t('experience.item_1.job_title')}}</div>
+                            </div>
+                            <div>
+                                {{$t('experience.item_1.job_time')}}
+                            </div>
+                        </div>
+    
+                        <p>
+                            {{$t('experience.item_1.job_description')}}
+                        </p>
+                    </div>
+                </div>
+            </section>
+    
+            <section>
+                <div class="section-title">
+                    {{$t('labels.education')}}
+                </div>
+    
+                <div>
+                    <div class="job">
+                        <div class="job-title-container">
+                            <div>
+                                <div class="job-company">{{$t('education.item_1.name')}}</div>
+                                <div class="job-title">{{$t('education.item_1.major')}}</div>
+                            </div>
+                            <div>
+                                {{$t('education.item_1.time')}}
+                            </div>
+                        </div>
 
-  
+                        <p>
+                            {{$t('education.item_1.description')}}
+                        </p>
+                    </div>
 
-    <script  src="js/index.js"></script>
+                    <div class="job">
+                        <div class="job-title-container">
+                            <div>
+                                <div class="job-company">{{$t('education.item_2.name')}}</div>
+                                <div class="job-title">{{$t('education.item_2.major')}}</div>
+                            </div>
+                            <div>
+                                {{$t('education.item_2.time')}}
+                            </div>
+                        </div>
 
-
-
-
+                        <p>
+                            {{$t('education.item_2.description')}}
+                        </p>
+                    </div>
+                </div>
+            </section>
+    
+            <section>
+                <div class="section-title">
+                    {{$t('labels.skills')}}
+                </div>
+                <div>
+                    <div class="skills-container">
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript/JQuery</li>
+                            <li>Git/Version Control</li>
+                        </ul>
+                        <ul>
+                            <li>PHP/MySQL</li>
+                            <li>VueJS</li>
+                            <li>Servers/Deployment</li>
+                        </ul>
+                        <ul>
+                            <li>Laravel</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    
+            <section>
+                <div class="section-title">{{$t('labels.interests')}}</div>
+                <div class="interests-container">
+                    <img src="imgs/guitar.svg" alt="icon">
+                    <img src="imgs/piano.svg" alt="icon">
+                    <img src="imgs/controller.svg" alt="icon">
+                    <img src="imgs/headphones.svg" alt="icon">
+                    <img src="imgs/monitor.svg" alt="icon">
+                    <img src="imgs/camera.svg" alt="icon">
+                    <img src="imgs/video.svg" alt="icon">
+                    <img src="imgs/cutlery.svg" alt="icon">
+                </div>
+            </section>
+    
+            <section>
+                <div class="section-title">{{$t('labels.reference')}}</div>
+                <div>
+                    <div class="job-company">Tom, CEO</div>
+                    <div class="job-title">Southern Cross University</div>
+                    <div class="links">
+                        <div class="link-item">
+                            <svg class="icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg>
+                            <a href="https://blog.man-ing.com">blog.man-ing.com</a>
+                        </div>
+                        <div class="link-item">
+                            <svg class="icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"/></svg>
+                            <a href="mailto:jerryzhao1212@gmail.com">jerryzhao1212@gmail.com</a>
+                        </div>
+                        <div class="link-item">
+                            <svg  class="icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1600 1240q0 27-10 70.5t-21 68.5q-21 50-122 106-94 51-186 51-27 0-53-3.5t-57.5-12.5-47-14.5-55.5-20.5-49-18q-98-35-175-83-127-79-264-216t-216-264q-48-77-83-175-3-9-18-49t-20.5-55.5-14.5-47-12.5-57.5-3.5-53q0-92 51-186 56-101 106-122 25-11 68.5-21t70.5-10q14 0 21 3 18 6 53 76 11 19 30 54t35 63.5 31 53.5q3 4 17.5 25t21.5 35.5 7 28.5q0 20-28.5 50t-62 55-62 53-28.5 46q0 9 5 22.5t8.5 20.5 14 24 11.5 19q76 137 174 235t235 174q2 1 19 11.5t24 14 20.5 8.5 22.5 5q18 0 46-28.5t53-62 55-62 50-28.5q14 0 28.5 7t35.5 21.5 25 17.5q25 15 53.5 31t63.5 35 54 30q70 35 76 53 3 7 3 21z"/></svg>
+                            <a href="tel:+61 432-482-397">+61 432-482-397</a>
+                        </div>
+                    </div>
+    
+                    <p class="reference-details">
+                        description
+                    </p>
+    
+                    <div class="reference">More reference available upon request.</div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
 </body>
-
 </html>
