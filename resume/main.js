@@ -8,7 +8,7 @@ const messages = {
             reference: 'Reference'
         },
         name: 'Jerry Zhao',
-        title: 'Backend Developer',
+        title: 'PHP Developer',
         profile: 'I am a website developer and I have three years of experience in website development, and the technology stack is LAMP. I have been able to develop small and medium-sized projects independently and participate in relevant competitions and have been made good grades. I have good teamwork ability. I am full of thirst for knowledge and am interested in technologies. I enjoy programming.',
         experience: {
             item_1: {
@@ -42,8 +42,8 @@ const messages = {
           reference: '参考'
       },
       name: '赵树权',
-      title: '后端开发者',
-      profile: '我是一名网站开发人员，我有三年的网站开发经验，技术堆栈是LAMP。 我已经能够独立开发中小型项目并参加相关比赛，并取得了不错的成绩。 我有很好的团队合作能力。 我对知识充满渴望，对技术很感兴趣。 我喜欢编程。',
+      title: 'PHP开发工程师',
+      profile: '我是一名PHP开发人员，我有三年的网站开发经验，技术堆栈是LAMP。 我已经能够独立开发中小型项目并参加相关比赛，并取得了不错的成绩。 我有很好的团队合作能力。 我对知识充满渴望，对技术很感兴趣。 我喜欢编程。',
       experience: {
           item_1: {
               job_company: '悦享文化传媒',
@@ -82,5 +82,10 @@ const messages = {
           show: function (language) {
               i18n.locale = language;
           }
+      },
+      created: function () {
+          hotkeys('ctrl+s', function (e, handler) {
+            html2pdf().from(document.getElementById('resume')).save();
+          });
       }
   })
