@@ -101,9 +101,15 @@ html {
   .link-item svg {
     margin-right: 6px;
   }
+
+  /* advantages */
+  .advantages-container ul {
+    margin-left: 20px;
+    list-style-type: disc;
+  }
   
   /***********************************
-  * =Experience
+  * Experience
   ***********************************/
   
   .job {
@@ -129,7 +135,7 @@ html {
   }
   
   /***********************************
-  * =Skills
+  * Skills
   ***********************************/
   
   .skills-container {
@@ -159,7 +165,7 @@ html {
   }
   
   /***********************************
-  * =References
+  * References
   ***********************************/
   
   .reference {
@@ -191,6 +197,13 @@ html {
     .interests-container img {
       margin-right: 32px;
       margin-bottom: 16px;
+    }
+  }
+
+
+  @media print {
+    #language-container {
+      display: none;
     }
   }
   
