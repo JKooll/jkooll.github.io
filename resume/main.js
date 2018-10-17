@@ -113,7 +113,7 @@ const messages = {
               job_company: '悦享文化传媒',
               job_title: 'PHP开发工程师',
               job_time: '2017.10 - 2018.2',
-              job_description: '该职位的主要成就包括：与其他同事维护公司网站; 参与并完成公司的核心产品开发; 及时解决客户的问题。'
+              job_description: '主要职责：与其他同事维护公司网站; 参与并完成公司的核心产品开发; 及时解决客户的问题。'
           }
       },
       skills: {
