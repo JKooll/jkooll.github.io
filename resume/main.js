@@ -54,6 +54,12 @@ const messages = {
         },
         activities: {
             item_1: {
+                name: 'China-Northeast Asia Expo Volunteer',
+                title: 'Volunteer',
+                time: '2015.9.1 - 2015.9.6',
+                description: 'At this exhibition, I was responsible for the network security of the exhibition. This work needs to ensure the stable operation of the network of the exhibition, timely repair various network failure problems and help the participants to use the network correctly.'
+            },
+            item_2: {
                 name: 'ACM Programming Group',
                 title: 'Society',
                 time: 'Sept. 2014 - Oct. 2016',
@@ -62,12 +68,6 @@ const messages = {
         },
         adwards: {
             item_1: {
-                name: 'China-Northeast Asia Expo Volunteer',
-                title: 'Volunteer',
-                time: '2015.9.1 - 2015.9.6',
-                description: 'At this exhibition, I was responsible for the network security of the exhibition. This work needs to ensure the stable operation of the network of the exhibition, timely repair various network failure problems and help the participants to use the network correctly.'
-            },
-            item_2: {
                 name: 'The Contest of Lan Qiao Cup',
                 title: 'Second Prize',
                 time: 'March 2016',
