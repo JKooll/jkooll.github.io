@@ -10,6 +10,7 @@ const messages = {
             interests: 'Interests',
             reference: 'Reference'
         },
+        file_name: 'Jerry Zhao\'s Resume',
         name: 'Jerry Zhao',
         title: 'PHP Developer',
         profile: 'A highly resourceful, innovative, and competent PHP developer with extensive experience in the layout, design and coding of websites specifically in PHP format. Possessing considerable knowledge of the development of web applications and scripts using PHP programming language and MySQL & SQL Server databases. Ability to complete web applications independently. Have good teamwork skills. Like programming, embrace open source, there are multiple open source projects on Github. <p>Looking for a suitable developer position with a ambitious & exciting company.</p>',
@@ -104,6 +105,7 @@ const messages = {
           social_links: '社交链接',
           reference: '参考'
       },
+      file_name: '赵树权的简历',
       name: '赵树权',
       title: 'PHP开发工程师',
       profile: '一个创新且能干的PHP开发者，在网站开发方面有丰富的经验。拥有使用Linux，Apache，MySQL和PHP开发Web应用的丰富知识。能够独立完成Web应用。拥有良好的团队协作能力。喜欢编程，拥抱开源，在Github上有多个开源项目。<p>目前正在寻找一个合适的PHP开发工程师职位。</p>',
@@ -201,11 +203,15 @@ const messages = {
       methods: {
           show: function (language) {
               i18n.locale = language;
+              document.getElementsByTagName('title')[0].innerText = i18n.t('file_name');
           }
       },
       created: function () {
+          // 监听快捷键
           hotkeys('ctrl+s', function (e, handler) {
             window.print();
           });
+
+          // 获取浏览器语言
       }
   })
