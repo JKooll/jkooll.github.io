@@ -62,6 +62,12 @@ const messages = {
         },
         adwards: {
             item_1: {
+                name: 'China-Northeast Asia Expo Volunteer',
+                title: 'Volunteer',
+                time: '2015.9.1 - 2015.9.6',
+                description: 'At this exhibition, I was responsible for the network security of the exhibition. This work needs to ensure the stable operation of the network of the exhibition, timely repair various network failure problems and help the participants to use the network correctly.'
+            },
+            item_2: {
                 name: 'The Contest of Lan Qiao Cup',
                 title: 'Second Prize',
                 time: 'March 2016',
@@ -95,7 +101,7 @@ const messages = {
           skills: '技能',
           activities: '活动',
           adwards: '奖项',
-          interests: '兴趣',
+          social_links: '社交链接',
           reference: '参考'
       },
       name: '赵树权',
@@ -142,6 +148,12 @@ const messages = {
       },
       activities: {
           item_1: {
+              name: '中国-东北亚博览会志愿者',
+              title: '志愿者',
+              time: '2015.9.1 - 2015.9.6',
+              description: '在此次展会上，我负责展会的网络保障工作。该工作需要保障展会的网络稳定运行，及时修复出现的各种网络不通畅问题以及帮助参会人员正确使用网络。'
+          },
+          item_2: {
               name: 'ACM编程小组',
               title: '社团',
               time: '2014.9 - 2016.10',
