@@ -26,7 +26,7 @@ const messages = {
                 job_company: 'YUEXIANG Culture Media',
                 job_title: 'PHP Developer',
                 job_time: 'Oct. 2017 - Feb. 2018',
-                job_description: 'The main achievements of the position include: maintaining the company\'s website with other colleagues; participating in and completing the company\'s core product development; and timely solving customer problems.'
+                job_description: 'At this company, I worked with other members of the team to develop the company\'s core products. This is a short video platform where users can upload and share videos and watch other people\'s videos. <p>My main responsibilities: to maintain the company\'s website with other colleagues; to participate in and complete the company\'s core product development; to solve customer problems in a timely manner.</p>'
             }
         },
         skills: {
@@ -121,7 +121,7 @@ const messages = {
               job_company: '悦享文化传媒',
               job_title: 'PHP开发工程师',
               job_time: '2017.10 - 2018.2',
-              job_description: '主要职责：与其他同事维护公司网站; 参与并完成公司的核心产品开发; 及时解决客户的问题。'
+              job_description: '在这个公司，我和团队的其他成员一起完成了公司核心产品的开发，这是一个短视频平台，用户可以上传并分享视频，而且可以观看别人的视频。<p>我的主要职责：与其他同事维护公司网站; 参与并完成公司的核心产品开发; 及时解决客户的问题。</p>'
           }
       },
       skills: {
