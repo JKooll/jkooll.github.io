@@ -13,7 +13,7 @@ const messages = {
         file_name: 'Jerry Zhao\'s Resume',
         name: 'Jerry Zhao',
         title: 'PHP Developer',
-        profile: 'A highly resourceful, innovative, and competent PHP developer with extensive experience in the layout, design and coding of websites specifically in PHP format. Possessing considerable knowledge of the development of web applications and scripts using PHP programming language and MySQL & SQL Server databases. Ability to complete web applications independently. Have good teamwork skills. Like programming, embrace open source, there are multiple open source projects on Github. <p>Looking for a suitable developer position with a ambitious & exciting company.</p>',
+        profile: 'A highly resourceful, innovative, and competent PHP developer with extensive experience in the layout, design and coding of websites specifically in PHP format. Possessing considerable knowledge of the development of web applications and scripts using PHP programming language and MySQL & SQL Server databases. Ability to complete web applications independently. Have good teamwork skills. Like programming, embrace open source, there are multiple open source projects on Github. <p>Looking for a remote PHP developer position with a ambitious & exciting company.</p>',
         advantages: {
             item_1: 'Can complete web application development independently',
             item_2: 'Have good learning, communication, problem solving skills and strong sense of responsibility',
@@ -108,7 +108,7 @@ const messages = {
       file_name: '赵树权的简历',
       name: '赵树权',
       title: 'PHP开发工程师',
-      profile: '一个创新且能干的PHP开发者，在网站开发方面有丰富的经验。拥有使用Linux，Apache，MySQL和PHP开发Web应用的丰富知识。能够独立完成Web应用。拥有良好的团队协作能力。喜欢编程，拥抱开源，在Github上有多个开源项目。<p>目前正在寻找一个合适的PHP开发工程师职位。</p>',
+      profile: '一个创新且能干的PHP开发者，在网站开发方面有丰富的经验。拥有使用Linux，Apache，MySQL和PHP开发Web应用的丰富知识。能够独立完成Web应用。拥有良好的团队协作能力。喜欢编程，拥抱开源，在Github上有多个开源项目。<p>目前正在寻找一个远程PHP开发工程师职位。</p>',
       advantages: {
           item_1: '能独立完成Web应用开发',
           item_2: '有良好的学习能力、沟通能力、解决问题能力、拥有较强的工作责任感',
