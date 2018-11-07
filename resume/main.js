@@ -44,7 +44,7 @@ const messages = {
                 name: 'Southern Cross University',
                 major: 'Bachelor of Information Technology',
                 time: 'Oct. 2016 - Oct. 2018',
-                description: 'Related courses: Application Development, Web Development, Electronic Commerce Systems.'
+                description: 'Related courses: Application Development, Web Development, Electronic Commerce Systems, Computing Project, Business Analytics and Big Data.'
             },
             item_2: {
               name: 'Chang Chun Normal University',
@@ -139,7 +139,7 @@ const messages = {
               name: '南十字星大学',
               major: '信息技术学士',
               time: '2016.10 - 2018.10',
-              description: '相关课程：Application Development，Web Development， Electronic Commerce Systems。'
+              description: '相关课程：Application Development，Web Development， Electronic Commerce Systems，Computing Project， Business Analytics and Big Data.。'
           },
           item_2: {
             name: '长春师范大学',
