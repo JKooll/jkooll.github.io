@@ -1,102 +1,321 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Blog</title>
+    <meta charset="UTF-8">
+    <title>赵树权的简历</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Bootstrap -->
-    <link href="./src/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./src/css/pages/default.css">
-    <link rel="stylesheet" type="text/css" href="./src/css/pages/blog-index.css">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="./src/js/jquery-3.2.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="./src/js/bootstrap.min.js"></script>
-    <!-- vue开发版本 发布之后替换成生产版本 -->
-    <script src="./src/js/vue.js" charset="utf-8"></script>
-    <script src="./src/js/vue-resource.min.js"></script>
-    <script src="./src/js/av-min.js"></script>
+    <script src="node_modules/vue/dist/vue.min.js"></script>
+    <script src="node_modules/vue-i18n/dist/vue-i18n.min.js"></script>
+    <script src="node_modules/hotkeys-js/dist/hotkeys.min.js"></script>
 </head>
 <body>
-  <div id="navigation" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="./index.html">
-                    Jack online
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="/resume/index.html">Resume</a></li>
-                    <li><a href="/foodmap/index.html">FoodMap</a></li>
-                    <li><a href="/ booklist.html">书单</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="./index.html">Blog</a></li>
-                    <li><div id="google_translate_element"></div></li>
-                    <li><a type="button" data-toggle="modal" data-target="#meModal">Me</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <div id="app">
+        <div class="container resume-languages" id="language-container">
+            <a v-on:click="show('zh')">ZH</a> / <a v-on:click="show('en')">EN</a>
         </div>
-        <!-- /.container-fluid -->
-    </div>
-
-    <!-- nav me -->
-    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="meModal">
-        <div class="modal-dialog modal-sm" role="document">
-            <div class="modal-content" style="padding: 10px 20px;">
-                <div>wechat: <img src="./src/images/wechat_qrcode.jpg" width="50%" alt="wechat QRcode image"> </div>
-                <div>email: <a href="mailto:jerryzhao1212@gmail.com" target="_top">jerryzhao1212@gmail.com</a></div>
-                <div>github: <a href="https://github.com/JKooll" target="_blank">JKooll</a></div>
-                <div>sina weibo: <a href="https://m.weibo.cn/u/5327302933?from=1079195010&wm=4260_0001&sourceType=weixin&uid=5327302933" target="_blank">
-                    JKol123</a></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container" id="post-list" v-if="posts">
-        <div class="panel panel-default" v-for="(post, index) in posts">
-            <div class="panel-heading">
-                <a :href="postUrl(index)">     
-                    <div class="panel-title open-post-title">
-                        {{ post.title }}
+    
+        <div class="container" id="resume">
+            <section>
+                <div>
+                    <div>
+                        <img src="imgs/avatar.jpg" alt="avatar" class="avatar">
                     </div>
-                </a>
-            </div>
-            <div class="panel-body">
-                {{ post.summary }}
-            </div>
+                </div>
+                <div>
+                    <div class="my-name">{{$t("name")}}</div>
+                    <div class="my-title">{{$t('title')}}</div>
+                    <div class="links">
+                        <div class="link-item">
+                            <svg class="icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg>
+                            <a href="https://zhaoshuquan.com" target="_blank">zhaoshuquan.com</a>
+                        </div>
+                        <div class="link-item">
+                            <svg class="icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"/></svg>
+                            <a href="mailto:jerryzhao1212@gmail.com">jerryzhao1212@gmail.com</a>
+                        </div>
+                        <div class="link-item">
+                            <svg  class="icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1600 1240q0 27-10 70.5t-21 68.5q-21 50-122 106-94 51-186 51-27 0-53-3.5t-57.5-12.5-47-14.5-55.5-20.5-49-18q-98-35-175-83-127-79-264-216t-216-264q-48-77-83-175-3-9-18-49t-20.5-55.5-14.5-47-12.5-57.5-3.5-53q0-92 51-186 56-101 106-122 25-11 68.5-21t70.5-10q14 0 21 3 18 6 53 76 11 19 30 54t35 63.5 31 53.5q3 4 17.5 25t21.5 35.5 7 28.5q0 20-28.5 50t-62 55-62 53-28.5 46q0 9 5 22.5t8.5 20.5 14 24 11.5 19q76 137 174 235t235 174q2 1 19 11.5t24 14 20.5 8.5 22.5 5q18 0 46-28.5t53-62 55-62 50-28.5q14 0 28.5 7t35.5 21.5 25 17.5q25 15 53.5 31t63.5 35 54 30q70 35 76 53 3 7 3 21z"/></svg>
+                            <a href="tel:+61 432-482-397">+61 432-482-397</a>
+                        </div>
+                    </div>
+    
+                    <p v-html="$t('profile')">
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <div class="section-title">
+                    {{$t('labels.advantages')}}
+                </div>
+
+                <div class="advantages-container">
+                    <ul>
+                        <li>{{$t('advantages.item_1')}}</li>
+                        <li>{{$t('advantages.item_2')}}</li>
+                        <li>{{$t('advantages.item_3')}}</li>
+                        <li>{{$t('advantages.item_4')}}</li>
+                        <li>{{$t('advantages.item_5')}}</li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section>
+                <div class="section-title">
+                    {{$t('labels.experience')}}
+                </div>
+    
+                <div>
+                    <div class="job">
+                        <div class="job-title-container">
+                            <div>
+                                <div class="job-company">{{$t('experience.item_1.job_company')}}</div>
+                                <div class="job-title">{{$t('experience.item_1.job_title')}}</div>
+                            </div>
+                            <div>
+                                {{$t('experience.item_1.job_time')}}
+                            </div>
+                        </div>
+    
+                        <p v-html="$t('experience.item_1.job_description')"></p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="section-title">
+                    {{$t('labels.skills')}}
+                </div>
+                <div>
+                    <div class="advantages-container">
+                        <ul>
+                            <li>{{$t('skills.item_1')}}</li>
+                            <li>{{$t('skills.item_2')}}</li>
+                            <li>{{$t('skills.item_3')}}</li>
+                            <li>{{$t('skills.item_4')}}</li>
+                            <li>{{$t('skills.item_5')}}</li>
+                            <li>{{$t('skills.item_6')}}</li>
+                            <li>{{$t('skills.item_7')}}</li>
+                            <li>{{$t('skills.item_8')}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    
+            <section>
+                <div class="section-title">
+                    {{$t('labels.education')}}
+                </div>
+    
+                <div>
+                    <div class="job">
+                        <div class="job-title-container">
+                            <div>
+                                <div class="job-company">{{$t('education.item_1.name')}}</div>
+                                <div class="job-title">{{$t('education.item_1.major')}}</div>
+                            </div>
+                            <div>
+                                {{$t('education.item_1.time')}}
+                            </div>
+                        </div>
+
+                        <p>
+                            {{$t('education.item_1.description')}}
+                        </p>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-title-container">
+                            <div>
+                                <div class="job-company">{{$t('education.item_2.name')}}</div>
+                                <div class="job-title">{{$t('education.item_2.major')}}</div>
+                            </div>
+                            <div>
+                                {{$t('education.item_2.time')}}
+                            </div>
+                        </div>
+
+                        <p>
+                            {{$t('education.item_2.description')}}
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="section-title">
+                    {{$t('labels.activities')}}
+                </div>
+                <div>
+                    <div class="job">
+                        <div class="job-title-container">
+                            <div>
+                                <div class="job-company">
+                                    {{$t('activities.item_1.name')}}
+                                </div>
+                                <div class="job-title">
+                                    {{$t('activities.item_1.title')}}
+                                </div>
+                            </div>
+                            <div>
+                                {{$t('activities.item_1.time')}}
+                            </div>
+                        </div>
+                        <p>
+                            {{$t('activities.item_1.description')}}
+                        </p>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-title-container">
+                            <div>
+                                <div class="job-company">
+                                    {{$t('activities.item_2.name')}}
+                                </div>
+                                <div class="job-title">
+                                    {{$t('activities.item_2.title')}}
+                                </div>
+                            </div>
+                            <div>
+                                {{$t('activities.item_2.time')}}
+                            </div>
+                        </div>
+                        <p>
+                            {{$t('activities.item_2.description')}}
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="section-title">
+                    {{$t('labels.adwards')}}
+                </div>
+                <div>
+                    <div class="job">
+                        <div class="job-title-container">
+                            <div>
+                                <div class="job-company">{{$t('adwards.item_1.name')}}</div>
+                                <div class="job-title">{{$t('adwards.item_1.title')}}</div>
+                            </div>
+                            <div>
+                                {{$t('adwards.item_1.time')}}
+                            </div>
+                        </div>
+
+                        <p>
+                            {{$t('adwards.item_1.description')}}
+                        </p>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-title-container">
+                            <div>
+                                <div class="job-company">{{$t('adwards.item_2.name')}}</div>
+                                <div class="job-title">{{$t('adwards.item_2.title')}}</div>
+                            </div>
+                            <div>
+                                {{$t('adwards.item_2.time')}}
+                            </div>
+                        </div>
+
+                        <p>
+                            {{$t('adwards.item_2.description')}}
+                        </p>
+                    </div>
+                    
+                    <div class="job">
+                        <div class="job-title-container">
+                            <div>
+                                <div class="job-company">{{$t('adwards.item_3.name')}}</div>
+                                <div class="job-title">{{$t('adwards.item_3.title')}}</div>
+                            </div>
+                            <div>
+                                {{$t('adwards.item_3.time')}}
+                            </div>
+                        </div>
+
+                        <p>
+                            {{$t('adwards.item_3.description')}}
+                        </p>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-title-container">
+                            <div>
+                                <div class="job-company">{{$t('adwards.item_4.name')}}</div>
+                                <div class="job-title">{{$t('adwards.item_4.title')}}</div>
+                            </div>
+                            <div>
+                                {{$t('adwards.item_4.time')}}
+                            </div>
+                        </div>
+
+                        <p>
+                            {{$t('adwards.item_4.description')}}
+                        </p>
+                    </div>
+                </div>
+            </section>
+    
+            <section>
+                <div class="section-title">{{$t('labels.social_links')}}</div>
+                <div class="social-links-container">
+                    <a href="https://github.com/JKooll" target="_blank"><svg class="icon" aria-labelledby="simpleicons-github-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-github-icon">GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+                    <a href="https://www.linkedin.com/in/shuquanzhao" target="_blank"><svg class="icon" aria-labelledby="simpleicons-linkedin-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-linkedin-icon">LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    <a href="https://leetcode.com/jkol" target="_blank"><svg class="icon" aria-labelledby="simpleicons-leetcode-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-leetcode-icon">LeetCode icon</title><path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039z"/><path d="M20.811 13.01H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"/></svg></a>
+                    <a href="https://stackoverflow.com/users/6792429/jkol" target="_blank"><svg class="icon" aria-labelledby="simpleicons-stackoverflow-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-stackoverflow-icon">Stack Overflow icon</title><path d="M18.986 21.865v-6.404h2.134V24H1.844v-8.539h2.13v6.404h15.012zM6.111 19.731H16.85v-2.137H6.111v2.137zm.259-4.852l10.48 2.189.451-2.07-10.478-2.187-.453 2.068zm1.359-5.056l9.705 4.53.903-1.95-9.706-4.53-.902 1.936v.014zm2.715-4.785l8.217 6.855 1.359-1.62-8.216-6.853-1.35 1.617-.01.001zM15.751 0l-1.746 1.294 6.405 8.604 1.746-1.294L15.749 0h.002z"/></svg></a>
+                    <a href="https://www.freecodecamp.org/jkooll" target="_blank"><svg class="icon" aria-labelledby="simpleicons-freecodecamp-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-freecodecamp-icon">freeCodeCamp icon</title><path d="M23.967 12.317c0 2.5-.854 4.718-2.598 6.681-.635.729-1.143 1.076-1.488 1.076-.121 0-.256-.033-.346-.125-.092-.096-.15-.223-.15-.35 0-.188.225-.475.674-.889 1.814-1.736 2.727-3.895 2.727-6.456 0-2.846-.943-5.152-2.816-6.936-.374-.342-.57-.627-.57-.852 0-.12.061-.256.164-.345.105-.09.225-.149.346-.149.418 0 1.049.509 1.842 1.527C23.25 7.402 24 9.694 24 12.345l-.033-.028zM0 11.682c0-2.499.854-4.719 2.598-6.681.635-.729 1.143-1.076 1.49-1.076.119 0 .254.033.344.125.09.095.15.189.15.314 0 .188-.225.477-.674.918-1.781 1.744-2.711 3.895-2.711 6.462 0 2.847.951 5.158 2.821 6.935.38.344.569.633.569.854 0 .127-.061.256-.16.348-.099.094-.225.16-.352.16-.436 0-1.033-.51-1.828-1.518C.734 16.654 0 14.373 0 11.682zm17.699 6.869H6.715c-.35 0-.668-.287-.668-.666 0-.383.285-.668.668-.668h10.984c.348 0 .668.285.668.668-.006.385-.287.666-.668.666zm-6-8.919c.197-.025.344.615.361.749.046.353-.071.693-.231 1.003-.597 1.165-1.978 2.104-1.612 3.575.166.635.494 1.076 1.514 1.619-.345.119-.824-.111-1.094-.301-1.199-.816-1.963-2.156-1.888-3.619.03-.464.12-.92.239-1.368.375-1.281 1.139-2.401 1.588-3.647.225-.599.39-1.324.211-1.953-.09-.309-.255-.599-.465-.849-.061-.076-.404-.465-.539-.42.6-.225 1.139-.016 1.662.299.404.24.72.585.959.975.449.719.629 1.542.719 2.381.031.345-.015 1.184.39 1.35.419.179.749-.525.839-.81.195-.645-.06-1.259-.314-1.858.061.121.285.255.389.346l.36.344c.435.449.704 1.004.884 1.604.164.539.24 1.093.27 1.633.074 1.123-.18 2.278-.629 3.311-.195.463-.449.898-.779 1.273-.319.373-.748.613-1.093.957.808-.809 1.238-2.127 1.123-3.131-.06-.553-.239-1.063-.659-1.572 0 0 .045.358.087.583.075.495-.255 1.02-.644.959-.285-.029-.136-.643-.105-.838.105-.584-.03-1.154-.244-1.693-.209-.509-.6-.914-1.198-.823l-.101-.079z"/></svg></a>
+                </div>
+                <div>
+                    <div class="advantages-container social-links-list-container">
+                        <ul>
+                            <li>
+                                <svg class="icon" aria-labelledby="simpleicons-github-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-github-icon">GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                                github.com/JKooll
+                            </li>
+                            <li>
+                                <svg class="icon" aria-labelledby="simpleicons-linkedin-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-linkedin-icon">LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                linkedin.com/in/shuquanzhao
+                            </li>
+                            <li>
+                                <svg class="icon" aria-labelledby="simpleicons-leetcode-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-leetcode-icon">LeetCode icon</title><path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039z"/><path d="M20.811 13.01H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"/></svg>
+                                leetcode.com/jkol
+                            </li>
+                            <li>
+                                <svg class="icon" aria-labelledby="simpleicons-stackoverflow-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-stackoverflow-icon">Stack Overflow icon</title><path d="M18.986 21.865v-6.404h2.134V24H1.844v-8.539h2.13v6.404h15.012zM6.111 19.731H16.85v-2.137H6.111v2.137zm.259-4.852l10.48 2.189.451-2.07-10.478-2.187-.453 2.068zm1.359-5.056l9.705 4.53.903-1.95-9.706-4.53-.902 1.936v.014zm2.715-4.785l8.217 6.855 1.359-1.62-8.216-6.853-1.35 1.617-.01.001zM15.751 0l-1.746 1.294 6.405 8.604 1.746-1.294L15.749 0h.002z"/></svg>
+                                stackoverflow.com/users/6792429/jkol
+                            </li>
+                            <li>
+                                <svg class="icon" aria-labelledby="simpleicons-freecodecamp-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-freecodecamp-icon">freeCodeCamp icon</title><path d="M23.967 12.317c0 2.5-.854 4.718-2.598 6.681-.635.729-1.143 1.076-1.488 1.076-.121 0-.256-.033-.346-.125-.092-.096-.15-.223-.15-.35 0-.188.225-.475.674-.889 1.814-1.736 2.727-3.895 2.727-6.456 0-2.846-.943-5.152-2.816-6.936-.374-.342-.57-.627-.57-.852 0-.12.061-.256.164-.345.105-.09.225-.149.346-.149.418 0 1.049.509 1.842 1.527C23.25 7.402 24 9.694 24 12.345l-.033-.028zM0 11.682c0-2.499.854-4.719 2.598-6.681.635-.729 1.143-1.076 1.49-1.076.119 0 .254.033.344.125.09.095.15.189.15.314 0 .188-.225.477-.674.918-1.781 1.744-2.711 3.895-2.711 6.462 0 2.847.951 5.158 2.821 6.935.38.344.569.633.569.854 0 .127-.061.256-.16.348-.099.094-.225.16-.352.16-.436 0-1.033-.51-1.828-1.518C.734 16.654 0 14.373 0 11.682zm17.699 6.869H6.715c-.35 0-.668-.287-.668-.666 0-.383.285-.668.668-.668h10.984c.348 0 .668.285.668.668-.006.385-.287.666-.668.666zm-6-8.919c.197-.025.344.615.361.749.046.353-.071.693-.231 1.003-.597 1.165-1.978 2.104-1.612 3.575.166.635.494 1.076 1.514 1.619-.345.119-.824-.111-1.094-.301-1.199-.816-1.963-2.156-1.888-3.619.03-.464.12-.92.239-1.368.375-1.281 1.139-2.401 1.588-3.647.225-.599.39-1.324.211-1.953-.09-.309-.255-.599-.465-.849-.061-.076-.404-.465-.539-.42.6-.225 1.139-.016 1.662.299.404.24.72.585.959.975.449.719.629 1.542.719 2.381.031.345-.015 1.184.39 1.35.419.179.749-.525.839-.81.195-.645-.06-1.259-.314-1.858.061.121.285.255.389.346l.36.344c.435.449.704 1.004.884 1.604.164.539.24 1.093.27 1.633.074 1.123-.18 2.278-.629 3.311-.195.463-.449.898-.779 1.273-.319.373-.748.613-1.093.957.808-.809 1.238-2.127 1.123-3.131-.06-.553-.239-1.063-.659-1.572 0 0 .045.358.087.583.075.495-.255 1.02-.644.959-.285-.029-.136-.643-.105-.838.105-.584-.03-1.154-.244-1.693-.209-.509-.6-.914-1.198-.823l-.101-.079z"/></svg>
+                                freecodecamp.org/jkooll
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </section>
+    
+            <section>
+                <div class="section-title">{{$t('labels.reference')}}</div>
+                <div class="job">
+                    <div class="job-company">Mr Alex Hendry, BInfTech(SCU)</div>
+                    <div class="job-title">Southern Cross University</div>
+                    <div class="links">
+                        <div class="link-item">
+                            <svg class="icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"/></svg>
+                            <a href="mailto:alex.hendry@scu.edu.au">alex.hendry@scu.edu.au</a>
+                        </div>
+                    </div>
+                    <div class="reference">More reference available upon request.</div>        
+                </div>
+            </section>
         </div>
     </div>
-
-    <script src="./src/js/pages/blog-index.js" charset="utf-8"></script>
-
-    <script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-    }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>        
-  </body>
+    
+    <script src="main.js"></script>
+</body>
 </html>
