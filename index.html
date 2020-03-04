@@ -14,7 +14,7 @@
 <body>
     <div id="app">
         <div class="container resume-languages" id="language-container">
-            <a v-on:click="show('zh')">ZH</a> / <a v-on:click="show('en')">EN</a>
+            <a v-on:click="goto('zh')">中文</a> / <a v-on:click="goto('en')">ENGLISH</a>
         </div>
     
         <div class="container" id="resume">
@@ -81,6 +81,20 @@
                         </div>
     
                         <p v-html="$t('experience.item_1.job_description')"></p>
+                    </div>
+                    
+                    <div class="job">
+                        <div class="job-title-container">
+                            <div>
+                                <div class="job-company">{{$t('experience.item_2.job_company')}}</div>
+                                <div class="job-title">{{$t('experience.item_2.job_title')}}</div>
+                            </div>
+                            <div>
+                                {{$t('experience.item_2.job_time')}}
+                            </div>
+                        </div>
+    
+                        <p v-html="$t('experience.item_2.job_description')"></p>
                     </div>
                 </div>
             </section>

@@ -27,6 +27,7 @@ img {
 .container a {
   color: #323232;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .container a:hover {

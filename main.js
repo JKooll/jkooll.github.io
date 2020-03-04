@@ -8,12 +8,13 @@ const messages = {
             activities: 'Activities',
             adwards: 'Adwards',
             interests: 'Interests',
+            social_links: 'Social Links',
             reference: 'Reference'
         },
         file_name: 'Jerry Zhao\'s Resume',
         name: 'Jerry Zhao',
         title: 'PHP Developer',
-        profile: 'A highly resourceful, innovative, and competent PHP developer with extensive experience in the layout, design and coding of websites specifically in PHP format. Possessing considerable knowledge of the development of web applications and scripts using PHP programming language and MySQL & SQL Server databases. Ability to complete web applications independently. Have good teamwork skills. Like programming, embrace open source, there are multiple open source projects on Github. <p>Looking for a remote PHP developer position with a ambitious & exciting company.</p>',
+        profile: 'A highly resourceful, innovative, and competent PHP developer with extensive experience in the layout, design and coding of websites specifically in PHP format. Possessing considerable knowledge of the development of web applications and scripts using PHP programming language and MySQL & SQL Server databases. Ability to complete web applications independently. Have good teamwork skills. Like programming, embrace open source, there are multiple open source projects on Github.',
         advantages: {
             item_1: 'Can complete web application development independently',
             item_2: 'Have good learning, communication, problem solving skills and strong sense of responsibility',
@@ -23,6 +24,12 @@ const messages = {
         },
         experience: {
             item_1: {
+                job_company: 'Kakabuy',
+                job_title: 'PHP Developer',
+                job_time: 'Jan. 2019 - Apr. 2019',
+                job_description: 'Maintain stable operation of online shopping platform, develop new functions according to demand, optimize front-end resource loadig.'
+            },
+            item_2: {
                 job_company: 'YUEXIANG Culture Media',
                 job_title: 'PHP Developer',
                 job_time: 'Oct. 2017 - Feb. 2018',
@@ -34,7 +41,7 @@ const messages = {
             item_2: 'Web Frameworks: Laravel/Slim/ThinkPHP',
             item_3: 'Frontend Frameworks: Bootstrap/AngularJS/VueJS/Ionic',
             item_4: 'Frontend Tools: SaSS/PhoneGap',
-            item_5: 'Data: MySQL/PDO',
+            item_5: 'Database: MySQL/PDO',
             item_6: 'Version Management, Documentation, and Automated Deployment: SVN/Git/PHPDoc/Composer',
             item_7: 'Unit Test: PHPUnit',
             item_8: 'Cloud and Open Platform: AWS/SAE/Wechat Application Development'
@@ -47,11 +54,11 @@ const messages = {
                 description: 'Related courses: Application Development, Web Development, Electronic Commerce Systems, Computing Project, Business Analytics and Big Data.'
             },
             item_2: {
-              name: 'Chang Chun Normal University',
-              major: 'Bachelor of Computer Science and Technology',
-              time: 'Sept. 2014 - Oct. 2016',
-              description: 'Related courses: Introduction to Computer Science, C++, Java, Computer Network, Discrete Mathematics.'
-          }
+                name: 'Chang Chun Normal University',
+                major: 'Bachelor of Computer Science and Technology',
+                time: 'Sept. 2014 - Oct. 2016',
+                description: 'Related courses: Introduction to Computer Science, C++, Java, Computer Network, Discrete Mathematics.'
+            }
         },
         activities: {
             item_1: {
@@ -95,123 +102,138 @@ const messages = {
         }
     },
     zh: {
-      labels: {
-          advantages: '优势',
-          experience: '经历',
-          education: '教育',
-          skills: '技能',
-          activities: '活动',
-          adwards: '奖项',
-          social_links: '社交链接',
-          reference: '参考'
-      },
-      file_name: '赵树权的简历',
-      name: '赵树权',
-      title: 'PHP开发工程师',
-      profile: '一个创新且能干的PHP开发者，在网站开发方面有丰富的经验。拥有使用Linux，Apache，MySQL和PHP开发Web应用的丰富知识。能够独立完成Web应用。拥有良好的团队协作能力。喜欢编程，拥抱开源，在Github上有多个开源项目。<p>目前正在寻找一个远程PHP开发工程师职位。</p>',
-      advantages: {
-          item_1: '能独立完成Web应用开发',
-          item_2: '有良好的学习能力、沟通能力、解决问题能力、拥有较强的工作责任感',
-          item_3: '拥有Geek精神，热爱开源，在GitHub上有很多开源项目',
-          item_4: '英语良好，无障碍阅读英文文档',
-          item_5: '熟练协作，无压力编写技术文档、项目文档'
-      },
-      experience: {
-          item_1: {
-              job_company: '悦享文化传媒',
-              job_title: 'PHP开发工程师',
-              job_time: '2017.10 - 2018.2',
-              job_description: '在这个公司，我和团队的其他成员一起完成了公司核心产品的开发，这是一个短视频平台，用户可以上传并分享视频，而且可以观看别人的视频。<p>我的主要职责：与其他同事维护公司网站; 参与并完成公司的核心产品开发; 及时解决客户的问题。</p>'
-          }
-      },
-      skills: {
-          item_1: 'Web开发：PHP/TypeScript/Node',
-          item_2: 'Web框架：Laravel/Slim/ThinkPHP',
-          item_3: '前端框架：Bootstrap/AngularJS/VueJS/Ionic',
-          item_4: '前端工具：SaSS/PhoneGap',
-          item_5: '数据库相关：MySQL/PDO',
-          item_6: '版本管理、文档和自动化部署：SVN/Git/PHPDoc/Composer',
-          item_7: '单元测试：PHPUnit',
-          item_8: '云和开放平台：AWS/SAE/微信应用开发'
-      },
-      education: {
-          item_1: {
-              name: '南十字星大学',
-              major: '信息技术学士',
-              time: '2016.10 - 2018.10',
-              description: '相关课程：Application Development，Web Development， Electronic Commerce Systems，Computing Project， Business Analytics and Big Data.。'
-          },
-          item_2: {
-            name: '长春师范大学',
-            major: '计算机科学与技术学士',
-            time: '2014.9 - 2016.10',
-            description: '相关课程：计算机科学导论，C++，Java，计算机网络，离散数学。'
+        labels: {
+            advantages: '优势',
+            experience: '经历',
+            education: '教育',
+            skills: '技能',
+            activities: '活动',
+            adwards: '奖项',
+            social_links: '社交链接',
+            reference: '参考'
+        },
+        file_name: '赵树权的简历',
+        name: '赵树权',
+        title: 'PHP开发工程师',
+        profile: '一个创新且能干的PHP开发者，在网站开发方面有丰富的经验。拥有使用Linux，Apache，MySQL和PHP开发Web应用的丰富知识。能够独立完成Web应用。拥有良好的团队协作能力。喜欢编程，拥抱开源，在Github上有多个开源项目。',
+        advantages: {
+            item_1: '能独立完成Web应用开发',
+            item_2: '有良好的学习能力、沟通能力、解决问题能力、拥有较强的工作责任感',
+            item_3: '拥有Geek精神，热爱开源，在GitHub上有很多开源项目',
+            item_4: '英语良好，无障碍阅读英文文档',
+            item_5: '熟练协作，无压力编写技术文档、项目文档'
+        },
+        experience: {
+            item_1: {
+                job_company: 'Kakabuy',
+                job_title: 'PHP 开发工程师',
+                job_time: '2019.1 - 2019.4',
+                job_description: '维护线上购物平台稳定运行，根据需求开发新的功能，优化前端资源加载。'
+            },
+            item_2: {
+                job_company: '悦享文化传媒',
+                job_title: 'PHP 开发工程师',
+                job_time: '2017.10 - 2018.2',
+                job_description: '在这个公司，我和团队的其他成员一起完成了公司核心产品的开发，这是一个短视频平台，用户可以上传并分享视频，而且可以观看别人的视频。<p>我的主要职责：与其他同事维护公司网站; 参与并完成公司的核心产品开发; 及时解决客户的问题。</p>'
+            }
+        },
+        skills: {
+            item_1: 'Web开发：PHP/TypeScript/Node',
+            item_2: 'Web框架：Laravel/Slim/ThinkPHP',
+            item_3: '前端框架：Bootstrap/AngularJS/VueJS/Ionic',
+            item_4: '前端工具：SaSS/PhoneGap',
+            item_5: '数据库相关：MySQL/PDO',
+            item_6: '版本管理、文档和自动化部署：SVN/Git/PHPDoc/Composer',
+            item_7: '单元测试：PHPUnit',
+            item_8: '云和开放平台：AWS/SAE/微信应用开发'
+        },
+        education: {
+            item_1: {
+                name: '南十字星大学',
+                major: '信息技术学士',
+                time: '2016.10 - 2018.10',
+                description: '相关课程：Application Development，Web Development， Electronic Commerce Systems，Computing Project， Business Analytics and Big Data.。'
+            },
+            item_2: {
+                name: '长春师范大学',
+                major: '计算机科学与技术学士',
+                time: '2014.9 - 2016.10',
+                description: '相关课程：计算机科学导论，C++，Java，计算机网络，离散数学。'
+            }
+        },
+        activities: {
+            item_1: {
+                name: '中国-东北亚博览会志愿者',
+                title: '志愿者',
+                time: '2015.9.1 - 2015.9.6',
+                description: '在此次展会上，我负责展会的网络保障工作。该工作需要保障展会的网络稳定运行，及时修复出现的各种网络不通畅问题以及帮助参会人员正确使用网络。'
+            },
+            item_2: {
+                name: 'ACM编程小组',
+                title: '社团',
+                time: '2014.9 - 2016.10',
+                description: '主要负责代表学校参加各级别编程比赛，包括ACM，CCPC，蓝桥杯等。'
+            }
+        },
+        adwards: {
+            item_1: {
+                name: '蓝桥杯大赛',
+                title: '二等奖',
+                time: '2016.3',
+                description: '为推动软件开发技术的发展，促进软件专业技术人才培养，向软件行业输送具有创新能力和实践能力的高端人才，提升高校毕业生的就业竞争力，全面推动行业发展及人才培养进程，工业和信息化部人才交流中心特举办“全国软件专业人才设计与创业大赛”。'
+            },
+            item_2: {
+                name: '中国大学生程序设计大赛',
+                title: '二等奖',
+                time: '2015.9',
+                description: '中国大学生程序设计竞赛（China Collegiate Programming Contest， 简称CCPC）是由中国大学生程序设计竞赛协会主办的面向世界大学生的国际性年度赛事，旨在激励当代大学生运用计算机编程技术和技能来解决实际问题，激发其学习算法和程序设计的兴趣，培养其团队合作意识、创新能力和挑战精神。'
+            },
+            item_3: {
+                name: '首届互联网+大学生创新创业大赛',
+                title: '银奖',
+                time: '2015.9',
+                description: '激发大学生的创造力，培养造就“大众创业、万众创新”的生力军；推动赛事成果转化和产学研用紧密结合，促进“互联网+”新业态形成，服务经济提质增效升级；以创新引领创业、创业带动就业，推动高校毕业生更高质量创业就业。'
+            },
+            item_4: {
+                name: '全国多媒体课件大赛',
+                title: '二等奖',
+                time: '2015.8',
+                description: '课件大赛将在全国范围内面向各级各类院校教师和信息技术人员征集参赛课件，邀请现代教育技术领域和各学科知名专家组成评审组进行评审。通过评审，遴选出一批好的作品，丰富教学内容，帮助各教育教学单位提高多媒体课件制作及应用水平，提升广大教师应用信息技术进行课程整合的能力，推动教育教学改革。'
+            }
         }
-      },
-      activities: {
-          item_1: {
-              name: '中国-东北亚博览会志愿者',
-              title: '志愿者',
-              time: '2015.9.1 - 2015.9.6',
-              description: '在此次展会上，我负责展会的网络保障工作。该工作需要保障展会的网络稳定运行，及时修复出现的各种网络不通畅问题以及帮助参会人员正确使用网络。'
-          },
-          item_2: {
-              name: 'ACM编程小组',
-              title: '社团',
-              time: '2014.9 - 2016.10',
-              description: '主要负责代表学校参加各级别编程比赛，包括ACM，CCPC，蓝桥杯等。'
-          }
-      },
-      adwards: {
-          item_1: {
-              name: '蓝桥杯大赛',
-              title: '二等奖',
-              time: '2016.3',
-              description: '为推动软件开发技术的发展，促进软件专业技术人才培养，向软件行业输送具有创新能力和实践能力的高端人才，提升高校毕业生的就业竞争力，全面推动行业发展及人才培养进程，工业和信息化部人才交流中心特举办“全国软件专业人才设计与创业大赛”。'
-          },
-          item_2: {
-              name: '中国大学生程序设计大赛',
-              title: '二等奖',
-              time: '2015.9',
-              description: '中国大学生程序设计竞赛（China Collegiate Programming Contest， 简称CCPC）是由中国大学生程序设计竞赛协会主办的面向世界大学生的国际性年度赛事，旨在激励当代大学生运用计算机编程技术和技能来解决实际问题，激发其学习算法和程序设计的兴趣，培养其团队合作意识、创新能力和挑战精神。'
-          },
-          item_3: {
-              name: '首届互联网+大学生创新创业大赛',
-              title: '银奖',
-              time: '2015.9',
-              description: '激发大学生的创造力，培养造就“大众创业、万众创新”的生力军；推动赛事成果转化和产学研用紧密结合，促进“互联网+”新业态形成，服务经济提质增效升级；以创新引领创业、创业带动就业，推动高校毕业生更高质量创业就业。'
-          },
-          item_4: {
-              name: '全国多媒体课件大赛',
-              title: '二等奖',
-              time: '2015.8',
-              description: '课件大赛将在全国范围内面向各级各类院校教师和信息技术人员征集参赛课件，邀请现代教育技术领域和各学科知名专家组成评审组进行评审。通过评审，遴选出一批好的作品，丰富教学内容，帮助各教育教学单位提高多媒体课件制作及应用水平，提升广大教师应用信息技术进行课程整合的能力，推动教育教学改革。'
-          }
-      }
     }
-  }
-  
-  // Create VueI18n instance with options
-  const i18n = new VueI18n({
+}
+
+// Create VueI18n instance with options
+const i18n = new VueI18n({
     locale: 'zh', // set locale
     messages, // set locale messages
-  });
+});
 
-  new Vue({
-      i18n,
-      el: '#app',
-      methods: {
-          show: function (language) {
-              i18n.locale = language;
-              document.getElementsByTagName('title')[0].innerText = i18n.t('file_name');
-          }
-      },
-      created: function () {
-          // 监听快捷键
-          hotkeys('ctrl+s', function (e, handler) {
+new Vue({
+    i18n,
+    el: '#app',
+    methods: {
+        goto: function (language) {
+            window.location.replace('#' + language)
+            this.show(language)
+        },
+        show: function (language) {
+            i18n.locale = language;
+            document.getElementsByTagName('title')[0].innerText = i18n.t('file_name');
+        }
+    },
+    created: function () {
+        // 监听快捷键
+        hotkeys('ctrl+s', function (e, handler) {
             window.print();
-          });
+        })
 
-          // 获取浏览器语言
-      }
-  })
+        // 设置显示的语言
+        let langs = ['zh', 'en']
+        currentLang = location.hash.substr(1).toLowerCase();
+        if (langs.includes(currentLang)) {
+            this.show(currentLang)
+        }
+    }
+})
