@@ -135,6 +135,13 @@ img.avatar {
   line-height: 1.2;
 }
 
+.job-time {
+  font-size: 14px;
+  color: #888;
+  width: 25%;
+  text-align: right;
+}
+
 /***********************************
 * Skills
 ***********************************/
