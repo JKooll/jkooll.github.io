@@ -48,16 +48,22 @@ const messages = {
         },
         education: {
             item_1: {
+                name: 'University of Sydney',
+                major: 'Master of Information Technology',
+                time: 'Apr. 2019 - Now',
+                description: 'Related Courses: Managemenet System, Mobile Computing, Object Oriented Application Frameworks, Model Based Software Engineering, Professional Practice in IT, Project Management in IT.'
+            },
+            item_2: {
                 name: 'Southern Cross University',
                 major: 'Bachelor of Information Technology',
                 time: 'Oct. 2016 - Oct. 2018',
-                description: 'Related courses: Application Development, Web Development, Electronic Commerce Systems, Computing Project, Business Analytics and Big Data.'
+                description: 'Related Courses: Application Development, Web Development, Electronic Commerce Systems, Computing Project, Business Analytics and Big Data.'
             },
-            item_2: {
+            item_3: {
                 name: 'Chang Chun Normal University',
                 major: 'Bachelor of Computer Science and Technology',
                 time: 'Sept. 2014 - Oct. 2016',
-                description: 'Related courses: Introduction to Computer Science, C++, Java, Computer Network, Discrete Mathematics.'
+                description: 'Related Courses: Introduction to Computer Science, C++, Java, Computer Network, Discrete Mathematics.'
             }
         },
         activities: {
@@ -149,12 +155,18 @@ const messages = {
         },
         education: {
             item_1: {
+                name: '悉尼大学',
+                major: '信息技术硕士',
+                time: '2019.4 - 目前在读',
+                description: '相关课程：Database Managemenet System，Mobile Computing，Object Oriented Application Frameworks，Model Based Software Engineering，Professional Practice in IT，Project Management in IT。'
+            },
+            item_2: {
                 name: '南十字星大学',
                 major: '信息技术学士',
                 time: '2016.10 - 2018.10',
-                description: '相关课程：Application Development，Web Development， Electronic Commerce Systems，Computing Project， Business Analytics and Big Data.。'
+                description: '相关课程：Application Development，Web Development， Electronic Commerce Systems，Computing Project， Business Analytics and Big Data。'
             },
-            item_2: {
+            item_3: {
                 name: '长春师范大学',
                 major: '计算机科学与技术学士',
                 time: '2014.9 - 2016.10',
