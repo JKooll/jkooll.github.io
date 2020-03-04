@@ -11,8 +11,8 @@ const messages = {
             social_links: 'Social Links',
             reference: 'Reference'
         },
-        file_name: 'Jerry Zhao\'s Resume',
-        name: 'Jerry Zhao',
+        file_name: 'Shuquan Zhao\'s Resume',
+        name: 'Shuquan Zhao',
         title: 'PHP Developer',
         profile: 'A highly resourceful, innovative, and competent PHP developer with extensive experience in the layout, design and coding of websites specifically in PHP format. Possessing considerable knowledge of the development of web applications and scripts using PHP programming language and MySQL & SQL Server databases. Ability to complete web applications independently. Have good teamwork skills. Like programming, embrace open source, there are multiple open source projects on Github.',
         advantages: {
