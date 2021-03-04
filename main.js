@@ -254,7 +254,8 @@ new Vue({
     i18n,
     el: '#app',
     data: {
-        messages: messages
+        messages: messages,
+        language: 'zh'
     },
     methods: {
         goto: function (language) {
@@ -262,6 +263,7 @@ new Vue({
             this.show(language)
         },
         show: function (language) {
+            this.language = language
             i18n.locale = language;
             document.getElementsByTagName('title')[0].innerText = i18n.t('file_name');
         }
