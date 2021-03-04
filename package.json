@@ -1,0 +1,25 @@
+{
+  "name": "jkooll.github.io",
+  "version": "1.0.0",
+  "description": "Shuquan Zhao Resume",
+  "main": "main.js",
+  "scripts": {
+    "test": "superstatic ./ --port 8080 --host 127.0.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JKooll/jkooll.github.io.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "Shuquan Zhao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JKooll/jkooll.github.io/issues"
+  },
+  "homepage": "https://github.com/JKooll/jkooll.github.io#readme",
+  "dependencies": {
+    "superstatic": "^7.1.0"
+  }
+}

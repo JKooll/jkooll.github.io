@@ -14,7 +14,7 @@ const messages = {
         file_name: 'Shuquan Zhao\'s Resume',
         name: 'Shuquan Zhao',
         title: 'PHP Developer',
-        profile: 'A highly resourceful, innovative, and competent PHP developer with extensive experience in the layout, design and coding of websites specifically in PHP format. Possessing considerable knowledge of the development of web applications and scripts using PHP programming language and MySQL & SQL Server databases. Ability to complete web applications independently. Have good teamwork skills. Like programming, embrace open source, there are multiple open source projects on Github.',
+        profile: 'Recent M.Sc. in Information Technology graduate equipped with the key talents for aligning business strategy and objectives with established technical development and programming paradigms to achieve maximum impacts. Detail-focused professional with the ability to closely collaborate and communicate with various personnel, administer the layout, design, and coding of websites, and lead the development of web applications and scripts through employment of technical expertise. Exceptionally dedicated professional with keen interpersonal, communication, and organizational skills.',
         advantages: {
             item_1: 'Can complete web application development independently',
             item_2: 'Have good learning, communication, problem solving skills and strong sense of responsibility',
@@ -27,13 +27,27 @@ const messages = {
                 job_company: 'Kakabuy',
                 job_title: 'PHP Developer',
                 job_time: 'Jan. 2019 - Apr. 2019',
-                job_description: 'Maintain stable operation of online shopping platform, develop new functions according to demand, optimize front-end resource loadig.'
+                job_description: {
+                    item_1: 'Played a key role by overseeing the maintenance of the stable and effective operation of an online shopping platform.',
+                    item_2: 'Leveraged extensive expertise in the creation and development of new functions to meet demand and ensure success.',
+                    item_3: 'Administered the enhancement and optimization of front-end resource loading over the course of my operations.',
+                    item_4: 'Provided support and assistance in the effective implementation of best practices, such as version control and code standards.',
+                    item_5: 'Orchestrated and executed all aspects of the development lifecycle, from requirements gathering to enhancements.',
+                    item_6: 'Instituted a significant improvement in the company’s development environment and QA standards.'
+                }
             },
             item_2: {
                 job_company: 'YUEXIANG Culture Media',
                 job_title: 'PHP Developer',
                 job_time: 'Oct. 2017 - Feb. 2018',
-                job_description: 'At this company, I worked with other members of the team to develop the company\'s core products. This is a short video platform where users can upload and share videos and watch other people\'s videos. <p>My main responsibilities: to maintain the company\'s website with other colleagues; to participate in and complete the company\'s core product development; to solve customer problems in a timely manner.</p>'
+                job_description: {
+                    item_1: 'Closely collaborated and communicated with other team members in the development of the company’s core products, including a short video platform to allow users to upload and share videos and watch other people’s videos.',
+                    item_2: 'Oversaw the maintenance of the company’s website in communication with other colleagues as part of my duties.',
+                    item_3: 'Actively engaged in, participated in, and completed the company’s core product development in an effective manner.',
+                    item_4: 'Dealt with and swiftly resolved a wide variety of customer problems and issues to ensure maximum satisfaction.',
+                    item_5: 'Performed the writing and maintenance of service code through effective employment of technical expertise.',
+                    item_6: 'Utilized a wide range of technical skills and knowledge across the full spectrum of online development.'
+                }
             }
         },
         skills: {
@@ -85,25 +99,25 @@ const messages = {
                 name: 'The Contest of Lan Qiao Cup',
                 title: 'Second Prize',
                 time: 'March 2016',
-                description: 'Lan Qiao Cup is the largest professional computer contest in China. Since 2010, the contest has been held for nine times, once a year. Since its start, including Peking University, Tsinghua University, Fudan University, Zhejiang University and other Chinese first-class universities, more than 1,200 institutions from 31 provinces and autonomous regions in China selected outstanding students to attend the contest. '
+                description: 'The largest professional computer contest in China. Since 2010, the contest has been held annually on nine occasions. Since its inception, more than 1,200 institutions from 31 provinces and autonomous regions in China selected outstanding students to attend the contest, including Peking University, Tsinghua University, Fudan University, Zhejiang University and other Chinese first-class universities'
             },
             item_2: {
                 name: 'China Collegiate Programming Contest',
                 title: 'Second Prize',
                 time: 'Sept. 2015',
-                description: 'China Collegiate Programming Contest (CCPC) is an international annual event hosted by the China University Student Programming Competition Association for the world\'s college students. It aims to inspire contemporary college students to use computer programming skills and skills to solve practical problems and stimulate His interest in learning algorithms and programming has fostered a sense of teamwork, innovation and challenge.'
+                description: 'CCPC is an international annual event hosted by the China University Student Programming Competition Association for the world\'s college students. It aims to inspire contemporary college students to use computer programming skills and expertise to solve practical problems.'
             },
             item_3: {
                 name: 'Internet + College Students Innovation and Entrepreneurship Competition',
                 title: 'Silver Award',
                 time: 'Sept. 2015',
-                description: 'Stimulate the creativity of college students, cultivate the new force that creates "mass entrepreneurship, innovation"; promote the transformation of the results of the competition and the close combination of production, education and research, promote the formation of new "Internet +" business, upgrade the service economy, upgrade efficiency; lead innovation with innovation Entrepreneurship drives employment and promotes higher quality entrepreneurship and employment for college graduates.'
+                description: 'This competition stimulates the creativity of college students, cultivates the new force that creates mass entrepreneurship and innovation, promotes the transformation of results of the competition and the close combination of production, education, and research while promoting the establishment of the new “Internet+. business.'
             },
             item_4: {
                 name: 'National Multimedia Courseware Competition',
                 title: 'Second Price',
                 time: 'August 2015',
-                description: 'The courseware contest will collect the courseware for teachers and information technology personnel of all levels and at all levels across the country, and invite the experts in the field of modern education technology and experts from various disciplines to form a judging panel for review. Through evaluation, a number of good works were selected to enrich the teaching content, help all educational and teaching units to improve the production and application level of multimedia courseware, improve the ability of teachers to apply information technology for curriculum integration, and promote education and teaching reform.'
+                description: 'This courseware content collects courseware for teachers and information technology personnel of all levels and at all levels across the country and invites the experts in the field of modern education technology and experts from various disciplines to form a judging panel for review. Through evaluation, a number of works were selected to enrich the teaching content, help all educational and teaching units to improve the production and application level of multimedia courseware, improve the ability of teachers to apply information technology for curriculum integration, and promote education and teaching reform.'
             }
         }
     },
@@ -134,13 +148,27 @@ const messages = {
                 job_company: 'Kakabuy',
                 job_title: 'PHP 开发工程师',
                 job_time: '2019.1 - 2019.4',
-                job_description: '维护线上购物平台稳定运行，根据需求开发新的功能，优化前端资源加载。'
+                job_description: {
+                    item_1: '通过监督在线购物平台的稳定和有效运行的维护发挥了关键作用。',
+                    item_2: '在创建和开发新功能方面拥有丰富的专业知识，可以满足需求并确保成功。',
+                    item_3: '在我的操作过程中管理了前端资源加载的增强和优化。',
+                    item_4: '在有效实施最佳实践（例如版本控制和代码标准）方面提供了支持和协助。',
+                    item_5: '从需求收集到增强，协调并执行了开发生命周期的各个方面。',
+                    item_6: '大大改善了公司的开发环境和质量检查标准。'
+                }
             },
             item_2: {
                 job_company: '悦享文化传媒',
                 job_title: 'PHP 开发工程师',
                 job_time: '2017.10 - 2018.2',
-                job_description: '在这个公司，我和团队的其他成员一起完成了公司核心产品的开发，这是一个短视频平台，用户可以上传并分享视频，而且可以观看别人的视频。<p>我的主要职责：与其他同事维护公司网站; 参与并完成公司的核心产品开发; 及时解决客户的问题。</p>'
+                job_description: {
+                    item_1: '在公司核心产品的开发中与其他团队成员紧密合作并进行了交流，包括一个短视频平台，该平台允许用户上传和共享视频以及观看其他人的视频。',
+                    item_2: '作为我的职责之一，与其他同事进行沟通，监督公司网站的维护。',
+                    item_3: '积极有效地参与，参与并完成了公司的核心产品开发。',
+                    item_4: '处理并迅速解决各种客户问题，以确保最大程度的满足。',
+                    item_5: '通过有效利用技术专长来执行服务代码的编写和维护。',
+                    item_6: '在整个开发中利用了广泛的技术技能和知识。'
+                }
             }
         },
         skills: {
@@ -225,6 +253,9 @@ const i18n = new VueI18n({
 new Vue({
     i18n,
     el: '#app',
+    data: {
+        messages: messages
+    },
     methods: {
         goto: function (language) {
             window.location.replace('#' + language)
