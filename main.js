@@ -65,7 +65,7 @@ const messages = {
                 name: 'University of Sydney',
                 major: 'Master of Information Technology',
                 time: 'Apr. 2019 - Now',
-                description: 'Related Courses: Managemenet System, Mobile Computing, Object Oriented Application Frameworks, Model Based Software Engineering, Professional Practice in IT, Project Management in IT.'
+                description: 'Related Courses: Management System, Mobile Computing, Object Oriented Application Frameworks, Model Based Software Engineering, Professional Practice in IT, Project Management in IT.'
             },
             item_2: {
                 name: 'Southern Cross University',
@@ -139,14 +139,14 @@ const messages = {
         advantages: {
             item_1: '能独立完成Web应用开发',
             item_2: '有良好的学习能力、沟通能力、解决问题能力、拥有较强的工作责任感',
-            item_3: '拥有Geek精神，热爱开源，在GitHub上有很多开源项目',
+            item_3: '拥有Geek精神，热爱开源，在GitHub上有多个开源项目',
             item_4: '英语良好，无障碍阅读英文文档',
             item_5: '熟练协作，无压力编写技术文档、项目文档'
         },
         experience: {
             item_1: {
                 job_company: 'Kakabuy',
-                job_title: 'PHP 开发工程师',
+                job_title: 'PHP 全栈工程师',
                 job_time: '2019.1 - 2019.4',
                 job_description: {
                     item_1: '通过监督在线购物平台的稳定和有效运行的维护发挥了关键作用。',
@@ -186,7 +186,7 @@ const messages = {
                 name: '悉尼大学',
                 major: '信息技术硕士',
                 time: '2019.4 - 目前在读',
-                description: '相关课程：Database Managemenet System，Mobile Computing，Object Oriented Application Frameworks，Model Based Software Engineering，Professional Practice in IT，Project Management in IT。'
+                description: '相关课程：Database Management System，Mobile Computing，Object Oriented Application Frameworks，Model Based Software Engineering，Professional Practice in IT，Project Management in IT。'
             },
             item_2: {
                 name: '南十字星大学',
